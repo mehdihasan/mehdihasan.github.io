@@ -22,7 +22,7 @@
             <nav>
                 <div class="nav-wrapper">
                     <ul id="nav-mobile" class="side-nav">
-                        <li><a href="index.php">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="project.php">Projects</a></li>
                         <!--<li><a href="cover-latter.html">Cover Latter</a></li>-->
                         <li><a href="contact.php">Contact</a></li>
