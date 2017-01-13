@@ -352,21 +352,31 @@ body .container {
 .blog-post:last-child {
   padding-right: 0px !important;
 }
-#blog-post-1 {
+#blog-post-3 {
   background-color: #e95855;
 }
 #blog-post-2 {
   background-color: #707281;
 }
-#blog-post-3 {
+#blog-post-0 {
   background-color: #564d52;
 }
-#blog-post-4 {
+#blog-post-1 {
   background-color: #47bac9;
 }
 #blog-post-5 {
-  background-color: #68c02e;
+  background-color: #435c60;
 }
+#blog-post-4 {
+  background-color: #022f4b;
+}
+#blog-post-6 {
+  background-color: #e11111;
+}
+#blog-post-7 {
+  background-color: #000000;
+}
+
 .post-details {
   background-color: #ffffff;
   padding: 20px;
