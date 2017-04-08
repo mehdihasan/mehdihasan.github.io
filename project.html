@@ -310,7 +310,7 @@
                 var items = [
                     [
                         "https://play.google.com/store/apps/details?id=no.dn.dn&hl=en",
-                        "https://lh6.ggpht.com/qS0h4HZ49cIMfzQJlNghGZy5Av2h_XVUqRzkHns8TANjfmFxQcJt9idsshiJCPRiM3U=w300-rw",
+                        "http://c1.staticflickr.com/3/2949/33906712965_841efc42cc.jpg",
                         "background-color: #4578BF;",
                         "DN.no",
                         "Android",
@@ -326,7 +326,7 @@
                     ],
                     [
                         "https://play.google.com/store/apps/details?id=com.lotd.yoapp&hl=en",
-                        "https://lh3.googleusercontent.com/niN_0xCuU0e1gVoOLvOVuOa6kUFt9dZch5Y-EmDwfUyvZbVpthwpKDyYNqtaHfqpLKhm=w300-rw",
+                        "http://c1.staticflickr.com/3/2840/33750192932_c466f638db.jpg",
                         "background-color: #fff;",
                         "YO! Share and Transfer Offline",
                         "Android",
@@ -341,6 +341,14 @@
                         "Developed entire iOS application using Objective-C.  Main feature: Creating account, social authentication, social media post from app, in-app post and comment, share any specific post to family and friends, search and view products etc."
                     ],
                     [
+                        "http://cornerstonehealthcaresolutions.com/",
+                        "http://c1.staticflickr.com/3/2843/33521997780_aee73a7a6d_m.jpg",
+                        "padding: 20px;background-color: #fff;",
+                        "Corner Stone Health Care",
+                        "Web Application / PTO software",
+                        "Entire Web Application and Patient-Employee management system. Used technologies: Yii2, Rack Form,  PHP, JQuery, MySQL etc."
+                    ],
+                    [
                         "http://cygnusaerial.com/",
                         "http://cygnusaerial.com/images/cygnus_logo.png",
                         "padding: 20px;background-color: #fff;",
@@ -349,16 +357,8 @@
                         "Entire Web Application developed. Used Yii2 framework. "
                     ],
                     [
-                        "http://cornerstonehealthcaresolutions.com/",
-                        "http://cornerstonehealthcaresolutions.com/images/logo-horizontal3-bg.png",
-                        "padding: 20px;background-color: #fff;",
-                        "Corner Stone Health Care",
-                        "Web Application / PTO software",
-                        "Entire Web Application and Patient-Employee management system. Used technologies: Yii2, Rack Form,  PHP, JQuery, MySQL etc."
-                    ],
-                    [
                         "http://wchconnect.paperlesshealth.com/",
-                        "https://lh4.googleusercontent.com/MDGc-p4AzZcJrIpJEH3SAW2wY3F7Ac_wsqoy7xndTLRczGchiFtXUdQLp5xM81LmDXcq5eoM=w2560-h1390",
+                        "http://c1.staticflickr.com/1/464/31452315120_000cdc109e_c.jpg",
                         "",
                         "WCHconnect",
                         "Application / Backend management panel / Custom Google Analytics Dashboard",
@@ -366,11 +366,19 @@
                     ],
                     [
                         "https://paperlesshealth.com/emsconnect/kettering/app/",
-                        "https://lh5.googleusercontent.com/6YbFX5LeUQprRXBv1XdJHKv8VvjZvBPBvneF6GnUIPlL7ZQQ-Gl94AdD67StnZjYoJU-xjOu=w2560-h1344",
+                        "http://c1.staticflickr.com/3/2922/33063255904_a3d962c621_c.jpg",
                         "",
                         "EMSconnect",
                         "Application / Backend Management Panel",
                         "Entire Web Application and backend. Developed mainly using Javascript, PHP and MySQL. Main feature: search and show direction of nearby hospitals."
+                    ],
+                    [
+                        "http://bao.com.bd",
+                        "http://bao.com.bd//images/logo/1600_1600.png",
+                        "padding: 20px;background-color: #fff;",
+                        "Bangladesh Astronomical Observatory (BAO)",
+                        "Web Application",
+                        "Entire Web Application developed. Used Yii2 framework. "
                     ]
                 ];
 
@@ -384,8 +392,12 @@
                             +'<span>'+items[i][4]+'</span>'
                             +'</a> </div> <div class="post-details">'
                             +'<p>'+items[i][5]+'</p>'
-                            +'</div> </div> </div> </div>';
+                            +'</div> </div> </div> </div> ';
                     $( ".blog" ).append( htmlItem );
+
+                    /*if (i % 2 != 0) {
+                        $( ".blog" ).append( '<div class="clear"></div>' );
+                    }*/
                 }
             });
 
