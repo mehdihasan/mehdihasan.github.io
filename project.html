@@ -155,7 +155,7 @@
                                 <div class="col m12 s12 l9 info wow fadeIn a2" data-wow-delay="0.2s" >
                                     <div class="section-item-details">
                                         <div class="personal">
-                                            <h4><a href="skype:skype.mehdi?call">skype.mehdi</a></h4> <!-- Number -->
+                                            <h4><a href="skype:live:email2mehdihasan?call">live:email2mehdihasan</a></h4> <!-- Number -->
                                             <span>skype</span>
                                         </div>
                                     </div>
@@ -171,7 +171,7 @@
                                 <div class="col m12 s12 l9 info wow fadeIn a3" data-wow-delay="0.3s">
                                     <div class="section-item-details">
                                         <div class="personal">
-                                            <h4><a href="mailto:mehdi-bd@hotmail.com">mehdi-bd@hotmail.com</a></h4> <!-- Email -->
+                                            <h4><a href="mailto:mehdi.hasan@ymail.com">mehdi.hasan@ymail.com</a></h4> <!-- Email -->
                                             <span>personal</span>
                                         </div>
                                     </div>
@@ -250,7 +250,7 @@
             =========================================-->
                 <section class="col s12 m12 l8 section" > <!-- Blog section start --> 
                     <div class="row">
-                        <div class="blog">
+                        <div id="blog" class="blog">
 
                         </div>
 
@@ -266,8 +266,8 @@
                                 <h2>Social </h2>
                                 <ul> <!-- interetsr icon start -->
                                     <li>
-                                        <a class="igl-tw" href="https://twitter.com/hasan_mehdi" target="_blank">
-                                            <i class="fa fa-twitter tooltipped" data-position="top" data-delay="50" data-tooltip="Twitter"></i>
+                                        <a class="igl-gp" href="https://github.com/mehdihasan" target="_blank">
+                                            <i class="fa fa-github tooltipped" data-position="top" data-delay="50" data-tooltip="Github"></i>
                                         </a>
                                     </li>
                                     <li>
@@ -276,18 +276,18 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="igl-fb" href="https://www.facebook.com/hasan0mehdi/about" target="_blank">
-                                            <i class="fa fa-facebook tooltipped" data-position="top" data-delay="50" data-tooltip="Facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
                                         <a class="igl-yu" href="http://stackoverflow.com/users/2064391/mehdi" target="_blank">
                                             <i class="fa fa-stack-overflow tooltipped" data-position="top" data-delay="50" data-tooltip="Stackoverflow"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="igl-gp" href="https://plus.google.com/u/0/117271806399496744279/about" target="_blank">
-                                            <i class="fa fa-google-plus tooltipped" data-position="top" data-delay="50" data-tooltip="GooglePlus"></i>
+                                        <a class="igl-tw" href="https://twitter.com/hasan_mehdi" target="_blank">
+                                            <i class="fa fa-twitter tooltipped" data-position="top" data-delay="50" data-tooltip="Twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="igl-fb" href="https://www.facebook.com/hasan0mehdi/about" target="_blank">
+                                            <i class="fa fa-facebook tooltipped" data-position="top" data-delay="50" data-tooltip="Facebook"></i>
                                         </a>
                                     </li>
                                 </ul> <!-- interetsr icon end -->
@@ -368,7 +368,7 @@
                     [
                         "http://cornerstonehealthcaresolutions.com/",
                         "http://c1.staticflickr.com/3/2843/33521997780_aee73a7a6d_m.jpg",
-                        "padding: 20px;background-color: #fff;",
+                        "background-color: #fff;",
                         "Corner Stone Health Care",
                         "Web Application / PTO software",
                         "Entire Web Application and Patient-Employee management system. Used technologies: Yii2, Rack Form,  PHP, JQuery, MySQL etc."
@@ -418,7 +418,7 @@
                             +'</a> </div> <div class="post-details">'
                             +'<p>'+items[i][5]+'</p>'
                             +'</div> </div> </div> </div> ';
-                    $( ".blog" ).append( htmlItem );
+                    $( "#blog" ).append( htmlItem );
 
                     /*if (i % 2 != 0) {
                         $( ".blog" ).append( '<div class="clear"></div>' );
