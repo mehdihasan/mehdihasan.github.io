@@ -1,0 +1,190 @@
+{
+  "basics": {
+    "name": "Mehdi Hasan",
+    "label": "Software Engineer",
+    "picture": "profilePhoto.jpg",
+    "email": "email2mehdihasan@gmail.com",
+    "phone": "+8801959990906",
+    "skype": "live:email2mehdihasan",
+    "website": "https://www.linkedin.com/in/md-mehdi-hasan/",
+    "summary": "You can always recover, learn, and build from mistakes, but when you do nothing, that automatically means there is nothing to improve or salvage or discover. - Jeff Haden",
+    "location": {
+      "address": "Bildstensvägen 4 F",
+      "postalCode": "226 54",
+      "city": "Lund",
+      "countryCode": "SE",
+      "region": "Sweden"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "md-mehdi-hasan",
+        "url": "https://www.linkedin.com/in/"
+      },
+      {
+        "network": "Github",
+        "username": "mehdihasan",
+        "url": "https://github.com/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Cefalo",
+      "position": "Senior Software Engineer",
+      "website": "https://www.cefalo.com/",
+      "startDate": "05/01/2016",
+      "endDate": "",
+      "summary": "Working as mobile applications and api developer for leading Norwegian business newspaper Dagens Naeringsliv",
+      "highlights": [
+        "Developing Android application in Java & native Android SDK for DN: https://play.google.com/store/apps/details?id=no.dn.dn",
+        "Developing iOS application in Swift and native iOS SDK: https://itunes.apple.com/no/app/dn/id919883184?mt=8",
+        "Developing RESTful API for corrosponding mobile applications.",
+        "Tech: Java, Swift, Android SDK, iOS SDK, Spring Boot, React Native, MySQL"
+      ]
+    },
+    {
+      "company": "Syndao",
+      "position": "Software Engineering Consultant",
+      "website": "https://syndaoapps.com/",
+      "startDate": "12/01/2015",
+      "endDate": "",
+      "summary": "SyndaoApps is a startup from USA which is working to provide flawless communication means to its customers. I am with Syndao from the start & responsible to develop all sorts of softwares required for clients. I have been involved with the entire SDLC process.",
+      "highlights": [
+        "Technologies used: PHP, Javascript, HTML, CSS, Java, MySQL, PWA, Android SDK, iOS SDK, AWS etc."
+      ]
+    },
+    {
+      "company": "iGlyphic",
+      "position": "Co-Founder & Consultant",
+      "website": "http://iglyphic.com/",
+      "startDate": "05/01/2015",
+      "endDate": "",
+      "summary": "As a startup, iGlyphic focuses on developing small-scale software products which meet the needs of hospitals, stores, fashion houses & different types of non-government organizations.",
+      "highlights": [
+        "Participate in developing strategies and roadmap",
+        "Lead a team of freelance developers from scratch to publish:",
+        "- 14 ThemeForest products (HTML and Wordpress Themes) ",
+        "- 8 CodeCanyon products (Android and iOS Applications)",
+        "- 5 Google Play Store products (Android Applications)",
+        "Lead the development team & participate in the development process.",
+        "Delivered multiple successful projects to the clients."
+      ]
+    },
+    {
+      "company": "AAPBD",
+      "position": "Project Manager",
+      "website": "http://www.aapbd.com/",
+      "startDate": "02/01/2016",
+      "endDate": "04/01/2016",
+      "summary": "...",
+      "highlights": [
+        "Introduce GIT instead of SVN as VCS.",
+        "Managed five different teams & 7 different projects (Android, IOS, Web & API, Design & QA) of total 21+ people",
+        "Delivered 3 completed projects to clients within 2 months of joining",
+        "Conduct interview of software developers",
+        "Introduced quarterly inner house training sessions",
+        "Projects: Mahash, Zamen, sloppy, love-lane, d-liv, NPS, ywaper"
+      ]
+    },
+    {
+      "company": "W3 Engineers",
+      "position": "Sr. Software Engineer",
+      "website": "http://w3engineers.com/",
+      "startDate": "12/01/2012",
+      "endDate": "01/01/2016",
+      "summary": "W3Engineers is an interactive web application development and consulting firm that utilizes latest technology, creative design and optimized business strategy to help businesses build their brand. ",
+      "highlights": [
+        "Published first Native Android product from the Company",
+        "Published first iOS product (Native SDK) from the Company",
+        "Conduct meeting with clients",
+        "Conduct interview of software developers from 4 team members to 20+ team members (Android and iOS team)",
+        "Lead the development team (YO! App product) from the scratch to MVP towards 250,000+ download"
+      ]
+    },
+    {
+      "company": "IIML",
+      "position": "System Engineer",
+      "website": "http://capturedata.com/",
+      "startDate": "02/01/2011",
+      "endDate": "02/01/2012",
+      "summary": "IIMI helps organizations of all types and sizes transform their data into information and knowledge, driving insight and action. I was responsible to provide system / networking service to more than 3500+ data entry operators and software engineers",
+      "highlights": []
+    },
+    {
+      "company": "Aamra Networks",
+      "position": "Network Engineer",
+      "website": "https://www.aamranetworks.com/",
+      "startDate": "09/01/2010",
+      "endDate": "01/01/2011",
+      "summary": "Aamra networks limited is one of the leader of communication solutions industry in Bangladesh.",
+      "highlights": [
+        "End user Gateway Server/Router/Switch/Polycom installation and troubleshooting.",
+        "Provide solution to customers remotely."
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "East West University",
+      "area": "",
+      "studyType": "B.Sc in Information and Communication Engineering",
+      "startDate": "08/01/2006",
+      "endDate": "2010",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Front End Development",
+      "level": "Master",
+      "keywords": [
+        "Java",
+        "Swift",
+        "Objective-C",
+        "Python",
+        "SQL",
+        "PHP",
+        "HTML",
+        "CSS",
+        "Javascript",
+        "jQuery",
+        "React",
+        "Android SDK",
+        "iOS SDK",
+        "Spring Boot",
+        "Tornado",
+        "Yii",
+        "Progressive Web App",
+        "AWS",
+        "Git",
+        "CI/CD",
+        "Agile Methodologies",
+        "Scrum",
+        "Mobile Application Development",
+        "Web Applications",
+        "Web Development",
+        "Design Patterns",
+        "SDLC",
+        "Jira"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Travel",
+      "keywords": []
+    }
+  ],
+  "references": []
+}
