@@ -1,13 +1,13 @@
 {
   "basics": {
     "name": "Mehdi Hasan",
-    "label": "Software Engineer",
+    "label": "Senior Android Engineer",
     "picture": "profilePhoto.jpg",
     "email": "email2mehdihasan@gmail.com",
     "phone": "+8801959990906",
     "skype": "live:email2mehdihasan",
     "website": "https://www.linkedin.com/in/md-mehdi-hasan/",
-    "summary": "You can always recover, learn, and build from mistakes, but when you do nothing, that automatically means there is nothing to improve or salvage or discover. - Jeff Haden",
+    "summary": "If your business is looking for an experienced Android application specialist, from whom you are expecting craftsmanship, robustness and maintainable quality software, then I am here to help you. Right now I am open to any full time/part time/project based jobs at Malmo/Lund, Skane (Sweden) area. \n\n For the last 8+ years, I have been developing high volume, scalable Android and iOS applications for startups and well-established businesses following agile methodologies. Beside native Android and iOS SDK, I also have experience in developing mobile application using ReactNative, Cordova & Flutter. I also have some little experience developing web and API applications using LAMP stack and SpringBoot framework, which helps me architecting mobile applications far better way by understanding the big picture of the business. \n\nWorking experience in a cross-cultural environment, good adaptability, effective communication skill, quick learning capability, enthusiasm about applying latest technologies makes me a strong team player wherever I work.",
     "location": {
       "address": "Bildstensvägen 4 F",
       "postalCode": "226 54",
@@ -35,12 +35,10 @@
       "website": "https://www.cefalo.com/",
       "startDate": "05/01/2016",
       "endDate": "",
-      "summary": "Working as mobile applications and api developer for leading Norwegian business newspaper Dagens Naeringsliv",
+      "summary": "In Cefalo, I have worked for Dagens Næringsliv, commonly known as DN, which is Norway's 3rd largest newspaper specialising in business news. Dagens Næringsliv is owned by NHST Media Group.",
       "highlights": [
-        "Developing Android application in Java & native Android SDK for DN: https://play.google.com/store/apps/details?id=no.dn.dn",
-        "Developing iOS application in Swift and native iOS SDK: https://itunes.apple.com/no/app/dn/id919883184?mt=8",
-        "Developing RESTful API for corrosponding mobile applications.",
-        "Tech: Java, Swift, Android SDK, iOS SDK, Spring Boot, React Native, MySQL"
+        "I was mostly responsible for develop, maintain and deploy the Android and iOS applications developed in native platform.",
+        "Beside the mobile applications, I have also worked on content API & Gateway applications in a micro-service architectural environment."
       ]
     },
     {
@@ -49,26 +47,22 @@
       "website": "https://syndaoapps.com/",
       "startDate": "12/01/2015",
       "endDate": "",
-      "summary": "SyndaoApps is a startup from USA which is working to provide flawless communication means to its customers. I am with Syndao from the start & responsible to develop all sorts of softwares required for clients. I have been involved with the entire SDLC process.",
-      "highlights": [
-        "Technologies used: PHP, Javascript, HTML, CSS, Java, MySQL, PWA, Android SDK, iOS SDK, AWS etc."
-      ]
+      "summary": "SYNDAO (TM) is an Applications Solutions company from USA. Currently focused on the Healthcare Industry and the Emergency Management sector. We have three products currently: medCNX (TM), emsCNX (TM) and CodeRED (TM). I have been involved with the entire SDLC process for all the current products.",
+      "highlights": []
     },
     {
       "company": "iGlyphic",
-      "position": "Co-Founder & Consultant",
+      "position": "Software Consultant",
       "website": "http://iglyphic.com/",
       "startDate": "05/01/2015",
       "endDate": "",
       "summary": "As a startup, iGlyphic focuses on developing small-scale software products which meet the needs of hospitals, stores, fashion houses & different types of non-government organizations.",
       "highlights": [
-        "Participate in developing strategies and roadmap",
+        "Negotiated with clients, Lead the team, participate in the development process through the entire SDLC process to billing and delivered 7 successful projects to the clients",
         "Lead a team of freelance developers from scratch to publish:",
         "- 14 ThemeForest products (HTML and Wordpress Themes) ",
         "- 8 CodeCanyon products (Android and iOS Applications)",
-        "- 5 Google Play Store products (Android Applications)",
-        "Lead the development team & participate in the development process.",
-        "Delivered multiple successful projects to the clients."
+        "- 5 Google Play Store products (Android Applications) "
       ]
     },
     {
@@ -77,29 +71,36 @@
       "website": "http://www.aapbd.com/",
       "startDate": "02/01/2016",
       "endDate": "04/01/2016",
-      "summary": "...",
+      "summary": "Advanced Apps Bangladesh Limited (AAPBD) is a digital enterprise specialized in mobile and web app development.",
       "highlights": [
         "Introduce GIT instead of SVN as VCS.",
         "Managed five different teams & 7 different projects (Android, IOS, Web & API, Design & QA) of total 21+ people",
         "Delivered 3 completed projects to clients within 2 months of joining",
         "Conduct interview of software developers",
-        "Introduced quarterly inner house training sessions",
+        "Introduced quarterly in-house training sessions",
         "Projects: Mahash, Zamen, sloppy, love-lane, d-liv, NPS, ywaper"
       ]
     },
     {
       "company": "W3 Engineers",
-      "position": "Sr. Software Engineer",
+      "position": "Sr. Software Engineer Team Lead",
       "website": "http://w3engineers.com/",
       "startDate": "12/01/2012",
       "endDate": "01/01/2016",
       "summary": "W3Engineers is an interactive web application development and consulting firm that utilizes latest technology, creative design and optimized business strategy to help businesses build their brand. ",
       "highlights": [
-        "Published first Native Android product from the Company",
-        "Published first iOS product (Native SDK) from the Company",
-        "Conduct meeting with clients",
-        "Conduct interview of software developers from 4 team members to 20+ team members (Android and iOS team)",
-        "Lead the development team (YO! App product) from the scratch to MVP towards 250,000+ download"
+        "Lead the deployment process for every production release on Google Play Store and App Store ",
+        "Manage JIRA for issue tracking, distribution of task, sprint management. ",
+        "Collaborate with clients as the development lead.",
+        "Regular code reviews for the development team.",
+        "Undertaking and devising mobile application developer recruitment process and then filtering potential talents through vigorous screening.",
+        "Developed authentication system and friend matching application using Python Tornado framework, DynamoDB and Twillo.",
+        "Developed TCP and UDP socket communication module for YO! Android Application & iOS Application",
+        "Developed Authentication, contact sync and friend search and find module for YO! Android Application & iOS Application",
+        "Developed the entire Christmas.com iOS application from scratch to deploy to the App Store (by learning Objective-C and iOS SDK by my own) ",
+        "Developed Teetimes.net iOS application firstly at Cordova framework and then on native iOS framework",
+        "Part of the development team to develop and publishing Christmas.com Android application",
+        "Worked on Teetimes.net Android application's search module, navigation module, geo-location module and the UI"
       ]
     },
     {
@@ -143,6 +144,8 @@
       "name": "Front End Development",
       "level": "Master",
       "keywords": [
+        "Android SDK",
+        "iOS SDK",
         "Java",
         "Swift",
         "Objective-C",
@@ -154,7 +157,6 @@
         "Javascript",
         "jQuery",
         "React",
-        "Android SDK",
         "iOS SDK",
         "Spring Boot",
         "Tornado",
