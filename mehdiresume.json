@@ -7,7 +7,7 @@
     "phone": "+8801751290833",
     "skype": "live:email2mehdihasan",
     "website": "https://www.linkedin.com/in/md-mehdi-hasan/",
-    "summary": "For the last 8+ years, I have been crafting robust, maintainable, high volume, scalable Android and iOS applications for startups and well-established businesses following agile methodologies. Beside native Android and iOS SDK, I also have experience in developing mobile application using ReactNative, Cordova & Flutter. I also have some little experience developing web and API applications using LAMP stack and SpringBoot framework, which helps me architecting mobile applications far better way by understanding the big picture of the business. \n\nWorking experience in a cross-cultural environment, good adaptability, effective communication skill, quick learning capability, enthusiasm about applying latest technologies makes me a strong team player wherever I work.",
+    "summary": "Passionate software developer with 8+ years of experience driving quality and consistency throughout all phases of software development projects. A partner who leads collaborative efforts with analysts, QA and support engineers throughout a product lifecycle to produce high-quality, user-friendly, scalable and bug-free software. I credit my success to the fundamental belief that business needs must be fully understood and remain paramount throughout a project. Compounded by my core belief in Agile methodologies and extensive experience using a broad range of technologies, I’m able to document the most efficient architecture for a true end-to-end solution. Results remain unparalleled. Whether your team needs a reliable teammate or proved leader, I can help!",
     "location": {
       "address": "Bildstensvägen 4 F",
       "postalCode": "226 54",
@@ -35,8 +35,9 @@
       "website": "https://www.cefalo.com/",
       "startDate": "05/01/2016",
       "endDate": "",
-      "summary": "In Cefalo, I have worked for Dagens Næringsliv, commonly known as DN, which is Norway's 3rd largest newspaper specialising in business news. Dagens Næringsliv is owned by NHST Media Group.",
+      "summary": "In Cefalo, I have worked for DN (Dagens Næringsliv), which is Norway's 3rd largest newspaper specialising in business news. Dagens Næringsliv is owned by NHST Media Group. ",
       "highlights": [
+        "Over the past year, we have continuously worked hard to increase from about 20,000 to 30,000 unique weekly users in the DN app. Since last couple of release with new navigation and some other additional features, time spent in app (median) per user has increased by 30%, from 3 min to 4 min per day. At the end of 2018, 10,000+ subscribers were in the app, versus 7000+ a year ago.",
         "I was mostly responsible for develop, maintain and deploy the Android and iOS applications developed in native platform.",
         "Beside the mobile applications, I have also worked on content API & Gateway applications in a micro-service architectural environment."
       ]
@@ -73,10 +74,10 @@
       "endDate": "04/01/2016",
       "summary": "Advanced Apps Bangladesh Limited (AAPBD) is a digital enterprise specialized in mobile and web app development.",
       "highlights": [
-        "Introduce GIT instead of SVN as VCS.",
+        "Introduce GIT instead of SVN as VCS and trained the team to adopt it.",
         "Managed five different teams & 7 different projects (Android, IOS, Web & API, Design & QA) of total 21+ people",
         "Delivered 3 completed projects to clients within 2 months of joining",
-        "Conduct interview of software developers",
+        "Undertaking and devising mobile application developer recruitment process.",
         "Introduced quarterly in-house training sessions",
         "Projects: Mahash, Zamen, sloppy, love-lane, d-liv, NPS, ywaper"
       ]
@@ -89,11 +90,11 @@
       "endDate": "01/01/2016",
       "summary": "W3Engineers is an interactive web application development and consulting firm that utilizes latest technology, creative design and optimized business strategy to help businesses build their brand. ",
       "highlights": [
-        "Lead the deployment process for every production release on Google Play Store and App Store ",
-        "Manage JIRA for issue tracking, distribution of task, sprint management. ",
-        "Collaborate with clients as the development lead.",
+        "Lead the deployment process for every production release on Google Play Store and App Store.",
+        "Manage JIRA for issue tracking, distribution of task, sprint management.",
+        "Liaison between the product team from Canada and development team in Bangladesh.",
         "Regular code reviews for the development team.",
-        "Undertaking and devising mobile application developer recruitment process and then filtering potential talents through vigorous screening.",
+        "Providing technical direction for development",
         "Developed authentication system and friend matching application using Python Tornado framework, DynamoDB and Twillo.",
         "Developed TCP and UDP socket communication module for YO! Android Application & iOS Application",
         "Developed Authentication, contact sync and friend search and find module for YO! Android Application & iOS Application",
