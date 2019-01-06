@@ -30,25 +30,32 @@
   },
   "work": [
     {
-      "company": "Cefalo",
-      "position": "Senior Software Engineer",
-      "website": "https://www.cefalo.com/",
-      "startDate": "05/01/2016",
-      "endDate": "",
-      "summary": "In Cefalo, I have worked for DN (Dagens Næringsliv), which is Norway's 3rd largest newspaper specialising in business news. Dagens Næringsliv is owned by NHST Media Group. ",
-      "highlights": [
-        "I was mostly responsible for develop, maintain and deploy the Android and iOS applications developed in native platform.",
-        "Beside the mobile applications, I have also worked on content API & Gateway applications in a micro-service architectural environment."
-      ]
-    },
-    {
       "company": "Syndao",
       "position": "Software Engineering Consultant",
       "website": "https://syndaoapps.com/",
       "startDate": "12/01/2015",
       "endDate": "",
       "summary": "SYNDAO (TM) is an Applications Solutions company from USA. Currently focused on the Healthcare Industry and the Emergency Management sector. We have three products currently: medCNX (TM), emsCNX (TM) and CodeRED (TM). I have been involved with the entire SDLC process for all the current products.",
-      "highlights": []
+      "highlights": [
+        "Most the softwares developed by Syndao has two parts: backend (communication between apps and managing admin stuffs) and user interaction part (PWA and native mobile apps). I am working both of the parts. Performing devOps role as well.",
+        "TECH: Android SDK, iOS SDK, PHP, Javascript, HTML, CSS, Java, MySQL, PWA, AWS, Firebase, Google Analytics, Android Jetpack Architecture, HIPPA, Safari and Chrome Push Notification, ServiceWorker, Cron, Integration of SSO etc."
+      ]
+    },
+    {
+      "company": "Cefalo",
+      "position": "Senior Software Engineer",
+      "website": "https://www.cefalo.com/",
+      "startDate": "05/01/2016",
+      "endDate": "15/01/2018",
+      "summary": "In Cefalo, I have directly worked with DN (Dagens Næringsliv), which is Norway's 3rd largest newspaper specialising in business news, owned by NHST Media Group.",
+      "highlights": [
+        "Started from an e-paper app with 4000+ unique user to full phase native media app in Android and iOS platform. Unique app user increases to 51000+ at the end of 2018.",
+        "Solo responsible person to architect, develop & deploy the DN Android app which has 10,000+ install in the GPS. Planned use of OOP, Executors & AsyncTask, Dagger and VIPER pattern made the app loading faster, modularize and robust.",
+        "Contributed different modules in the DN iOS App using swift.",
+        "Beside the native mobile applications, I have also worked on content API & Gateway applications in a microservice architectural environment using Spring Boot framework.",
+        "Writing Unit Test codes for Android platforms and Spring Boot.",
+        "TECH: Java, Kotlin, Swift, Android SDK, iOS SDK, Spring, Spring Boot, React Native, MySQL, OpenShift, Jenkins, Adobe SDK, Comscore, GDPR, JIRA etc."
+      ]
     },
     {
       "company": "iGlyphic",
@@ -94,7 +101,7 @@
         "Liaison between the product team from Canada and development team in Bangladesh.",
         "Regular code reviews for the development team.",
         "Providing technical direction for development",
-        "Developed authentication system and friend matching application using Python Tornado framework, DynamoDB and Twillo.",
+        "Developed backend authentication system and friend matching application using Python Tornado framework, DynamoDB and Twillo.",
         "Developed TCP and UDP socket communication module for YO! Android Application & iOS Application",
         "Developed Authentication, contact sync and friend search and find module for YO! Android Application & iOS Application",
         "Developed the entire Christmas.com iOS application from scratch to deploy to the App Store (by learning Objective-C and iOS SDK by my own) ",
@@ -147,8 +154,11 @@
         "Android SDK",
         "iOS SDK",
         "Java",
+        "Kotlin",
         "Swift",
         "Objective-C",
+        "Flutter",
+        "Dart",
         "Python",
         "SQL",
         "PHP",
@@ -156,8 +166,7 @@
         "CSS",
         "Javascript",
         "jQuery",
-        "React",
-        "iOS SDK",
+        "React Native",
         "Spring Boot",
         "Tornado",
         "Yii",
@@ -171,6 +180,9 @@
         "Web Applications",
         "Web Development",
         "Design Patterns",
+        "VIPER",
+        "MVP",
+        "MVC",
         "SDLC",
         "Jira"
       ]
