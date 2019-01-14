@@ -46,10 +46,10 @@
       "position": "Senior Software Engineer",
       "website": "https://www.cefalo.com/",
       "startDate": "05/01/2016",
-      "endDate": "15/01/2018",
+      "endDate": "01/15/2019",
       "summary": "In Cefalo, I have directly worked with DN (Dagens Næringsliv), which is Norway's 3rd largest newspaper specialising in business news, owned by NHST Media Group.",
       "highlights": [
-        "Started from an e-paper app with 4000+ unique user to full phase native media app in Android and iOS platform. Unique app user increases to 51000+ at the end of 2018.",
+        "Started this project with an e-paper app with stable numbers of unique users in Q1 2016, to a full phase native media app in Android and iOS platform developed with continues releases. By the end of 2018 the app has 6 times as many unique users as it had at project start and it is still growing.",
         "Solo responsible person to architect, develop & deploy the DN Android app which has 10,000+ install in the GPS. Planned use of OOP, Executors, AsyncTask, Dagger, VIPER pattern etc made the app loading faster, modularize and robust.",
         "Contributed different modules in the DN iOS App using swift.",
         "Beside the native mobile applications, I have also worked on content API & Gateway applications in a microservice architectural environment using Spring Boot framework.",
