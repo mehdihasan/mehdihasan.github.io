@@ -30,15 +30,14 @@
   },
   "work": [
     {
-      "company": "Syndao",
-      "position": "Software Engineering Consultant",
-      "website": "https://syndaoapps.com/",
-      "startDate": "12/01/2015",
+      "company": "Hungrig",
+      "position": "Mobile Application Developer",
+      "website": "https://hungrig.se/",
+      "startDate": "18/02/2019",
       "endDate": "",
-      "summary": "SYNDAO (TM) is an Applications Solutions company from USA. Currently focused on the Healthcare Industry and the Emergency Management sector. We have three products currently: medCNX (TM), emsCNX (TM) and CodeRED (TM). I have been involved with the entire SDLC process for all the current products.",
+      "summary": "HUNGRIG.se is a service for both people and companies that wants to order good quality restaurant food, home delivered to their doorstep. From Malmö in the south to Luleå in the North, with over 1200 restaurants connected",
       "highlights": [
-        "Most of the softwares developed by Syndao has two parts: backend (communication between apps and managing admin stuffs) and user interaction part (PWA and native mobile apps). I am working both of the parts. Performing devOps role as well.",
-        "TECH: Android SDK, iOS SDK, PHP, Javascript, HTML, CSS, Java, MySQL, PWA, AWS, Firebase, Google Analytics, Android Jetpack Architecture, HIPPA, Safari and Chrome Push Notification, ServiceWorker, Cron, Integration of SSO etc."
+        ""
       ]
     },
     {
@@ -55,6 +54,18 @@
         "Beside the native mobile applications, I have also worked on content API & Gateway applications in a microservice architectural environment using Spring Boot framework.",
         "Writing Unit Test codes for Android platforms and Spring Boot.",
         "TECH: Java, Kotlin, Swift, Android SDK, iOS SDK, Spring, Spring Boot, React Native, MySQL, OpenShift, Jenkins, Adobe SDK, Comscore, GDPR, JIRA etc."
+      ]
+    },
+    {
+      "company": "Syndao",
+      "position": "Software Engineering Consultant",
+      "website": "https://syndaoapps.com/",
+      "startDate": "12/01/2015",
+      "endDate": "",
+      "summary": "SYNDAO (TM) is an Applications Solutions company from USA. Currently focused on the Healthcare Industry and the Emergency Management sector. We have three products currently: medCNX (TM), emsCNX (TM) and CodeRED (TM). I have been involved with the entire SDLC process for all the current products.",
+      "highlights": [
+        "Most of the softwares developed by Syndao has two parts: backend (communication between apps and managing admin stuffs) and user interaction part (PWA and native mobile apps). I am working both of the parts. Performing devOps role as well.",
+        "TECH: Android SDK, iOS SDK, PHP, Javascript, HTML, CSS, Java, MySQL, PWA, AWS, Firebase, Google Analytics, Android Jetpack Architecture, HIPPA, Safari and Chrome Push Notification, ServiceWorker, Cron, Integration of SSO etc."
       ]
     },
     {
