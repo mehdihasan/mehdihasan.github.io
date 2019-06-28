@@ -42,7 +42,7 @@
         "Design and developed waypoint feature (to show animated route point from restaurant to delivery point on mapbox  map) on both iOS and Android for the delivery manager apps.",
         "Implemented test automation for Client Hungrig app, Delivery manager and Restaurants apps for both iOS and Android. (Unit test, Integration test and UI test)",
         "Implement automation of iOS push notification certificate (.pem & .p12) generation for 180+ apps through fastlane",
-        "TECH: Android SDK, iOS SDK, Viper, MVP, MVVM, Android Jetpack Architecture, Fastlane, MsAppcenter etc."
+        "TECH: Android SDK, iOS SDK, Viper, MVP, MVVM, Android Jetpack Architecture, Fastlane, MsAppcenter, TDD, JUnit, Mockito, Roboelectric, Espresso, XCTest, Accessibility, etc."
       ]
     },
     {
