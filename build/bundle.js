@@ -214,7 +214,17 @@ var Profile = React.createClass({
                       { href: "skype:"+profile.skype },
                       profile.skype
                   )
-              )
+                ),
+                React.createElement(
+                  "li",
+                  null,
+                  React.createElement("i", { className: "fa fa-lg fa-cloud-download" }),
+                  React.createElement(
+                      "a",
+                      { href: profile.resume, target: "blank" },
+                      "Download Resume"
+                  )
+                )
             ),
             React.createElement("div", { className: "divider" }),
             React.createElement(
@@ -229,7 +239,7 @@ var Profile = React.createClass({
                     "li",
                     null,
                     React.createElement("a", { className: "fa fa-github fa-2x", href: profile.profiles[1].url + profile.profiles[1].username, target: "blank" })
-                )
+                ),
             )
         );
     },
