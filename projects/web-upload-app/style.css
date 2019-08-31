@@ -1,0 +1,23 @@
+*{margin:0;padding:0}
+body{margin:0;padding:0;background:#f1f5fb}
+h1{text-align:center;padding:10px}
+h3{padding:20px 0}
+input{border: 1px solid #CCC;margin: 0 5px 10px 0;padding: 7px}
+table{margin:0 auto;}
+
+.wrapper{width:75%;background:#f0f0f0;margin:0 auto;padding: 30px 0}
+.content{padding:0 100px}
+.abc{padding:0 20px}
+.abc2{margin:40px 0 10px 0;padding:0 0 10px}
+.intro{padding:10px 0;text-align:justify}
+.prob1{clear: both;display: block;float: left;font-weight: normal;padding: 3px 0;width: 150px;}
+.boxer{background:#e4e4e4;margin:20px auto;padding:20px 40px 20px;box-shadow: 0px 0px 10px #888;border-radius: 5px;}
+.butto{border: 1px solid #CCC;margin: 0 5px 10px 0;padding: 7px 10px;border-radius:15px;cursor: pointer;background: -moz-linear-gradient(top, #c3c3c3 0%, #fff 100%);background:-moz-linear-gradient(top, #c3c3c3 0%, #fff 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3c3c3), color-stop(100%,#fff));background: -webkit-linear-gradient(top, #c3c3c3 0%,#fff 100%);background: -o-linear-gradient(top, #c3c3c3 0%,#fff 100%);background: -ms-linear-gradient(top, #c3c3c3 0%, #fff 100%);background: linear-gradient(top, #c3c3c3 0%, #fff 100%)}
+.butto:hover{background:#c4e3f2}
+.navigator{margin: 0 auto;width: 52%;}
+.navi{display: inline;margin: 10px 30px;}
+.nai{text-decoration:none;border: 1px solid #CCC;margin: 0;padding: 7px 10px;border-radius:15px;cursor: pointer;background:#c3c3c3;background: -moz-linear-gradient(top, #c3c3c3 0%, #fff 100%);background:-moz-linear-gradient(top, #c3c3c3 0%, #fff 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3c3c3), color-stop(100%,#fff));background: -webkit-linear-gradient(top, #c3c3c3 0%,#fff 100%);background: -o-linear-gradient(top, #c3c3c3 0%,#fff 100%);background: -ms-linear-gradient(top, #c3c3c3 0%, #fff 100%);background: linear-gradient(top, #c3c3c3 0%, #fff 100%)}
+.click{text-decoration:none;border: 1px solid #CCC;margin: 0;padding: 7px 10px;border-radius:5px;cursor: pointer;background:#fff}
+
+.read-th{padding: 3px 15px}
+.read-td{text-align:center;padding: 3px 15px}
