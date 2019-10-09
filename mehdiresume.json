@@ -31,11 +31,22 @@
   },
   "work": [
     {
+      "company": "Additude AB",
+      "position": "Senior IT Consultant",
+      "website": "https://www.additude.se/",
+      "startDate": "01/10/2019",
+      "endDate": "",
+      "summary": "Additude is a market-leading business in the IT and technology sector in innovation processes, product development and growth.",
+      "highlights": [
+        ""
+      ]
+    },
+    {
       "company": "RestaurangOnline Sverige AB",
       "position": "Mobile Application Developer",
       "website": "https://hungrig.se/",
       "startDate": "02/18/2019",
-      "endDate": "",
+      "endDate": "09/30/2019",
       "summary": "Worked on HUNGRIG.se service which is a platform for both people and companies that wants to order good quality restaurant food, home delivered to their doorstep.",
       "highlights": [
         "Developing and distributing all the mobile applications developed for end users, restaurants and delivery managers in native iOS and Android Platform in Swift, Objective-C, Java and Kotlin.",
