@@ -63,11 +63,12 @@
       "summary": "In Cefalo, I have directly worked for DN (Dagens Næringsliv), which is Norway's 3rd largest newspaper specialising in business news, owned by NHST Media Group.",
       "highlights": [
         "Started this project with an e-paper app with stable numbers of unique users in Q1 2016, to a full phase native media app in Android and iOS platform developed with continuous releases. By the end of 2018 the app has 6 times as many unique users as it had at project start and it is still growing.",
+        "DN-App Legacy API Application: The purpose was to serve feeds to DN mobile applications. Core functionalities including  fetch content from different sources and process the HTML content to mobile friendly data structure and serve the payload, subscription based authorization system, Dashboard for editors to manipulate the front row of the mobile applications.",
+        "DN-App Backend Gateway Application: 2nd version of the API application developed in Spring Boot as a Gateway Application in a microservice architecture. Improvement of performance by applying concurrency and modularization. Technology: Java, Maven, Spring, Spring-boot, MySQL, Thymeleaf, JSP, Openshift, Jenkins, Jsoup, Tomcat.",
         "Solo responsible person to architect, develop & deploy the DN Android app which has 10,000+ installed in the GPS. Planned use of OOP, Executors, AsyncTask, Dagger, VIPER pattern etc made the app loading faster, modularize and robust.",
         "Contributed different modules in the DN iOS App using swift.",
-        "Beside the native mobile applications, I have also worked on content API & Gateway applications in a microservice architectural environment using Spring Boot framework.",
         "Writing Test codes for Android platforms and Spring Boot.",
-        "TECH: Java, Kotlin, Swift, Android SDK, iOS SDK, Spring, Spring Boot, React Native, MySQL, OpenShift, Jenkins, Adobe SDK, Comscore, GDPR, JIRA etc."
+        "TECH: Spring, Spring Boot, MySQL, OpenShift, Jenkins, Java, Kotlin, Swift, Android SDK, iOS SDK, Adobe SDK, Comscore, GDPR, JIRA etc."
       ]
     },
     {
@@ -78,8 +79,11 @@
       "endDate": "03/01/2019",
       "summary": "Syndao LLC is a startup from USA which is working to provide flawless communication means to its customers. I have been involved with the entire SDLC process of all the software developed by SyndaoApps.",
       "highlights": [
-        "Most of the software developed by Syndao has two parts: backend (communication between apps and managing admin stuff) and user interaction part (PWA and native mobile apps). I am working both of the parts. Performing devOps role as well.",
-        "TECH: Android SDK, iOS SDK, PHP, Javascript, HTML, CSS, Java, MySQL, PWA, AWS, Firebase, Google Analytics, Android Jetpack Architecture, HIPPA, Safari and Chrome Push Notification, ServiceWorker, Cron, Integration of SSO etc."
+        "CodeRed: An application to emergency situation management system. I have developed the backend application using Spring Framework and Hibernate. Core functionality: Authentication using OAuth2 and JWT, Resource server, Role based authorization, messaging management between users using Firebase, sending notifications to the users on emergency situation etc.  Developed CI/CD pipeline using Jenkins to build, test and deploy the application to Tomcat. Tech: Java, Maven, Spring-boot, MySQL, Firebase, Tomcat, Jenkins, Cargo, Digital Ocean.",
+        "medCNX: An application for Physician profile search / Disaster protocol content management system / Custom Google analytics integration in the dashboard using PHP Yii framework. Integrated SSO (by Azure AD) for authentication of the application users. Set up LAPM and Apache Virtual Hosts on AWS to deploy the application. Developed CRON to remote SFTP excel file access to regular update of the MySQL database.",
+        "Cornerstone PTO software: A pay time off web portal for healthcare professionals. Developed the backend using PHP Yii Framework and MySQL and a very basic user interface using Javascript,  HTML & CSS.",
+        "EMSConnect: The core functionality of the application was to search for the nearby 5 hospitals and providing the details to the mobile app. Developed the backend using PHP & MySQL.",
+        "TECH: Spring, Hibernate, Java, Maven, Gradle, Android SDK, iOS SDK, PHP, Javascript, HTML, CSS, MySQL, PWA, AWS, Digital Ocean, Tomcat, LAMP, Firebase, Google Analytics, Android Jetpack Architecture, HIPPA, Safari and Chrome Push Notification, ServiceWorker, Cron, Integration of SSO etc."
       ]
     },
     {
@@ -87,7 +91,7 @@
       "position": "Software Consultant",
       "website": "http://iglyphic.com/",
       "startDate": "05/01/2015",
-      "endDate": "",
+      "endDate": "01/01/2019",
       "summary": "As a startup, iGlyphic focuses on developing small-scale software products which meet the needs of hospitals, stores, fashion houses & different types of non-government organizations.",
       "highlights": [
         "Negotiated with clients, Lead the team, participate in the development process through the entire SDLC process to billing and delivered 7 successful projects to the clients",
@@ -126,13 +130,16 @@
         "Liaison between the product team from Canada and development team in Bangladesh.",
         "Regular code reviews for the development team.",
         "Providing technical direction for development",
-        "Developed backend authentication system and friend matching application using Python Tornado framework, DynamoDB and Twillo.",
+        "YO! Backend Application: As a communication application YO! requires authentication, verification and friend matching. To meet the need I have developed the backend application using Tornado (a Python asynchronous web framework which supports non-blocking network I/O, can scale concurrent 10,000 open connections, long live connections), HMAC, DynamoDB (AWS) and Twillo.",
         "Developed TCP and UDP socket communication module for YO! Android Application & iOS Application",
         "Developed Authentication, contact sync and friend search and find module for YO! Android Application & iOS Application",
-        "Developed the entire Christmas.com iOS application from scratch to deploy to the App Store (by learning Objective-C and iOS SDK by my own) ",
         "Developed Teetimes.net iOS application firstly at Cordova framework and then on native iOS framework",
-        "Part of the development team to develop and publishing Christmas.com Android application",
-        "Worked on Teetimes.net Android application's search module, navigation module, geo-location module and the UI"
+        "Worked on Teetimes.net Android application's search module, navigation module, geo-location module and the UI",
+        "Teetimes API: Developed the API application to server feed to the mobile applications. Core functionality including searching for golf courses based on location, date-time and number of players. Also to book the course from the course provider. Technology: PHP Yii framework, MySQL.",
+        "Answers.net Backend Purpose of the project was to develop a platform like answers.com. I have worked on the backend which was fetching data from Yahoo Answers API, process it in our backend and then saving it to a PostgreSQL database after serving the feed as JSON payload on request from the mobile app.Technology used: PHP Yii Framework, PostgreSQL, JSON, Yahoo Answers API. I have used Objective-C to develop the mobile application.",
+        "Developed the Christmas.com iOS application from scratch to deploy to the App Store (by learning Objective-C and iOS SDK by my own) ",
+        "Christmas.com API The purpose of the API application was to serve feed for Android and iOS applications. Functionalities including showing latest random paginated feeds for the home page, product details feed including comments, ratings, related products etc, user details feed, search API. Technology used: PHP, MySQL, JSON.",
+        "Part of the development team to develop and publishing Christmas.com Android application"
       ]
     },
     {
@@ -173,30 +180,37 @@
   "publications": [],
   "skills": [
     {
-      "name": "Front End Development",
+      "name": "Back End Development",
       "level": "Master",
       "keywords": [
+        "Spring",
+        "Spring Boot",
+        "Hibernate",
         "Android SDK",
         "iOS SDK",
         "Java",
+        "Maven",
+        "Gradle",
         "Kotlin",
         "Swift",
         "Objective-C",
-        "Flutter",
         "Dart",
         "Python",
         "SQL",
         "PHP",
         "Javascript",
         "jQuery",
-        "React Native",
-        "Spring Boot",
         "Tornado",
         "Yii",
         "Progressive Web App (PWA)",
         "AWS",
+        "Digital Ocean",
+        "Tomcat",
+        "LAMP",
+        "Apache",
         "Git",
         "CI/CD",
+        "Jenkins",
         "Fastlane",
         "Agile Methodologies",
         "Scrum",
