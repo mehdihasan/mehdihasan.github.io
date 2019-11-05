@@ -208,16 +208,6 @@ var Profile = React.createClass({
                 React.createElement(
                   "li",
                   null,
-                  React.createElement("i", { className: "fa fa-lg fa-skype" }),
-                  React.createElement(
-                      "a",
-                      { href: "skype:"+profile.skype },
-                      profile.skype
-                  )
-                ),
-                React.createElement(
-                  "li",
-                  null,
                   React.createElement("i", { className: "fa fa-lg fa-cloud-download" }),
                   React.createElement(
                       "a",
