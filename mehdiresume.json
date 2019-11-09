@@ -48,9 +48,10 @@
       "summary": "Worked on HUNGRIG.se service which is a platform for both people and companies that wants to order good quality restaurant food, home delivered to their doorstep.",
       "highlights": [
         "Developing and distributing all the mobile applications developed for end users, restaurants and delivery managers in native iOS and Android Platform in Swift, Objective-C, Java and Kotlin.",
-        "Implemented test automation for Client Hungrig app, Delivery manager and Restaurants apps for both iOS and Android. (Unit test, Integration test and UI test)",
+        "Implemented build, test & deploy automation for Client Hungrig app, Delivery manager and Restaurants apps for both iOS and Android (Unit test, Integration test and UI test) using JUnit, Mockito, Roboelectric, Espresso, XCTest, Accessibility, Fastlane & Jenkins.",
         "Implement automation of iOS push notification certificate (.pem & .p12) generation for 180+ apps through fastlane",
-        "TECH: Android SDK, iOS SDK, Viper, MVP, MVVM, Android Jetpack Architecture, Fastlane, MsAppcenter, TDD, JUnit, Mockito, Roboelectric, Espresso, XCTest, Accessibility, etc."
+        "Implemented Android 64 bit and bundle app support for Android apps and iOS 13 support for iOS apps.",
+        "TECH: Android SDK, iOS SDK, Viper, MVP, MVVM, Android Jetpack Architecture, Fastlane, Jenkins, MsAppcenter, TDD, JUnit, Mockito, Roboelectric, Espresso, XCTest, Accessibility, etc."
       ]
     },
     {
@@ -179,11 +180,12 @@
   "publications": [],
   "skills": [
     {
-      "name": "Front End Development",
+      "name": "Back End Development",
       "level": "Master",
       "keywords": [
         "Spring",
         "Spring Boot",
+        "Spring Cloud",
         "Hibernate",
         "Android SDK",
         "iOS SDK",
@@ -215,6 +217,8 @@
         "Scrum",
         "Mobile Application Development",
         "Backend Applications",
+        "Cloud Native App Development",
+        "Microservice",
         "Web Development",
         "Design Patterns",
         "VIPER",
