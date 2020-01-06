@@ -230,6 +230,11 @@ var Profile = React.createClass({
                     null,
                     React.createElement("a", { className: "fa fa-github fa-2x", href: profile.profiles[1].url + profile.profiles[1].username, target: "blank" })
                 ),
+                React.createElement(
+                  "li",
+                  null,
+                  React.createElement("a", { className: "fa fa-gitlab fa-2x", href: profile.profiles[2].url + profile.profiles[2].username, target: "blank" })
+              ),
             )
         );
     },
