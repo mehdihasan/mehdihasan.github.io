@@ -26,6 +26,11 @@
         "network": "Github",
         "username": "mehdihasan",
         "url": "https://github.com/"
+      },
+      {
+        "network": "Gitlab",
+        "username": "hasanmehdi",
+        "url": "https://gitlab.com"
       }
     ]
   },
