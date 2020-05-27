@@ -190,7 +190,6 @@
       "keywords": [
         "API Applications",
         "AWS",
-        "Accessibility",
         "Agile Methodologies",
         "Android Jetpack",
         "Android SDK",
@@ -204,12 +203,12 @@
         "Docker",
         "Eclipse",
         "Espresso",
-        "Expression Language",
         "Fastlane",
         "Git",
         "Gradle",
         "Hibernate",
         "HTML",
+        "iOS SDK",
         "JUnit",
         "Java",
         "Java Servlet",
@@ -221,6 +220,7 @@
         "JQuery",
         "Jenkins",
         "Jira",
+        "Kafka",
         "Kotlin",
         "Kubernetes",
         "LAMP",
@@ -232,6 +232,7 @@
         "Mobile Application Development",
         "Mockito",
         "Objective-C",
+        "Openshift",
         "PHP",
         "Progressive Web App (PWA)",
         "Python",
@@ -255,9 +256,7 @@
         "VIPER",
         "Web Development",
         "XCTest",
-        "Yii",
-        "iOS SDK",
-        "jQuery"
+        "Yii2"
       ]
     }
   ],
