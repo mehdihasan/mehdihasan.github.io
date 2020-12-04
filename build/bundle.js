@@ -339,7 +339,11 @@ var WorkItem = React.createClass({
 
   render: function render() {
     var getHighlights = this.props.workItemData.highlights.map(function (item) {
-      return React.createElement("li", null, React.createElement("div", null, item));
+      if (item.startsWith("###")) {
+        return React.createElement("li", null, React.createElement("b", null, item));
+      } else {
+        return React.createElement("li", null, item);
+      }
     });
     return React.createElement(
       "div",
