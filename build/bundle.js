@@ -340,7 +340,7 @@ var WorkItem = React.createClass({
   render: function render() {
     var getHighlights = this.props.workItemData.highlights.map(function (item) {
       if (item.startsWith("###")) {
-        return React.createElement("li", null, React.createElement("h3", null, item));
+        return React.createElement("li", null, React.createElement("h4", null, item));
       } else {
         return React.createElement("li", null, item);
       }
@@ -349,7 +349,7 @@ var WorkItem = React.createClass({
       "div",
       { className: "workItem" },
       React.createElement(
-        "h2",
+        "h3",
         null,
         this.props.workItemData.position,
         ", ",
