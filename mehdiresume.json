@@ -42,7 +42,18 @@
       "startDate": "03/31/2020",
       "endDate": "",
       "summary": "HCL Technologies is a next-generation global technology company that helps enterprises reimagine their businesses for the digital age. Through its worldwide network of R&D facilities and co-innovation labs, global delivery capabilities, and over 150,000+ ‘Ideapreneurs’ across 49 countries, HCL delivers holistic services across industry verticals to leading enterprises, including 250 of the Fortune 500 and 650 of the Global 2000.",
-      "highlights": []
+      "highlights": [
+        "###",
+        "As part of my journey in HCL, I have worked for INGKA group which brought the IKEA Brand to 30 countries and millions of homes.",
+        "Worked in an enterprise environment with microservices and event-driven systems.",
+        "Designed and developed a high throughput, high volume, resilient data pipelines, and components between Kafka, GCP, Oracle, Event Mesh (Solace), API applications, etc systems.",
+        "Designed and developed highly scalable, resource-efficient, flexible, resilient, fault-tolerant Kafka plugins.",
+        "Designed and developed Utility and API applications using SpringBoot in Java and Kotlin.",
+        "Implemented Kafka mirror makers between different Kafka clusters across different datacenters.",
+        "Implemented highly accessible, distributed Schema Registry across multiple datacenters.",
+        "Implemented KSQL.",
+        "TECH: Java, Kotlin, Spring, Spring Cloud, Strimzi, Kafka, Kafka Connect, Kafka Transforms, Kafka SMT, Kafka Converters, Schema Registry, KSQL, AVRO, XML, XSLT, Openshift, Kubernetes, Helm, Docker, Ansible, Python, Flask, GCP, Google Cloud Pub-Sub, Event Mesh (Solace), Oracle, PostgreSQL Jenkins, Prometheus, Grafana, Splunk."
+      ]
     },
     {
       "company": "Additude AB",
