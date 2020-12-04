@@ -45,8 +45,8 @@
       "highlights": [
         "### INGKA Group / IKEA IT AB",
         "As part of my journey in HCL, I have worked for INGKA group which brought the IKEA Brand to 30 countries and millions of homes.",
-        "Worked in an enterprise environment with microservices, event-driven systems, data integration pipelines between systems and applications",
-        "Designed and developed a high throughput, high volume, resilient data pipelines, and components between Kafka, GCP, Oracle, Event Mesh (Solace), API applications, etc systems.",
+        "Worked in an enterprise environment with microservices, event-driven systems, data integration pipelines between systems and applications, monitoring the data integrations and tracing the events",
+        "Designed and developed high throughput, high volume, resilient data integration pipelines, and components between Kafka, GCP, Oracle, Event Mesh (Solace), API applications, etc systems.",
         "Designed and developed highly scalable, resource-efficient, flexible, resilient, fault-tolerant Kafka plugins.",
         "Designed and developed Utility and API applications using SpringBoot in Java and Kotlin.",
         "Implemented Kafka mirror makers between different Kafka clusters across different datacenters.",
