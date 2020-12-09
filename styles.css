@@ -72,5 +72,9 @@ a {
   font-size: 18px;
 }
 .workDates {
+  color: #666;
+  margin: 0 0;
+}
+.jobLocation {
   color: #777;
 }
