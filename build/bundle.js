@@ -356,6 +356,8 @@ var WorkItem = React.createClass({
         React.createElement("span", null, this.props.workItemData.company)
       ),
       React.createElement("p", { className: "workDates" }, this.getWorkDates()),
+      React.createElement("p", { className: "workDates" }, this.props.workItemData.location),
+      React.createElement("p", { className: "workDates" }, this.props.workItemData.jobType),
       React.createElement("p", null, this.props.workItemData.summary),
       React.createElement("ul", null, getHighlights)
     );

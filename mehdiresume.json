@@ -41,18 +41,20 @@
       "website": "https://www.hcltech.com/geo-presence/sweden",
       "startDate": "03/31/2020",
       "endDate": "",
+      "location": "Helsingborg, Skane County, Sweden",
+      "jobType": "Full-time",
       "summary": "HCL Technologies is a next-generation global technology company that helps enterprises reimagine their businesses for the digital age. Through its worldwide network of R&D facilities and co-innovation labs, global delivery capabilities, and over 150,000+ ‘Ideapreneurs’ across 49 countries, HCL delivers holistic services across industry verticals to leading enterprises, including 250 of the Fortune 500 and 650 of the Global 2000.",
       "highlights": [
         "### INGKA Group / IKEA IT AB",
-        "As part of my journey in HCL, I have worked for INGKA group which brought the IKEA Brand to 30 countries and millions of homes.",
-        "Worked in an enterprise environment with microservices, event-driven systems, data integration pipelines between systems and applications, monitoring the data integrations and tracing the events",
-        "Designed and developed high throughput, high volume, resilient data integration pipelines, and components between Kafka, GCP, Oracle, Event Mesh (Solace), API applications, etc systems.",
+        "As part of my journey in HCL, I am working for INGKA group which brought the IKEA Brand to 30 countries and millions of homes.",
+        "Working in an enterprise environment with microservices, event-driven systems, data integration pipelines between systems and applications, monitoring the data integrations and tracing the events",
+        "Designed and developed high throughput, high volume, resilient data integration pipelines, and components between Kafka, GCP, Oracle, Event Mesh (Solace), and API applications.",
         "Designed and developed highly scalable, resource-efficient, flexible, resilient, fault-tolerant Kafka plugins.",
         "Designed and developed Utility and API applications using SpringBoot in Java and Kotlin.",
         "Implemented Kafka mirror makers between different Kafka clusters across different datacenters.",
         "Implemented highly accessible, distributed Schema Registry across multiple datacenters.",
         "Implemented KSQL.",
-        "TECH: Java, Kotlin, Spring, Spring Cloud, Strimzi, Kafka, Kafka Connect, Kafka Transforms, Kafka SMT, Kafka Converters, Schema Registry, KSQL, AVRO, XML, XSLT, Openshift, Kubernetes, Helm, Docker, Ansible, Python, Flask, GCP, Google Cloud Pub-Sub, Event Mesh (Solace), Oracle, PostgreSQL Jenkins, Prometheus, Grafana, Splunk."
+        "TECH: Java, Kotlin, Spring, Spring Cloud, Strimzi Kafka, Strimzi Bridge, Kafka, Kafka Connect, Kafka Transforms, Kafka SMT, Kafka Converters, Schema Registry, KSQL, AVRO, XML, XSLT, Openshift, Kubernetes, Helm, Docker, Ansible, Python, Flask, GCP, Google Cloud Pub-Sub, Event Mesh (Solace), Oracle, PostgreSQL Jenkins, Prometheus, Grafana, Splunk."
       ]
     },
     {
@@ -61,6 +63,8 @@
       "website": "https://www.additude.se/",
       "startDate": "10/01/2019",
       "endDate": "03/30/2020",
+      "location": "Malmo, Sweden",
+      "jobType": "Full-time",
       "summary": "Additude is a market-leading business in the IT and technology sector in innovation processes, product development and growth.",
       "highlights": []
     },
@@ -70,6 +74,8 @@
       "website": "https://hungrig.se/",
       "startDate": "02/18/2019",
       "endDate": "09/30/2019",
+      "location": "Lund, Sweden",
+      "jobType": "Full-time",
       "summary": "Worked on HUNGRIG.se service which is a platform for both people and companies that wants to order good quality restaurant food, home delivered to their doorstep.",
       "highlights": [
         "Developing and distributing all the mobile applications developed for end users, restaurants and delivery managers in native iOS and Android Platform in Swift, Objective-C, Java and Kotlin.",
@@ -85,6 +91,8 @@
       "website": "https://www.cefalo.com/",
       "startDate": "05/01/2016",
       "endDate": "01/15/2019",
+      "location": "Dhaka, Bangladesh | Oslo, Norway",
+      "jobType": "Full-time",
       "summary": "In Cefalo, I have directly worked for DN (Dagens Næringsliv), which is Norway's 3rd largest newspaper specialising in business news, owned by NHST Media Group.",
       "highlights": [
         "### NHST Media Group / Dagens Næringsliv",
@@ -103,6 +111,8 @@
       "website": "https://syndaoapps.com/",
       "startDate": "12/01/2015",
       "endDate": "03/01/2019",
+      "location": "Cincinnati, Ohio, USA (Remote)",
+      "jobType": "Contract",
       "summary": "Syndao LLC is a startup from USA which is working to provide flawless communication means to its customers. I have been involved with the entire SDLC process of all the software developed by SyndaoApps.",
       "highlights": [
         "CodeRed: An application to emergency situation management system. I have developed the backend application using Spring Framework and Hibernate. Core functionality: Authentication using OAuth2 and JWT, Resource server, Role based authorization, messaging management between users using Firebase, sending notifications to the users on emergency situation etc.  Developed CI/CD pipeline using Jenkins to build, test and deploy the application to Tomcat. Tech: Java, Maven, Spring-boot, MySQL, Firebase, Tomcat, Jenkins, Cargo, Digital Ocean.",
@@ -118,6 +128,8 @@
       "website": "http://iglyphic.com/",
       "startDate": "05/01/2015",
       "endDate": "05/01/2019",
+      "location": "Dhaka, Bangladesh",
+      "jobType": "Self-employed",
       "summary": "As a startup, iGlyphic focuses on developing small-scale software products which meet the needs of hospitals, stores, fashion houses & different types of non-government organizations.",
       "highlights": [
         "Negotiated with clients, Lead the team, participate in the development process through the entire SDLC process to billing and delivered 7 successful projects to the clients",
@@ -133,6 +145,8 @@
       "website": "http://www.aapbd.com/",
       "startDate": "02/01/2016",
       "endDate": "04/01/2016",
+      "location": "Dhaka, Bangladesh",
+      "jobType": "Full-time",
       "summary": "Advanced Apps Bangladesh Limited (AAPBD) is a digital enterprise specialized in mobile and web app development.",
       "highlights": [
         "Introduce GIT instead of SVN as VCS and trained the team to adopt it.",
@@ -149,6 +163,8 @@
       "website": "http://w3engineers.com/",
       "startDate": "12/01/2012",
       "endDate": "01/01/2016",
+      "location": "Khulna, Bangladesh",
+      "jobType": "Full-time",
       "summary": "W3Engineers is an interactive web application development and consulting firm that utilizes latest technology, creative design and optimized business strategy to help businesses build their brand. ",
       "highlights": [
         "Lead the deployment process for every production release on Google Play Store and App Store.",
@@ -174,6 +190,8 @@
       "website": "http://capturedata.com/",
       "startDate": "02/01/2011",
       "endDate": "02/01/2012",
+      "location": "Dhaka, Bangladesh",
+      "jobType": "Full-time",
       "summary": "IIMI helps organizations of all types and sizes transform their data into information and knowledge, driving insight and action. I was responsible to provide system / networking service to more than 3500+ data entry operators and software engineers",
       "highlights": []
     },
@@ -183,6 +201,8 @@
       "website": "https://www.aamranetworks.com/",
       "startDate": "09/01/2010",
       "endDate": "01/01/2011",
+      "location": "Dhaka, Bangladesh",
+      "jobType": "Full-time",
       "summary": "Aamra networks limited is one of the leader of communication solutions industry in Bangladesh.",
       "highlights": [
         "End user Gateway Server/Router/Switch/Polycom installation and troubleshooting.",
