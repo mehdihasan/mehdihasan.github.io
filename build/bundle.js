@@ -335,7 +335,7 @@ var WorkItem = React.createClass({
       " - ",
       enddate,
       " | ",
-      React.createElement("i", null, this.props.workItemData.jobType)
+      this.props.workItemData.jobType
     );
   },
 
