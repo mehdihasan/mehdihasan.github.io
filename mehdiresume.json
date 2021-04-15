@@ -49,13 +49,14 @@
         "As part of my journey in HCL, I am working for INGKA group which brought the IKEA Brand to 30 countries and millions of homes.",
         "Working in an enterprise environment with microservices, event-driven systems, data integration pipelines between systems and applications, monitoring the data integrations and tracing the events",
         "Design, development, implementation and maintenance of high throughput, high volume, resilient data integration pipelines, and components between Kafka (Connect Connect), GCP, Oracle, Event Mesh (Solace), and API applications.",
-        "Development and maintenance of highly scalable, resource-efficient, flexible, resilient, fault-tolerant Kafka plugins.",
+        "Development and maintenance of highly scalable, resource-efficient, flexible, resilient, fault-tolerant Kafka plugins - Connectors, Transformers and Kafka Streams applications.",
         "Developed Utility and API applications in SpringBoot, Flask frameworks using Java, Kotlin and Python.",
         "Implemented Kafka mirror makers between different Kafka clusters across different data-centers.",
         "Implemented highly accessible, distributed Schema Registry across multiple data-centers.",
         "Automation of frequent operational activities using Ansible.",
-        "Implemented KSQL.",
-        "TECH: Java, Kotlin, Spring, Spring Cloud, Strimzi Kafka, Strimzi Bridge, Kafka, Kafka Connect, Kafka Transforms, Kafka SMT, Kafka Converters, Schema Registry, KSQL, AVRO, XML, XSLT, Openshift, Kubernetes, Helm, Docker, Ansible, Python, Flask, GCP, Google Cloud Pub-Sub, Event Mesh (Solace), Oracle, PostgreSQL Jenkins, Prometheus, Grafana, Splunk."
+        "Implemented KSQL and developed message processing applications based on KSQL.",
+        "Developed Jenkins CICD scripts to automate build and deployment jobs uisng Bash scripting and Groovy.",
+        "TECH: Java, Kotlin, Spring, Spring Cloud, Strimzi Kafka, Strimzi Bridge, Kafka, Kafka Connect, Kafka Transforms, Kafka SMT, Kafka Converters, Schema Registry, KSQL, AVRO, XML, XSLT, Openshift, Kubernetes, Helm, Docker, Ansible, Python, Flask, GCP, Google Cloud Pub-Sub, Solace, Event Mesh, Oracle, PostgreSQL Jenkins, Prometheus, Grafana, Splunk."
       ]
     },
     {
