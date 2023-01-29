@@ -8,7 +8,7 @@
     "skype": "skype.mehdi",
     "resume": "https://www.dropbox.com/s/w85g5044zldvncc/resume-mehdi-2020-01-21.pdf?dl=0",
     "website": "https://www.linkedin.com/in/md-mehdi-hasan/",
-    "summary": "Passionate software developer with 9+ years of experience driving quality and consistency throughout all phases of software development projects. A partner who leads collaborative efforts with analysts, QA and support engineers throughout a product lifecycle to produce high-quality, user-friendly, scalable and bug-free software. I credit my success to the fundamental belief that business needs must be fully understood and remain paramount throughout a project. Compounded by my core belief in Agile methodologies and extensive experience using a broad range of technologies, I’m able to document the most efficient architecture for a true end-to-end solution. Results remain unparalleled. Whether your team needs a reliable teammate or proved leader, I can help!",
+    "summary": "Passionate software developer with 10+ years of experience driving quality and consistency throughout all phases of software development projects. A partner who leads collaborative efforts with analysts, QA and support engineers throughout a product lifecycle to produce high-quality, user-friendly, scalable and bug-free software. I credit my success to the fundamental belief that business needs must be fully understood and remain paramount throughout a project. Compounded by my core belief in Agile methodologies and extensive experience using a broad range of technologies, I’m able to document the most efficient architecture for a true end-to-end solution. Results remain unparalleled. Whether your team needs a reliable teammate or proved leader, I can help!",
     "location": {
       "address": "Bildstensvägen 4 F",
       "postalCode": "226 54",
@@ -36,11 +36,24 @@
   },
   "work": [
     {
+      "company": "Axis Communications AB",
+      "position": "Experienced Software Engineer",
+      "website": "https://www.axis.com/",
+      "startDate": "01/02/2020",
+      "endDate": "",
+      "location": "Lund, Skane County, Sweden",
+      "jobType": "Full-time",
+      "summary": "Industry leader in video surveillance.",
+      "highlights": [
+        ""
+      ]
+    },
+    {
       "company": "HCL Sweden AB",
       "position": "Senior Technical Lead",
       "website": "https://www.hcltech.com/geo-presence/sweden",
       "startDate": "03/31/2020",
-      "endDate": "",
+      "endDate": "12/26/2022",
       "location": "Helsingborg, Skane County, Sweden",
       "jobType": "Full-time",
       "summary": "HCL Technologies is a next-generation global technology company that helps enterprises reimagine their businesses for the digital age. Through its worldwide network of R&D facilities and co-innovation labs, global delivery capabilities, and over 150,000+ ‘Ideapreneurs’ across 49 countries, HCL delivers holistic services across industry verticals to leading enterprises, including 250 of the Fortune 500 and 650 of the Global 2000.",
@@ -59,11 +72,24 @@
       ]
     },
     {
+      "company": "Additude AB",
+      "position": "Senior Information Technology Consultant",
+      "website": "https://www.additude.se/",
+      "startDate": "10/01/2019",
+      "endDate": "03/30/2020",
+      "location": "Malmo, Sweden",
+      "jobType": "Full-time",
+      "summary": "Work full time as senior information technology consultant.",
+      "highlights": [
+        "TECH: Android SDK, iOS SDK, Viper, MVP, MVVM, Android Jetpack Architecture, Fastlane, Jenkins, MsAppcenter, TDD, JUnit, Kubernetes, Docker, Espresso, React & Express, Accessibility, etc."
+      ]
+    },
+    {
       "company": "RestaurangOnline Sverige AB",
       "position": "Mobile Application Developer",
       "website": "https://hungrig.se/",
       "startDate": "02/18/2019",
-      "endDate": "02/28/2020",
+      "endDate": "09/30/2019",
       "location": "Lund, Sweden",
       "jobType": "Full-time",
       "summary": "Worked on HUNGRIG.se service which is a platform for both people and companies that wants to order good quality restaurant food, home delivered to their doorstep.",
