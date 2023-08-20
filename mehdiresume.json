@@ -220,6 +220,16 @@
       "courses": []
     }
   ],
+  "certification": [
+    {
+      "institution": "Google Cloud",
+      "area": "A Professional Data Engineer enables data-driven decision making by collecting, transforming, and publishing data. A data engineer should be able to design, build, operationalize, secure, and monitor data processing systems with a particular emphasis on security and compliance; scalability and efficiency; reliability and fidelity; and flexibility and portability. A Data Engineer should also be able to leverage, deploy, and continuously train pre-existing machine learning models.",
+      "studyType": "Google Cloud Certified Professional Data Engineer",
+      "issueDate": "01/11/2022",
+      "certificate": "https://www.credential.net/88ce16d0-110f-49de-b21e-127af88b4da8",
+      "courses": []
+    }
+  ],
   "awards": [],
   "publications": [],
   "skills": [

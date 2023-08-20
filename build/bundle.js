@@ -51,6 +51,7 @@ var Resume = React.createClass({
       var about = profile.summary;
       var work = this.state.jsonObj.work;
       var education = this.state.jsonObj.education;
+      var certification = this.state.jsonObj.certification;
       var skills = this.state.jsonObj.skills;
       return React.createElement(
         "div",
@@ -76,7 +77,8 @@ var Resume = React.createClass({
               React.createElement(About, { aboutData: about }),
               React.createElement(Skills, { skillsData: skills }),
               React.createElement(Work, { workData: work }),
-              React.createElement(Education, { educationData: education })
+              React.createElement(Education, { educationData: education }),
+              React.createElement(Certification, { certificationData: certification })
             )
           )
         )
@@ -122,6 +124,44 @@ var Education = React.createClass({
         " Education"
       ),
       getEducation
+    );
+  },
+});
+("use strict");
+
+var Certification = React.createClass({
+  displayName: "Certifications",
+
+  propTypes: {
+    educationData: React.PropTypes.object,
+  },
+
+  render: function render() {
+    var getCertification = this.props.certificationData.map(function (item) {
+      var issueData = moment(item.issueDate).format("MMM, YYYY");
+      return React.createElement(
+        "div",
+        null,
+        React.createElement(
+          "a",
+          { href: item.certificate },
+          React.createElement("h3", null, item.studyType)
+        ),
+        React.createElement("h4", null, item.institution),
+        React.createElement("p", null, "Issue Date: ", issueData),
+        React.createElement("p", null, item.area)
+      );
+    });
+    return React.createElement(
+      "section",
+      { className: "education" },
+      React.createElement(
+        "h2",
+        { className: "text-uppercase" },
+        React.createElement("i", { className: "fa fa-lg fa-certificate" }),
+        " Certifications"
+      ),
+      getCertification
     );
   },
 });
