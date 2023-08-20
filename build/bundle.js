@@ -144,7 +144,7 @@ var Certification = React.createClass({
         null,
         React.createElement(
           "a",
-          { href: item.certificate },
+          { href: item.certificate, target: "_blank", rel: "noopener noreferrer" },
           React.createElement("h3", null, item.studyType)
         ),
         React.createElement("h4", null, item.institution),
