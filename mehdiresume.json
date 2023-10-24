@@ -8,7 +8,7 @@
     "skype": "skype.mehdi",
     "resume": "https://www.dropbox.com/s/w85g5044zldvncc/resume-mehdi-2020-01-21.pdf?dl=0",
     "website": "https://www.linkedin.com/in/md-mehdi-hasan/",
-    "summary": "Passionate software developer with 10+ years of experience driving quality and consistency throughout all phases of software development projects. A partner who leads collaborative efforts with analysts, QA and support engineers throughout a product lifecycle to produce high-quality, user-friendly, scalable and bug-free software. I credit my success to the fundamental belief that business needs must be fully understood and remain paramount throughout a project. Compounded by my core belief in Agile methodologies and extensive experience using a broad range of technologies, I’m able to document the most efficient architecture for a true end-to-end solution. Results remain unparalleled.",
+    "summary": "Experienced and driven software professional with over a decade of expertise driving quality and consistency throughout the entire software development lifecycle. I excel in leading cross-functional teams, encompassing analysts, QA specialists, support engineers, and stakeholders, across all phases of software development, from requirement analysis to architectural design, development, deployment, maintenance, monitoring, and troubleshooting.",
     "location": {
       "address": "Bildstensvägen 4 F",
       "postalCode": "226 54",
@@ -39,13 +39,13 @@
       "company": "Axis Communications AB",
       "position": "Experienced Software Engineer",
       "website": "https://www.axis.com/",
-      "startDate": "01/02/2020",
+      "startDate": "01/02/2023",
       "endDate": "",
       "location": "Lund, Skane County, Sweden",
       "jobType": "Full-time",
       "summary": "Industry leader in video surveillance.",
       "highlights": [
-        ""
+        "TECH: Data Engineering, Linux, Embedded Systems, Redis, GitOps, Microservices, Kubernetes, Python (Programming Language), Elasticsearch, Kibana, Prometheus.io, Grafana, Containerization, Design Patterns, Object-Oriented Programming (OOP), Software Development Life Cycle (SDLC), Software Design, Test Driven Development, SQL, Git, REST API, Jenkins, Docker, API Development, DevOps"
       ]
     },
     {
@@ -217,6 +217,32 @@
       "startDate": "08/01/2006",
       "endDate": "2010",
       "gpa": "",
+      "courses": []
+    }
+  ],
+  "certification": [
+    {
+      "institution": "Google Cloud",
+      "area": "A Professional Data Engineer enables data-driven decision making by collecting, transforming, and publishing data. A data engineer should be able to design, build, operationalize, secure, and monitor data processing systems with a particular emphasis on security and compliance; scalability and efficiency; reliability and fidelity; and flexibility and portability. A Data Engineer should also be able to leverage, deploy, and continuously train pre-existing machine learning models.",
+      "studyType": "Google Cloud Certified Professional Data Engineer",
+      "issueDate": "01/11/2022",
+      "certificate": "https://www.credential.net/88ce16d0-110f-49de-b21e-127af88b4da8",
+      "courses": []
+    },
+    {
+      "institution": "Google Cloud",
+      "studyType": "API Design and Fundamentals",
+      "area": "A professional API designer performs API design using OpenAPI specifications to create well-structured APIs. This involves mastering the API life cycle, with the assistance of the Apigee API platform for comprehensive life cycle management. The process includes designing APIs through the utilization of API proxies. Furthermore, APIs are bundled into API products, which are then made available for utilization by application developers.",
+      "issueDate": "14/09/2022",
+      "certificate": "https://www.credential.net/88ce16d0-110f-49de-b21e-127af88b4da8",
+      "courses": []
+    },
+    {
+      "institution": "Google Cloud",
+      "studyType": "Professional Cloud Architect",
+      "area": "A Google Cloud Certified - Professional Cloud Architect enables organizations to leverage Google Cloud technologies. Through an understanding of cloud architecture and Google technology, this individual can design, develop, and manage robust, secure, scalable, highly available, and dynamic solutions to drive business objectives.",
+      "issueDate": "01/12/2021",
+      "certificate": "https://www.credential.net/88ce16d0-110f-49de-b21e-127af88b4da8",
       "courses": []
     }
   ],
