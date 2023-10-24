@@ -159,16 +159,6 @@ var Profile = React.createClass({
         React.createElement(
           "li",
           null,
-          React.createElement("i", { className: "fa fa-lg fa-phone" }),
-          React.createElement(
-            "a",
-            { href: "tel:" + profile.phone },
-            profile.phone
-          )
-        ),
-        React.createElement(
-          "li",
-          null,
           React.createElement("i", { className: "fa fa-lg fa-envelope" }),
           React.createElement(
             "a",
