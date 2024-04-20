@@ -225,7 +225,7 @@
       "institution": "IBM",
       "area": "The badge earner demonstrates an understanding of Supervised vs. Unsupervised Learning, applications of different types of machine learning models, and how to build and evaluate machine learning models.",
       "studyType": "Machine Learning with Python",
-      "issueDate": "24/03/2024",
+      "issueDate": "03/24/2024",
       "certificate": "https://www.credly.com/badges/9325f370-0703-4887-83be-44f1ea473e14",
       "courses": []
     },
@@ -233,7 +233,7 @@
       "institution": "IBM",
       "area": "This credential earner demonstrates knowledge of artificial intelligence (AI) concepts, such as natural language processing, computer vision, machine learning, deep learning, chatbots, and neural networks; AI ethics; and the applications of AI. The individual has a conceptual understanding of how to run an AI model using IBM Watson Studio. The earner is aware of the job outlook in fields that use AI and is familiar with the skills required for success in various roles in the domain.",
       "studyType": "Artificial Intelligence Fundamentals",
-      "issueDate": "11/03/2024",
+      "issueDate": "03/11/2024",
       "certificate": "https://www.credly.com/badges/5cd90da5-46ef-43a8-979b-08e22c0c2c82",
       "courses": []
     },
@@ -241,7 +241,7 @@
       "institution": "IBM",
       "area": "This badge earner is able to code in Python for data science. They can analyze and visualize data with Python with packages like scikit-learn, matplotlib and bokeh.",
       "studyType": "Applied Data Science with Python",
-      "issueDate": "24/11/2023",
+      "issueDate": "11/24/2023",
       "certificate": "https://www.credly.com/badges/6647e21b-a8ca-42f0-9121-f6cedbd3b564",
       "courses": []
     },
@@ -249,7 +249,7 @@
       "institution": "Solace",
       "area": "The badge earner has the foundational understanding of event-driven architecture (EDA), best practices associated with event-driven methodology, and how to apply them both to their applications and infrastructure as a whole. With the hands-on activities, the earner has the knowledge to get started with the Event Portal, to design and document event driven applications, events and event flows.",
       "studyType": "Solace Certified Event Driven Architecture Practitioner",
-      "issueDate": "16/06/2023",
+      "issueDate": "06/16/2023",
       "certificate": "https://www.credly.com/badges/6647e21b-a8ca-42f0-9121-f6cedbd3b564",
       "courses": []
     },
@@ -265,7 +265,7 @@
       "institution": "Google Cloud",
       "studyType": "Professional Cloud Developer",
       "area": "A Professional Cloud Developer builds scalable and highly available applications using Google-recommended tools and best practices. This individual has experience with cloud-native applications, developer tools, managed services, and next-generation databases. A Professional Cloud Developer also has proficiency with at least one general-purpose programming language and instruments their code to produce metrics, logs, and traces.",
-      "issueDate": "22/12/2021",
+      "issueDate": "12/22/2021",
       "certificate": "https://www.credly.com/badges/e2276edf-ed78-490d-b3fe-b07892c9156b",
       "courses": []
     },
