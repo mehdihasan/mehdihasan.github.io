@@ -3,12 +3,12 @@
     "name": "Mehdi Hasan",
     "label": "Software Engineer",
     "picture": "profile.png",
-    "email": "mail@mehdihasan.me",
+    "email": "email2mehdihasan@gmail.com",
     "phone": "‭+46 73-495 36 52‬",
     "skype": "skype.mehdi",
     "resume": "https://www.dropbox.com/s/w85g5044zldvncc/resume-mehdi-2020-01-21.pdf?dl=0",
     "website": "https://www.linkedin.com/in/md-mehdi-hasan/",
-    "summary": "Experienced and driven software professional with over a decade of experience in designing and delivering complex, scalable, and secure solutions. Proven ability to lead cross-functional teams and drive quality and consistency throughout the entire software development lifecycle. Passionate about Agile methodologies and continuous learning. Consistently delivers efficient and end-to-end solutions, while always keeping business needs at the forefront.",
+    "summary": "Experienced and driven software professional with over a decade of experience in designing and delivering complex, scalable, and secure solutions. Proven ability to co-ordinate with cross-functional teams and drive quality and consistency throughout the entire software development lifecycle. Passionate about Agile methodologies and continuous learning. Consistently delivers efficient and end-to-end solutions, while always keeping business needs at the forefront.",
     "location": {
       "address": "Bildstensvägen 4 F",
       "postalCode": "226 54",
@@ -222,19 +222,51 @@
   ],
   "certification": [
     {
-      "institution": "Google Cloud",
-      "area": "A Professional Data Engineer enables data-driven decision making by collecting, transforming, and publishing data. A data engineer should be able to design, build, operationalize, secure, and monitor data processing systems with a particular emphasis on security and compliance; scalability and efficiency; reliability and fidelity; and flexibility and portability. A Data Engineer should also be able to leverage, deploy, and continuously train pre-existing machine learning models.",
-      "studyType": "Google Cloud Certified Professional Data Engineer",
-      "issueDate": "01/11/2022",
-      "certificate": "https://www.credential.net/88ce16d0-110f-49de-b21e-127af88b4da8",
+      "institution": "IBM",
+      "area": "The badge earner demonstrates an understanding of Supervised vs. Unsupervised Learning, applications of different types of machine learning models, and how to build and evaluate machine learning models.",
+      "studyType": "Machine Learning with Python",
+      "issueDate": "24/03/2024",
+      "certificate": "https://www.credly.com/badges/9325f370-0703-4887-83be-44f1ea473e14",
+      "courses": []
+    },
+    {
+      "institution": "IBM",
+      "area": "This credential earner demonstrates knowledge of artificial intelligence (AI) concepts, such as natural language processing, computer vision, machine learning, deep learning, chatbots, and neural networks; AI ethics; and the applications of AI. The individual has a conceptual understanding of how to run an AI model using IBM Watson Studio. The earner is aware of the job outlook in fields that use AI and is familiar with the skills required for success in various roles in the domain.",
+      "studyType": "Artificial Intelligence Fundamentals",
+      "issueDate": "11/03/2024",
+      "certificate": "https://www.credly.com/badges/5cd90da5-46ef-43a8-979b-08e22c0c2c82",
+      "courses": []
+    },
+    {
+      "institution": "IBM",
+      "area": "This badge earner is able to code in Python for data science. They can analyze and visualize data with Python with packages like scikit-learn, matplotlib and bokeh.",
+      "studyType": "Applied Data Science with Python",
+      "issueDate": "24/11/2023",
+      "certificate": "https://www.credly.com/badges/6647e21b-a8ca-42f0-9121-f6cedbd3b564",
+      "courses": []
+    },
+    {
+      "institution": "Solace",
+      "area": "The badge earner has the foundational understanding of event-driven architecture (EDA), best practices associated with event-driven methodology, and how to apply them both to their applications and infrastructure as a whole. With the hands-on activities, the earner has the knowledge to get started with the Event Portal, to design and document event driven applications, events and event flows.",
+      "studyType": "Solace Certified Event Driven Architecture Practitioner",
+      "issueDate": "16/06/2023",
+      "certificate": "https://www.credly.com/badges/6647e21b-a8ca-42f0-9121-f6cedbd3b564",
       "courses": []
     },
     {
       "institution": "Google Cloud",
-      "studyType": "API Design and Fundamentals",
-      "area": "A professional API designer performs API design using OpenAPI specifications to create well-structured APIs. This involves mastering the API life cycle, with the assistance of the Apigee API platform for comprehensive life cycle management. The process includes designing APIs through the utilization of API proxies. Furthermore, APIs are bundled into API products, which are then made available for utilization by application developers.",
-      "issueDate": "14/09/2022",
-      "certificate": "https://www.credential.net/88ce16d0-110f-49de-b21e-127af88b4da8",
+      "area": "A Professional Data Engineer enables data-driven decision making by collecting, transforming, and publishing data. A data engineer should be able to design, build, operationalize, secure, and monitor data processing systems with a particular emphasis on security and compliance; scalability and efficiency; reliability and fidelity; and flexibility and portability. A Data Engineer should also be able to leverage, deploy, and continuously train pre-existing machine learning models.",
+      "studyType": "Google Cloud Certified Professional Data Engineer",
+      "issueDate": "01/11/2022",
+      "certificate": "https://www.credly.com/badges/d07ecab1-7ad3-4c2a-8955-ba2af8c7a063",
+      "courses": []
+    },
+    {
+      "institution": "Google Cloud",
+      "studyType": "Professional Cloud Developer",
+      "area": "A Professional Cloud Developer builds scalable and highly available applications using Google-recommended tools and best practices. This individual has experience with cloud-native applications, developer tools, managed services, and next-generation databases. A Professional Cloud Developer also has proficiency with at least one general-purpose programming language and instruments their code to produce metrics, logs, and traces.",
+      "issueDate": "22/12/2021",
+      "certificate": "https://www.credly.com/badges/e2276edf-ed78-490d-b3fe-b07892c9156b",
       "courses": []
     },
     {
@@ -242,7 +274,7 @@
       "studyType": "Professional Cloud Architect",
       "area": "A Google Cloud Certified - Professional Cloud Architect enables organizations to leverage Google Cloud technologies. Through an understanding of cloud architecture and Google technology, this individual can design, develop, and manage robust, secure, scalable, highly available, and dynamic solutions to drive business objectives.",
       "issueDate": "01/12/2021",
-      "certificate": "https://www.credential.net/88ce16d0-110f-49de-b21e-127af88b4da8",
+      "certificate": "https://www.credly.com/badges/7fbf2de8-9de2-400b-94dd-a470328b1899",
       "courses": []
     }
   ],
