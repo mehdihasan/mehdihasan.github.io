@@ -8,10 +8,10 @@
     "skype": "skype.mehdi",
     "resume": "https://www.dropbox.com/s/w85g5044zldvncc/resume-mehdi-2020-01-21.pdf?dl=0",
     "website": "https://www.linkedin.com/in/md-mehdi-hasan/",
-    "summary": "Experienced and driven software professional with over a decade of experience in designing and delivering complex, scalable, and secure solutions. Proven ability to co-ordinate with cross-functional teams and drive quality and consistency throughout the entire software development lifecycle. Passionate about Agile methodologies and continuous learning. Consistently delivers efficient and end-to-end solutions, while always keeping business needs at the forefront.",
+    "summary": "Experienced software systems engineer with 14+ years spanning networking, mobile, backend, and cloud — now specialized in distributed data systems and large-scale architectures. Proven track record in building real-time data platforms, streaming pipelines, and high-performance storage/analytics systems using Python, Java, and modern cloud ecosystems (GCP certified: Architect, Data Engineer, Developer). Hands-on expertise in IoT data ingestion & integration, distributed databases (ClickHouse, Postgres, Elastic), and event-driven systems (Kafka, Solace, RabbitMQ). Skilled in mentoring teams, onboarding newcomers, and raising the technical bar — while remaining deeply hands-on with system design and problem solving. Passionate about distributed systems, data-intensive applications, and continuous learning, with a long-term goal of designing the next generation of scalable, data-driven platforms.",
     "location": {
-      "address": "Bildstensvägen 4 F",
-      "postalCode": "226 54",
+      "address": "",
+      "postalCode": "",
       "city": "Lund",
       "countryCode": "SE",
       "region": "Sweden"
@@ -26,11 +26,6 @@
         "network": "Github",
         "username": "mehdihasan",
         "url": "https://github.com/"
-      },
-      {
-        "network": "Gitlab",
-        "username": "hasanmehdi",
-        "url": "https://gitlab.com/"
       }
     ]
   },
@@ -43,9 +38,13 @@
       "endDate": "",
       "location": "Lund, Skane County, Sweden",
       "jobType": "Full-time",
-      "summary": "Industry leader in video surveillance.",
+      "summary": "Axis Communications AB is global industry leader in video surveillance and intelligent security solutions.",
       "highlights": [
-        "TECH: Data Engineering, Linux, Embedded Systems, Redis, GitOps, Microservices, Kubernetes, Python (Programming Language), Elasticsearch, Kibana, Prometheus.io, Grafana, Containerization, Design Patterns, Object-Oriented Programming (OOP), Software Development Life Cycle (SDLC), Software Design, Test Driven Development, SQL, Git, REST API, Jenkins, Docker, API Development, DevOps"
+        "Working in the Data Infrastructure & System Insights area, designing and developing data platforms to collect, process, store, and analyze device telemetry at scale.",
+        "Successfully put the system into production, enabling scalable ingestion and monitoring of device telemetry data.",
+        "Broke down data silos by creating ETL pipelines from legacy platforms into a modern distributed system, unlocking cross-team access to insights.",
+        "Led the design, development, and rollout of migration strategy from legacy to modern data systems, improving reliability and future scalability.",
+        "TECH: Data Engineering, Linux, Embedded Systems, Kafka, RabbitMQ, Clickhouse, Redis, GitOps, Microservices, Kubernetes, Python, Elasticsearch, Kibana, Prometheus.io, Grafana, Containerization, SQL, Git, REST API, Jenkins, Docker, API Development, DevOps"
       ]
     },
     {
@@ -56,19 +55,15 @@
       "endDate": "12/26/2022",
       "location": "Helsingborg, Skane County, Sweden",
       "jobType": "Full-time",
-      "summary": "HCL Technologies is a next-generation global technology company that helps enterprises reimagine their businesses for the digital age. Through its worldwide network of R&D facilities and co-innovation labs, global delivery capabilities, and over 150,000+ ‘Ideapreneurs’ across 49 countries, HCL delivers holistic services across industry verticals to leading enterprises, including 250 of the Fortune 500 and 650 of the Global 2000.",
+      "summary": "Worked with INGKA Group (IKEA IT AB) on designing and maintaining event-driven data platforms and high-throughput integrations across global retail systems.",
       "highlights": [
-        "### INGKA Group / IKEA IT AB",
-        "As part of my journey in HCL, I am working for INGKA group which brought the IKEA Brand to 30 countries and millions of homes.",
-        "Working in an enterprise environment with microservices, event-driven systems, data integration pipelines between systems and applications, monitoring the data integrations and tracing the events",
-        "Design, development, implementation and maintenance of high throughput, high volume, resilient data integration pipelines, and components between Kafka (Connect Connect), GCP, Oracle, Event Mesh (Solace), and API applications.",
-        "Development and maintenance of highly scalable, resource-efficient, flexible, resilient, fault-tolerant Kafka plugins - Connectors, Single Message Transforms and Kafka Streams applications.",
-        "Developed micro-services in SpringBoot, Flask frameworks using Java, Kotlin and Python.",
-        "Implemented Kafka mirror makers between different Kafka clusters across different data-centers.",
-        "Automation of frequent operational activities using Ansible.",
-        "Implemented KSQL and developed message processing applications based on KSQL.",
-        "Developed Jenkins CICD scripts to automate build and deployment jobs uisng Bash scripting and Groovy.",
-        "TECH: Java, Kotlin, Spring, Spring Cloud, Strimzi Kafka, Strimzi Bridge, Kafka, Kafka Connect, Kafka Transforms, Kafka SMT, Kafka Connector, Kafka Converters, Schema Registry, KSQL, AVRO, JSON, XML, XSLT, Openshift, Kubernetes, Helm, Docker, Ansible, Python, Flask, GCP, Google Cloud Pub-Sub, Cloud Run, GKE, Solace, Event Mesh, Oracle, PostgreSQL, Jenkins, Prometheus, Grafana, Splunk."
+        "Designed and operated 3 enterprise Kafka clusters in Kubernetes (Strimzi) with high availability and resilience.",
+        "Developed and optimized Kafka Connect plugins, SMTs, and streaming apps supporting global-scale data flows.",
+        "Engineered event-driven pipelines integrating Kafka, GCP, Oracle, Solace Event Mesh, and microservices.",
+        "Built microservices in Spring Boot, Kotlin, and Python Flask for business-critical integrations.",
+        "Automated operational workflows with Ansible and CI/CD pipelines in Jenkins (Groovy, Bash).",
+        "Introduced KSQL-based stream processing for real-time message transformations.",
+        "TECH: Java, Kotlin, Python, Spring Boot, Strimzi Kafka, Kafka Connect, KSQL, Solace Event Mesh, Oracle, PostgreSQL, GCP (Pub/Sub, Cloud Run, GKE), Kubernetes, Helm, Docker, Ansible, Jenkins, Prometheus, Grafana, Splunk."
       ]
     },
     {
@@ -92,13 +87,12 @@
       "endDate": "09/30/2019",
       "location": "Lund, Sweden",
       "jobType": "Full-time",
-      "summary": "Worked on HUNGRIG.se service which is a platform for both people and companies that wants to order good quality restaurant food, home delivered to their doorstep.",
+      "summary": "Contributed to HUNGRIG.se, a food delivery platform for customers, restaurants, and couriers.",
       "highlights": [
-        "Developing and distributing all the mobile applications developed for end users, restaurants and delivery managers in native iOS and Android Platform in Swift, Objective-C, Java and Kotlin.",
-        "Implemented build, test & deploy automation for Client Hungrig app, Delivery manager and Restaurants apps for both iOS and Android (Unit test, Integration test and UI test) using JUnit, Mockito, Roboelectric, Espresso, XCTest, Accessibility, Fastlane & Jenkins.",
-        "Implement automation of iOS push notification certificate (.pem & .p12) generation for 180+ apps through fastlane",
-        "Implemented Android 64 bit and bundle app support for Android apps and iOS 13 support for iOS apps.",
-        "TECH: Android SDK, iOS SDK, Viper, MVP, MVVM, Android Jetpack Architecture, Fastlane, Jenkins, MsAppcenter, TDD, JUnit, Mockito, Roboelectric, Espresso, XCTest, Accessibility, etc."
+        "Developed and distributed multiple native Android/iOS apps (Swift, Kotlin, Objective-C, Java).",
+        "Automated build, test, and deploy workflows with Fastlane, Jenkins, and AppCenter.",
+        "Implemented automation for iOS push certificate generation across 180+ apps.",
+        "TECH: Swift, Kotlin, Objective-C, Android SDK, iOS SDK, Fastlane, Jenkins, Espresso, XCTest, Mockito."
       ]
     },
     {
@@ -109,16 +103,12 @@
       "endDate": "01/15/2019",
       "location": "Dhaka, Bangladesh | Oslo, Norway",
       "jobType": "Full-time",
-      "summary": "In Cefalo, I have directly worked for DN (Dagens Næringsliv), which is Norway's 3rd largest newspaper specialising in business news, owned by NHST Media Group.",
+      "summary": "Worked for Dagens Næringsliv (DN), Norway's 3rd largest business newspaper, building mobile apps and backend systems.",
       "highlights": [
-        "### NHST Media Group / Dagens Næringsliv",
-        "Started this project with an e-paper app with stable numbers of unique users in Q1 2016, to a full phase native media app in Android and iOS platform developed with continuous releases. By the end of 2018 the app has 6 times as many unique users as it had at project start and it is still growing.",
-        "DN-App Legacy API Application: The purpose was to serve feeds to DN mobile applications. Core functionalities including  fetch content from different sources and process the HTML content to mobile friendly data structure and serve the payload, subscription based authorization system, Dashboard for editors to manipulate the front row of the mobile applications.",
-        "DN-App Backend Gateway Application: 2nd version of the API application developed in Spring Boot as a Gateway Application in a microservice architecture. Improvement of performance by applying concurrency and modularization. Technology: Java, Maven, Spring, Spring-boot, MySQL, Thymeleaf, JSP, Openshift, Jenkins, Jsoup, Tomcat.",
-        "Solo responsible person to architect, develop & deploy the DN Android app which has 10,000+ installed in the GPS. Planned use of OOP, Executors, AsyncTask, Dagger, VIPER pattern etc made the app loading faster, modularize and robust.",
-        "Contributed different modules in the DN iOS App using swift.",
-        "Writing Test codes for Android platforms and Spring Boot.",
-        "TECH: Spring, Spring Boot, MySQL, OpenShift, Jenkins, Java, Kotlin, Swift, Android SDK, iOS SDK, Adobe SDK, Comscore, GDPR, JIRA etc."
+        "Led Android development of DN’s media app, growing users 6x between 2016–2018.",
+        "Developed backend APIs (Spring Boot) powering mobile apps, improving scalability and performance.",
+        "Contributed to iOS app modules in Swift and backend gateway apps in Java.",
+        "TECH: Spring Boot, MySQL, Openshift, Java, Kotlin, Swift, Android SDK, iOS SDK, Jenkins, GDPR compliance."
       ]
     },
     {
@@ -129,13 +119,12 @@
       "endDate": "03/01/2019",
       "location": "Cincinnati, Ohio, USA (Remote)",
       "jobType": "Contract",
-      "summary": "Syndao LLC is a startup from USA which is working to provide flawless communication means to its customers. I have been involved with the entire SDLC process of all the software developed by SyndaoApps.",
+      "summary": "Consultant for US-based startup delivering web and mobile solutions across healthcare and emergency domains.",
       "highlights": [
-        "CodeRed: An application to emergency situation management system. I have developed the backend application using Spring Framework and Hibernate. Core functionality: Authentication using OAuth2 and JWT, Resource server, Role based authorization, messaging management between users using Firebase, sending notifications to the users on emergency situation etc.  Developed CI/CD pipeline using Jenkins to build, test and deploy the application to Tomcat. Tech: Java, Maven, Spring-boot, MySQL, Firebase, Tomcat, Jenkins, Cargo, Digital Ocean.",
-        "medCNX: An application for Physician profile search / Disaster protocol content management system / Custom Google analytics integration in the dashboard using PHP Yii framework. Integrated SSO (by Azure AD) for authentication of the application users. Set up LAPM and Apache Virtual Hosts on AWS to deploy the application. Developed CRON to remote SFTP excel file access to regular update of the MySQL database.",
-        "Cornerstone PTO software: A pay time off web portal for healthcare professionals. Developed the backend using PHP Yii Framework and MySQL and a very basic user interface using Javascript,  HTML & CSS.",
-        "EMSConnect: The core functionality of the application was to search for the nearby 5 hospitals and providing the details to the mobile app. Developed the backend using PHP & MySQL.",
-        "TECH: Spring, Hibernate, Java, Maven, Gradle, Android SDK, iOS SDK, PHP, Javascript, HTML, CSS, MySQL, PWA, AWS, Digital Ocean, Tomcat, LAMP, Firebase, Google Analytics, Android Jetpack Architecture, HIPPA, Safari and Chrome Push Notification, ServiceWorker, Cron, Integration of SSO etc."
+        "Developed backend for emergency management system (CodeRed) using Spring Boot, OAuth2, JWT, and Firebase messaging.",
+        "Built CI/CD pipelines (Jenkins) for automated deployment to Tomcat and cloud environments.",
+        "Integrated SSO (Azure AD) for healthcare systems and automated data ingestion via CRON/SFTP.",
+        "TECH: Java, Spring Boot, Hibernate, PHP Yii, MySQL, Firebase, AWS, Digital Ocean."
       ]
     },
     {
@@ -146,13 +135,10 @@
       "endDate": "05/01/2019",
       "location": "Dhaka, Bangladesh",
       "jobType": "Self-employed",
-      "summary": "As a startup, iGlyphic focuses on developing small-scale software products which meet the needs of hospitals, stores, fashion houses & different types of non-government organizations.",
+      "summary": "Founded and delivered software projects for SMEs, leading a team of freelancers across web and mobile.",
       "highlights": [
-        "Negotiated with clients, Lead the team, participate in the development process through the entire SDLC process to billing and delivered 7 successful projects to the clients",
-        "Lead a team of freelance developers from scratch to publish:",
-        "- 14 ThemeForest products (HTML and Wordpress Themes) ",
-        "- 8 CodeCanyon products (Android and iOS Applications)",
-        "- 5 Google Play Store products (Android Applications) "
+        "Delivered 20+ commercial products including mobile apps, WordPress themes, and APIs.",
+        "Led design, development, and client delivery for 7+ successful projects across sectors."
       ]
     },
     {
@@ -163,23 +149,12 @@
       "endDate": "01/01/2016",
       "location": "Khulna, Bangladesh",
       "jobType": "Full-time",
-      "summary": "W3Engineers is an interactive web application development and consulting firm that utilizes latest technology, creative design and optimized business strategy to help businesses build their brand. ",
+      "summary": "Led backend and mobile development projects across multiple domains, from messaging apps to media platforms.",
       "highlights": [
-        "Lead the deployment process for every production release on Google Play Store and App Store.",
-        "Manage JIRA for issue tracking, distribution of task, sprint management.",
-        "Liaison between the product team from Canada and development team in Bangladesh.",
-        "Regular code reviews for the development team.",
-        "Providing technical direction for development",
-        "YO! Backend Application: As a communication application YO! requires authentication, verification and friend matching. To meet the need I have developed the backend application using Tornado (a Python asynchronous web framework which supports non-blocking network I/O, can scale concurrent 10,000 open connections, long live connections), HMAC, DynamoDB (AWS) and Twillo.",
-        "Developed TCP and UDP socket communication module for YO! Android Application & iOS Application",
-        "Developed Authentication, contact sync and friend search and find module for YO! Android Application & iOS Application",
-        "Developed Teetimes.net iOS application firstly at Cordova framework and then on native iOS framework",
-        "Worked on Teetimes.net Android application's search module, navigation module, geo-location module and the UI",
-        "Teetimes API: Developed the API application to server feed to the mobile applications. Core functionality including searching for golf courses based on location, date-time and number of players. Also to book the course from the course provider. Technology: PHP Yii framework, MySQL.",
-        "Answers.net Backend Purpose of the project was to develop a platform like answers.com. I have worked on the backend which was fetching data from Yahoo Answers API, process it in our backend and then saving it to a PostgreSQL database after serving the feed as JSON payload on request from the mobile app.Technology used: PHP Yii Framework, PostgreSQL, JSON, Yahoo Answers API. I have used Objective-C to develop the mobile application.",
-        "Developed the Christmas.com iOS application from scratch to deploy to the App Store (by learning Objective-C and iOS SDK by my own) ",
-        "Christmas.com API The purpose of the API application was to serve feed for Android and iOS applications. Functionalities including showing latest random paginated feeds for the home page, product details feed including comments, ratings, related products etc, user details feed, search API. Technology used: PHP, MySQL, JSON.",
-        "Part of the development team to develop and publishing Christmas.com Android application"
+        "Architected and built backend for YO! messaging app with Tornado (async Python), DynamoDB, and Twilio.",
+        "Developed socket-based modules and authentication flows for Android/iOS apps.",
+        "Led a cross-border team, managed releases, and conducted regular code reviews.",
+        "TECH: Python (Tornado), DynamoDB, Java, Objective-C, PHP Yii, MySQL, Jenkins, JIRA."
       ]
     },
     {
