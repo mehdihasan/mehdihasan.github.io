@@ -54,7 +54,7 @@ export default function Navbar() {
         borderColor: 'divider'
       }}>
         <Typography variant="h6" color="primary.main" fontWeight="bold">
-          Norrskensleder
+          DataDreamscape
         </Typography>
         <IconButton onClick={handleDrawerToggle}>
           <CloseIcon />
@@ -102,10 +102,10 @@ export default function Navbar() {
         <Toolbar sx={{ justifyContent: 'space-between' }}>
           {/* Logo and Brand */}
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
-            <Tooltip title="Norrskensleder - Northern Lights Leader">
+            <Tooltip title="DataDreamscape - Northern Lights Leader">
               <Avatar
-                src="/norrskensleder/logo.svg"
-                alt="Norrskensleder logo"
+                src="/datadreamscape/logo.svg"
+                alt="DataDreamscape logo"
                 sx={{
                   width: 40,
                   height: 40,
@@ -132,7 +132,7 @@ export default function Navbar() {
                 }
               }}
             >
-              Norrskensleder
+              DataDreamscape
             </Typography>
           </Box>
 

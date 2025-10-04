@@ -39,7 +39,7 @@ export default function Home({ posts, topTags }) {
       <Box sx={{
         width: '100%',
         minHeight: 340,
-        background: `url(/norrskensleder/banner.webp) center/cover no-repeat, linear-gradient(120deg, #005cbf 60%, #ffd700 100%)`,
+        background: `url(/datadreamscape/banner.webp) center/cover no-repeat, linear-gradient(120deg, #005cbf 60%, #ffd700 100%)`,
         color: '#fff',
         display: 'flex',
         alignItems: 'center',
@@ -61,7 +61,7 @@ export default function Home({ posts, topTags }) {
             lineHeight: 1.15
           }}
         >
-          Norrskensleder
+          DataDreamscape
         </Typography>
         <Typography
           variant="h2"
@@ -74,7 +74,7 @@ export default function Home({ posts, topTags }) {
             lineHeight: 1.3
           }}
         >
-          Explore Northern Europe and Beyond ...
+          Where technology meets curiosity ...
         </Typography>
       </Box>
       <Container maxWidth="lg">

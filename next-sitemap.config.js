@@ -1,9 +1,9 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://norrskensleder.com',
+  siteUrl: 'https://datadreamscape.com',
   generateRobotsTxt: true,
   outDir: './out',
   additionalSitemaps: [
-    'https://norrskensleder.com/sitemap-posts.xml',
+    'https://datadreamscape.com/sitemap-posts.xml',
   ],
 };

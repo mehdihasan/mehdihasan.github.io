@@ -5,8 +5,8 @@ import {
   Email,
   Favorite,
   Article as BlogIcon,
-  Facebook,
-  YouTube,
+  X,
+  LinkedIn,
   Instagram
 } from '@mui/icons-material';
 
@@ -34,34 +34,18 @@ export default function Footer() {
             gutterBottom
             sx={{ fontWeight: 'bold', mb: 1 }}
           >
-            Norrskensleder
+            DataDreamscape
           </Typography>
           <Typography
             variant="body2"
             color="text.secondary"
             sx={{ mb: 3, maxWidth: 500, mx: 'auto', lineHeight: 1.6 }}
           >
-            At Norrskensleder, we explore Northern Europe and the wider continent, uncovering breathtaking landscapes, rich cultures, and forward-looking innovations. Blending travel and technology, our stories and discoveries invite you to experience Europe in all its beauty, diversity, and creativity.
+            Exploring the art and engineering of modern technology — from systems and software to data, people, and the ideas that connect them.
           </Typography>
 
           {/* Social Links */}
           <Box sx={{ mb: 3 }}>
-            <Tooltip title="Blog Posts">
-              <IconButton
-                color="primary"
-                sx={{
-                  mx: 1,
-                  '&:hover': {
-                    backgroundColor: 'primary.lighter',
-                    transform: 'translateY(-2px)'
-                  }
-                }}
-                component="a"
-                href="/blog"
-              >
-                <BlogIcon />
-              </IconButton>
-            </Tooltip>
             <Tooltip title="Contact">
               <IconButton
                 color="primary"
@@ -78,7 +62,7 @@ export default function Footer() {
                 <Email />
               </IconButton>
             </Tooltip>
-            <Tooltip title="Facebook">
+            <Tooltip title="X (formerly Twitter)">
               <IconButton
                 color="primary"
                 sx={{
@@ -89,14 +73,14 @@ export default function Footer() {
                   }
                 }}
                 component="a"
-                href="https://www.facebook.com/profile.php?id=61556531231306"
+                href="https://www.x.com/hasanmehdi"
                 target="_blank"
                 rel="noopener"
               >
-                <Facebook />
+                <X />
               </IconButton>
             </Tooltip>
-            <Tooltip title="YouTube">
+            <Tooltip title="LinkedIn">
               <IconButton
                 color="primary"
                 sx={{
@@ -107,29 +91,11 @@ export default function Footer() {
                   }
                 }}
                 component="a"
-                href="https://www.youtube.com/@Norrskensleder"
+                href="https://www.linkedin.com/in/md-mehdi-hasan/"
                 target="_blank"
                 rel="noopener"
               >
-                <YouTube />
-              </IconButton>
-            </Tooltip>
-            <Tooltip title="Instagram">
-              <IconButton
-                color="primary"
-                sx={{
-                  mx: 1,
-                  '&:hover': {
-                    backgroundColor: 'primary.lighter',
-                    transform: 'translateY(-2px)'
-                  }
-                }}
-                component="a"
-                href="https://www.instagram.com/norrskensleder/"
-                target="_blank"
-                rel="noopener"
-              >
-                <Instagram />
+                <LinkedIn />
               </IconButton>
             </Tooltip>
           </Box>
@@ -139,7 +105,7 @@ export default function Footer() {
           {/* Copyright and Policy Links */}
           <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
             <Typography variant="body2" color="text.secondary">
-              © {currentYear} Norrskensleder. Made with
+              © {currentYear} DataDreamscape. Made with
             </Typography>
             <Favorite
               sx={{

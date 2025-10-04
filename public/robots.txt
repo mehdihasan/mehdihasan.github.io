@@ -1,12 +1,12 @@
-# robots.txt for Norrskensleder blog
+# robots.txt for DataDreamscape blog
 # Allow all web crawlers
 
 User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://norrskensleder.com/sitemap.xml
-Sitemap: https://norrskensleder.com/sitemap-posts.xml
+Sitemap: https://datadreamscape.com/sitemap.xml
+Sitemap: https://datadreamscape.com/sitemap-posts.xml
 
 # Specific crawl rules
 # Allow blog content
@@ -15,7 +15,7 @@ Allow: /posts/
 Allow: /tag/
 
 # Allow static assets
-Allow: /norrskensleder/
+Allow: /datadreamscape/
 Allow: /images/
 
 # Disallow admin or private areas (if any)

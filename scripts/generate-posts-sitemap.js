@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const domain = 'https://norrskensleder.com';
+const domain = 'https://datadreamscape.com';
 const postsDir = path.join(process.cwd(), 'posts');
 const files = fs.readdirSync(postsDir).filter(f => f.endsWith('.md'));
 
