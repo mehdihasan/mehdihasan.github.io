@@ -24,13 +24,21 @@ export default function About() {
           My Story
         </Typography>
         <Typography sx={{ mb: 3 }}>
-          From the vibrant streets of Bangladesh to the innovative tech hubs of Sweden, my journey has been one of curiosity, resilience, and continuous learning.
+
+          From the lively streets of Bangladesh to the calm innovation hubs of Sweden, my journey in technology has been driven by curiosity, perseverance, and a constant desire to learn.
+
           <br /><br />
-          I started as a network engineer, solving real-world connectivity challenges, and soon found myself drawn to the world of software—building mobile apps, architecting backend systems, and leading teams across continents.
+          I began my career as a network engineer, working on the nuts and bolts of connectivity. Over time, I found myself drawn deeper into software—building mobile apps, designing backend systems, and helping teams deliver meaningful products.
+
           <br /><br />
-          Each chapter brought new lessons: launching products for startups, scaling data platforms for global enterprises, and mentoring others to grow alongside me.
+          Each role taught me something new: how to design for scale, how to balance reliability with speed, and how to help others grow through mentorship and collaboration.
+
           <br /><br />
-          Today, I specialize in distributed systems and data engineering, passionate about designing solutions that empower people and organizations. My story is still being written, fueled by a love for technology, travel, and the endless possibilities of learning.
+          Today, I focus on distributed systems and data engineering—designing data platforms that help organizations understand and act on information in real time. I enjoy solving hard problems, learning from peers, and exploring how technology can quietly make things better.
+
+          <br /><br />
+          Outside work, I love to travel, take photos, and explore new ideas—because every experience, technical or otherwise, adds another layer to the story I'm still writing.
+
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary', mt: 4 }}>
           Want to know more? Check out my <a href="/profile" style={{ color: '#1976d2' }}>full resume</a>.
