@@ -1,23 +1,30 @@
-#OS junk files
-[Tt]humbs.db
-Thumbs.db
+# Node
+*node_modules/
+*.next/
+out/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
 *.DS_Store
+*Thumbs.db
 
-# phpstorm project files
-.idea
+# Env
+.env
+.env.local
+.env.*.local
 
-# composer vendor dir
-#/vendor
+# VSCode
+.vscode/
 
-# composer itself is not needed
-composer.phar
+# Misc
+*.local
+*.swp
+.idea/
 
-# phpunit itself is not needed
-phpunit.phar
-# local phpunit config
-/phpunit.xml
-
-# asset folder
-assets/*
-
-protected/runtime/*
+# Build output
+/build
+/dist
