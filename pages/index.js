@@ -6,6 +6,7 @@ import { Box, Typography, Container, Chip, Grid } from '@mui/material';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Script from 'next/script';
+import { useState } from 'react';
 
 export async function getStaticProps() {
   const posts = getSortedPostsData();
@@ -25,6 +26,12 @@ export async function getStaticProps() {
 }
 
 export default function Home({ posts, topTags }) {
+  const [search, setSearch] = useState('');
+  const filteredPosts = posts.filter(post =>
+    post.title.toLowerCase().includes(search.toLowerCase()) ||
+    post.content.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
     <>
       <Navbar />
@@ -89,15 +96,39 @@ export default function Home({ posts, topTags }) {
         </Box>
       </Container>
       <Container maxWidth="md" sx={{ mt: 4 }}>
+        {/* Search Bar */}
+        <Box sx={{ display: 'flex', justifyContent: 'center', mb: 3 }}>
+          <input
+            type="text"
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+            placeholder="Search articles..."
+            style={{
+              width: '100%',
+              padding: '0.75rem 1rem',
+              fontSize: '1.1rem',
+              border: '1px solid #ccc',
+              borderRadius: 6,
+              outline: 'none',
+              boxShadow: '0 2px 8px rgba(25, 118, 210, 0.04)'
+            }}
+          />
+        </Box>
         <Typography
           variant="h4"
           sx={{ mb: 3, fontWeight: 600, color: 'primary.main' }}
         >
           Latest Articles
         </Typography>
-        {posts.map(post => (
-          <ArticleCardHorizontal key={post.slug} post={post} />
-        ))}
+        {filteredPosts.length === 0 ? (
+          <Typography variant="body1" sx={{ color: 'text.secondary', mb: 4 }}>
+            No articles found.
+          </Typography>
+        ) : (
+          filteredPosts.map(post => (
+            <ArticleCardHorizontal key={post.slug} post={post} />
+          ))
+        )}
       </Container>
       <Footer />
     </>
