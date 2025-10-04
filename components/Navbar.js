@@ -1,10 +1,10 @@
 // Enhanced Navbar component with responsive design
 import { useState } from 'react';
-import { 
-  AppBar, 
-  Toolbar, 
-  Typography, 
-  Button, 
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Button,
   Box,
   IconButton,
   Drawer,
@@ -18,7 +18,7 @@ import {
   Avatar,
   Tooltip
 } from '@mui/material';
-import { 
+import {
   Menu as MenuIcon,
   Close as CloseIcon,
   Article as BlogIcon,
@@ -39,17 +39,16 @@ export default function Navbar() {
 
   const navItems = [
     { label: 'Home', href: '/', icon: <HomeIcon /> },
-    { label: 'Blog', href: '/blog', icon: <BlogIcon /> },
     { label: 'About', href: '/about', icon: <AboutIcon /> },
     { label: 'Contact', href: '/contact', icon: <ContactIcon /> }
   ];
 
   const drawer = (
     <Box sx={{ width: 250 }}>
-      <Box sx={{ 
-        display: 'flex', 
-        alignItems: 'center', 
-        justifyContent: 'space-between', 
+      <Box sx={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
         p: 2,
         borderBottom: '1px solid',
         borderColor: 'divider'
@@ -64,8 +63,8 @@ export default function Navbar() {
       <List>
         {navItems.map((item) => (
           <ListItem key={item.label} disablePadding>
-            <ListItemButton 
-              component={Link} 
+            <ListItemButton
+              component={Link}
               href={item.href}
               onClick={handleDrawerToggle}
               sx={{
@@ -78,8 +77,8 @@ export default function Navbar() {
               <ListItemIcon sx={{ color: 'primary.main' }}>
                 {item.icon}
               </ListItemIcon>
-              <ListItemText 
-                primary={item.label} 
+              <ListItemText
+                primary={item.label}
                 sx={{ color: 'text.primary' }}
               />
             </ListItemButton>
@@ -91,8 +90,8 @@ export default function Navbar() {
 
   return (
     <>
-      <AppBar 
-        position="static" 
+      <AppBar
+        position="static"
         color="primary"
         elevation={2}
         sx={{
@@ -104,12 +103,12 @@ export default function Navbar() {
           {/* Logo and Brand */}
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <Tooltip title="Norrskensleder - Northern Lights Leader">
-              <Avatar 
-                src="/norrskensleder/logo.svg" 
+              <Avatar
+                src="/norrskensleder/logo.svg"
                 alt="Norrskensleder logo"
-                sx={{ 
-                  width: 40, 
-                  height: 40, 
+                sx={{
+                  width: 40,
+                  height: 40,
                   mr: 2,
                   border: '2px solid rgba(255,255,255,0.3)',
                   transition: 'transform 0.2s',
@@ -119,12 +118,12 @@ export default function Navbar() {
                 }}
               />
             </Tooltip>
-            <Typography 
-              variant="h6" 
-              component={Link} 
+            <Typography
+              variant="h6"
+              component={Link}
               href="/"
-              sx={{ 
-                color: 'inherit', 
+              sx={{
+                color: 'inherit',
                 textDecoration: 'none',
                 fontWeight: 'bold',
                 letterSpacing: '0.5px',
@@ -196,8 +195,8 @@ export default function Navbar() {
         }}
         sx={{
           display: { xs: 'block', md: 'none' },
-          '& .MuiDrawer-paper': { 
-            boxSizing: 'border-box', 
+          '& .MuiDrawer-paper': {
+            boxSizing: 'border-box',
             width: 250,
             background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)'
           },

@@ -39,12 +39,6 @@ export default function Post({ post }) {
               </span>
             </Link>
 
-            <Link href="/blog">
-              <span style={{ color: 'var(--mui-palette-primary-main)', textDecoration: 'none' }}>
-                Blog
-              </span>
-            </Link>
-
             <Typography color="text.primary">{post.title}</Typography>
           </Breadcrumbs>
 
