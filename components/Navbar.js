@@ -21,7 +21,6 @@ import {
 import {
   Menu as MenuIcon,
   Close as CloseIcon,
-  Article as BlogIcon,
   Person as AboutIcon,
   Email as ContactIcon,
   Home as HomeIcon
@@ -41,6 +40,7 @@ export default function Navbar() {
     { label: 'Home', href: '/', icon: <HomeIcon /> },
     { label: 'About', href: '/about', icon: <AboutIcon /> },
     { label: 'Contact', href: '/contact', icon: <ContactIcon /> }
+
   ];
 
   const drawer = (

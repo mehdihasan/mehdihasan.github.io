@@ -1,137 +1,40 @@
-// About page
-import { Container, Typography, Box, Avatar, Chip, Link, Divider, List, ListItem, ListItemText, Tooltip } from '@mui/material';
+import { Container, Typography, Box, Avatar } from '@mui/material';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import resume from './mehdiresume.json';
 
 export default function About() {
-  const { basics, work, certification, skills } = resume;
+  const { basics } = resume;
 
   return (
     <>
       <Navbar />
-      <Container maxWidth="md" sx={{ mt: 4 }}>
-        {/* Profile Header */}
-        <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
+      <Container maxWidth="sm" sx={{ mt: 6 }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mb: 4 }}>
           <Avatar
             src={basics.picture}
             alt={basics.name}
-            sx={{ width: 80, height: 80, mr: 3 }}
+            sx={{ width: 100, height: 100, mb: 2 }}
           />
-          <Box>
-            <Typography variant="h4" sx={{ fontWeight: 700 }}>
-              {basics.name}
-            </Typography>
-            <Typography variant="subtitle1" sx={{ color: 'text.secondary', mb: 1 }}>
-              {basics.label}
-            </Typography>
-            <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', mb: 1 }}>
-              {basics.profiles?.map(profile => (
-                <Chip
-                  key={profile.network}
-                  label={profile.network}
-                  component={Link}
-                  href={profile.url}
-                  clickable
-                  sx={{ mr: 1 }}
-                />
-              ))}
-            </Box>
-            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-              {basics.location.city}, {basics.location.region}, {basics.location.countryCode}
-            </Typography>
-          </Box>
+          <Typography variant="h4" sx={{ fontWeight: 700, mb: 2 }}>
+            {basics.name}
+          </Typography>
         </Box>
-        <Divider sx={{ my: 2 }} />
-
-        {/* Summary */}
-        <Typography variant="h6" sx={{ mb: 1 }}>Summary</Typography>
-        <Typography sx={{ mb: 3 }}>{basics.summary}</Typography>
-        <Divider sx={{ my: 2 }} />
-
-        {/* Skills */}
-        <Typography variant="h6" sx={{ mb: 2 }}>Skills</Typography>
-        {skills && skills.length > 0 && (
-          <Box sx={{ mb: 3 }}>
-            {skills.map(skill => (
-              <Box key={skill.name} sx={{ mb: 2 }}>
-                <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
-                  {skill.name} <span style={{ fontSize: '0.95rem', color: '#888' }}>({skill.level})</span>
-                </Typography>
-                <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, mt: 1 }}>
-                  {skill.keywords.map(keyword => (
-                    <Chip key={keyword} label={keyword} size="small" sx={{ mb: 0.5 }} />
-                  ))}
-                </Box>
-              </Box>
-            ))}
-          </Box>
-        )}
-        <Divider sx={{ my: 2 }} />
-
-        {/* Certifications */}
-        <Typography variant="h6" sx={{ mb: 2 }}>Certifications</Typography>
-        {certification && certification.length > 0 && (
-          <List>
-            {certification.map(cert => (
-              <ListItem key={cert.certificate} sx={{ mb: 2 }}>
-                <ListItemText
-                  primary={
-                    <Box>
-                      <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
-                        {cert.studyType} @ <Link href={cert.certificate} target="_blank" rel="noopener">{cert.institution}</Link>
-                      </Typography>
-                      <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                        {cert.issueDate}
-                      </Typography>
-                    </Box>
-                  }
-                  secondary={
-                    <Tooltip title={cert.area} arrow>
-                      <Typography variant="body2" sx={{ mt: 1 }}>
-                        {cert.area.length > 120 ? cert.area.slice(0, 120) + '...' : cert.area}
-                      </Typography>
-                    </Tooltip>
-                  }
-                />
-              </ListItem>
-            ))}
-          </List>
-        )}
-        <Divider sx={{ my: 2 }} />
-
-        {/* Work Experience */}
-        <Typography variant="h6" sx={{ mb: 2 }}>Work Experience</Typography>
-        <List>
-          {work.map(job => (
-            <ListItem key={job.company} alignItems="flex-start" sx={{ mb: 2 }}>
-              <ListItemText
-                primary={
-                  <Box>
-                    <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
-                      {job.position} @ <Link href={job.website} target="_blank" rel="noopener">{job.company}</Link>
-                    </Typography>
-                    <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                      {job.location} &nbsp;|&nbsp; {job.startDate} - {job.endDate || 'Present'}
-                    </Typography>
-                  </Box>
-                }
-                secondary={
-                  <>
-                    <Typography variant="body2" sx={{ mt: 1 }}>{job.summary}</Typography>
-                    {job.highlights && job.highlights.length > 0 && (
-                      <ul style={{ marginTop: 8, marginBottom: 0, paddingLeft: 20 }}>
-                        {job.highlights.map((hl, idx) => (
-                          <li key={idx} style={{ fontSize: '0.95rem', marginBottom: 4 }}>{hl}</li>
-                        ))}
-                      </ul>
-                    )}
-                  </>
-                }
-              />
-            </ListItem>
-          ))}
-        </List>
+        <Typography variant="h6" sx={{ mb: 2, fontWeight: 500 }}>
+          My Story
+        </Typography>
+        <Typography sx={{ mb: 3 }}>
+          From the vibrant streets of Bangladesh to the innovative tech hubs of Sweden, my journey has been one of curiosity, resilience, and continuous learning.
+          <br /><br />
+          I started as a network engineer, solving real-world connectivity challenges, and soon found myself drawn to the world of software—building mobile apps, architecting backend systems, and leading teams across continents.
+          <br /><br />
+          Each chapter brought new lessons: launching products for startups, scaling data platforms for global enterprises, and mentoring others to grow alongside me.
+          <br /><br />
+          Today, I specialize in distributed systems and data engineering, passionate about designing solutions that empower people and organizations. My story is still being written, fueled by a love for technology, travel, and the endless possibilities of learning.
+        </Typography>
+        <Typography variant="body2" sx={{ color: 'text.secondary', mt: 4 }}>
+          Want to know more? Check out my <a href="/profile" style={{ color: '#1976d2' }}>full resume</a>.
+        </Typography>
       </Container>
       <Footer />
     </>
