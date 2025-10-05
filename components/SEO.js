@@ -4,9 +4,9 @@ import { useRouter } from 'next/router';
 import Script from 'next/script';
 
 const SEO = ({
-  title = 'BetweenSystems - Adventures in Northern Europe',
-  description = 'Adventures, tech, and stories from a South Asian exploring Northern Europe. Discover Norway, Scandinavia, and Nordic culture through travel experiences and drone photography.',
-  keywords = 'Sweden, Norway, Scandinavia, travel, adventure, Northern Europe, drone photography, Nordic culture, South Asian, blog, experiences, lifestyle, technology',
+  title = 'BetweenSystems - Where technology meets curiosity',
+  description = 'Exploring the art and engineering of modern technology — from systems and software to data, people, and the ideas that connect them.',
+  keywords = 'distributed systems, microservices, data engineering, kafka, clickhouse, artificial intelligence, machine learning',
   author = 'BetweenSystems',
   image = '/betweensystems/banner.webp',
   article = false,
