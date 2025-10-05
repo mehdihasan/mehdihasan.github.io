@@ -73,7 +73,7 @@ export default function Footer() {
                   }
                 }}
                 component="a"
-                href="https://www.x.com/hasanmehdi"
+                href="https://www.x.com/hasan_mehdi"
                 target="_blank"
                 rel="noopener"
               >
