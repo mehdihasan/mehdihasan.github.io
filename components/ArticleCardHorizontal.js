@@ -1,6 +1,27 @@
 import { Card, CardMedia, CardContent, Typography, CardActions, Button, Box } from '@mui/material';
 import Link from 'next/link';
 
+// Utility to strip markdown and code blocks for summary
+function getPlainSummary(content) {
+  if (!content) return '';
+  // Remove code blocks (```...```)
+  let text = content.replace(/```[\s\S]*?```/g, '');
+  // Remove inline code (`...`)
+  text = text.replace(/`[^`]*`/g, '');
+  // Remove markdown images ![alt](url)
+  text = text.replace(/!\[.*?\]\(.*?\)/g, '');
+  // Remove markdown links [text](url)
+  text = text.replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1');
+  // Remove headings, lists, blockquotes, etc.
+  text = text.replace(/^#+\s/gm, '');
+  text = text.replace(/^\s*>\s?/gm, '');
+  text = text.replace(/^\s*[-*+]\s?/gm, '');
+  // Collapse multiple newlines
+  text = text.replace(/\n+/g, ' ');
+  // Trim and limit length
+  return text.trim().slice(0, 200);
+}
+
 export default function ArticleCardHorizontal({ post }) {
   return (
     <Card sx={{ display: 'flex', mb: 3, minHeight: 180, flexDirection: { xs: 'column', md: 'row' } }}>
@@ -62,7 +83,7 @@ export default function ArticleCardHorizontal({ post }) {
               fontSize: { xs: '1.05rem', md: '1.01rem' }
             }}
           >
-            {post.content?.slice(0, 200)}...
+            {getPlainSummary(post.content)}...
           </Typography>
         </CardContent>
         <CardActions sx={{ justifyContent: 'flex-end', mt: 'auto', width: '100%' }}>
