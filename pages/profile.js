@@ -69,6 +69,32 @@ export default function Profile() {
         )}
         <Divider sx={{ my: 2 }} />
 
+        {/* Work Experience */}
+        <Typography variant="h6" sx={{ mb: 2 }}>Work Experience</Typography>
+        {work.map(job => (
+          <Box key={job.company} sx={{ mb: 4 }}>
+            <Box>
+              <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
+                {job.position} @ <Link href={job.website} target="_blank" rel="noopener">{job.company}</Link>
+              </Typography>
+              <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                {job.location} &nbsp;|&nbsp; {job.startDate} - {job.endDate || 'Present'}
+              </Typography>
+            </Box>
+            <Typography variant="body2" sx={{ mt: 1 }}>{job.summary}</Typography>
+            {job.highlights && job.highlights.length > 0 && (
+              <Box component="ul" sx={{ marginTop: 1.5, marginBottom: 0, paddingLeft: 3 }}>
+                {job.highlights.map((hl, idx) => (
+                  <li key={idx} style={{ fontSize: '0.95rem', marginBottom: 4 }}>
+                    {hl}
+                  </li>
+                ))}
+              </Box>
+            )}
+            <Divider sx={{ my: 2 }} />
+          </Box>
+        ))}
+
         {/* Certifications */}
         <Typography variant="h6" sx={{ mb: 2 }}>Certifications</Typography>
         {certification && certification.length > 0 && (
@@ -100,31 +126,6 @@ export default function Profile() {
         )}
         <Divider sx={{ my: 2 }} />
 
-        {/* Work Experience */}
-        <Typography variant="h6" sx={{ mb: 2 }}>Work Experience</Typography>
-        {work.map(job => (
-          <Box key={job.company} sx={{ mb: 4 }}>
-            <Box>
-              <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
-                {job.position} @ <Link href={job.website} target="_blank" rel="noopener">{job.company}</Link>
-              </Typography>
-              <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                {job.location} &nbsp;|&nbsp; {job.startDate} - {job.endDate || 'Present'}
-              </Typography>
-            </Box>
-            <Typography variant="body2" sx={{ mt: 1 }}>{job.summary}</Typography>
-            {job.highlights && job.highlights.length > 0 && (
-              <Box component="ul" sx={{ marginTop: 1.5, marginBottom: 0, paddingLeft: 3 }}>
-                {job.highlights.map((hl, idx) => (
-                  <li key={idx} style={{ fontSize: '0.95rem', marginBottom: 4 }}>
-                    {hl}
-                  </li>
-                ))}
-              </Box>
-            )}
-            <Divider sx={{ my: 2 }} />
-          </Box>
-        ))}
       </Container>
       <Footer />
     </>
