@@ -197,8 +197,8 @@ export const generateArticleSEO = (post) => {
 
   return {
     title: `${post.title} | BetweenSystems`,
-    description: post.excerpt || post.content?.slice(0, 160) || 'Read more about this adventure in Northern Europe.',
-    keywords: post.tags?.join(', ') || 'Norway, travel, adventure',
+    description: post.excerpt || post.content?.slice(0, 160) || 'Where technology meets curiosity ...',
+    keywords: post.tags?.join(', ') || 'technology, data, systems',
     image: post.coverImage || '/betweensystems/banner.webp',
     article: true,
     publishedTime: post.date ? new Date(post.date).toISOString() : undefined,
@@ -237,10 +237,10 @@ export const generateArticleSEO = (post) => {
         '@type': 'WebPage',
         '@id': `${baseUrl}/${post.slug}`
       },
-      keywords: post.tags?.join(', ') || 'Norway, travel, adventure',
+      keywords: post.tags?.join(', ') || 'technology, data, systems',
       inLanguage: 'en-US',
       wordCount: post.content?.split(' ').length || 0,
-      articleSection: 'Travel & Technology'
+      articleSection: 'Technology'
     }
   };
 };

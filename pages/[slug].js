@@ -7,8 +7,8 @@ import React, { useMemo } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import Gallery from '../components/Gallery';
-import LikeDislike from '../components/LikeDislike';
-import CommentBox from '../components/CommentBox';
+// import LikeDislike from '../components/LikeDislike';
+// import CommentBox from '../components/CommentBox';
 import SEO, { generateArticleSEO } from '../components/SEO';
 import { AccessibleHeading, Landmark } from '../components/Accessibility';
 import { Home, Tag, Share as ShareIcon, Facebook, Twitter, LinkedIn } from '@mui/icons-material';
@@ -213,10 +213,10 @@ export default function Post({ post }) {
           </Box>
 
           {/* Article footer */}
-          <Box component="footer" sx={{ mt: 6 }}>
+          {/* <Box component="footer" sx={{ mt: 6 }}>
             <LikeDislike slug={post.slug} />
             <CommentBox slug={post.slug} />
-          </Box>
+          </Box> */}
         </Container>
       </Landmark>
 

@@ -1,6 +1,5 @@
 // Home page with sections for top tags and latest articles
 import { getSortedPostsData } from '../lib/posts';
-import ArticleCard from '../components/ArticleCard';
 import ArticleCardHorizontal from '../components/ArticleCardHorizontal';
 import { Box, Typography, Container, Chip, Grid } from '@mui/material';
 import Navbar from '../components/Navbar';
@@ -38,7 +37,7 @@ export default function Home({ posts, topTags }) {
       {/* Hero Section */}
       <Box sx={{
         width: '100%',
-        minHeight: 340,
+        minHeight: 150,
         background: `url(/betweensystems/banner.webp) center/cover no-repeat, linear-gradient(120deg, #005cbf 60%, #ffd700 100%)`,
         color: '#fff',
         display: 'flex',
@@ -50,19 +49,7 @@ export default function Home({ posts, topTags }) {
         mb: 4,
         position: 'relative',
       }}>
-        <Typography
-          variant="h1"
-          sx={{
-            fontWeight: 700,
-            mb: 2,
-            textShadow: '0 2px 16px #00336699',
-            fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem', lg: '3.5rem' },
-            wordBreak: 'break-word',
-            lineHeight: 1.15
-          }}
-        >
-          BetweenSystems
-        </Typography>
+
         <Typography
           variant="h2"
           sx={{

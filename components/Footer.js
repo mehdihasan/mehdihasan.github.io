@@ -115,9 +115,6 @@ export default function Footer() {
                 animation: 'heartbeat 2s ease-in-out infinite'
               }}
             />
-            <Typography variant="body2" color="text.secondary">
-              in Northern Europe
-            </Typography>
           </Box>
 
           {/* Additional Info */}

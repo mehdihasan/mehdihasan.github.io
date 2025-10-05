@@ -102,7 +102,7 @@ export default function Navbar() {
         <Toolbar sx={{ justifyContent: 'space-between' }}>
           {/* Logo and Brand */}
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
-            <Tooltip title="BetweenSystems - Northern Lights Leader">
+            <Tooltip title="BetweenSystems - Where technology meets curiosity">
               <Avatar
                 src="/betweensystems/logo.svg"
                 alt="BetweenSystems logo"

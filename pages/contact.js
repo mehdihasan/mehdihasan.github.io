@@ -10,7 +10,7 @@ export default function Contact() {
       <Container maxWidth="sm" sx={{ mt: 4 }}>
         <Typography variant="h4" gutterBottom>Contact</Typography>
         <Typography>
-          You can reach us via email at <a href="mailto:betweensystems@gmail.com">betweensystems@gmail.com</a>.
+          You can reach us via email at <a href="mailto:contact@betweensystems.com">contact@betweensystems.com</a>.
         </Typography>
       </Container>
       <Footer />

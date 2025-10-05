@@ -3,7 +3,7 @@ import Script from "next/script";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
-const GA_TRACKING_ID = "G-CEBL7KXZEB";
+const GA_TRACKING_ID = "G-R6JDPM6RT3";
 
 export default function ScriptLoader() {
   const router = useRouter();
@@ -31,11 +31,15 @@ export default function ScriptLoader() {
   return (
     <>
       {/* Google Analytics */}
-      <Script
+      {/* <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
         strategy="afterInteractive"
+      /> */}
+      <Script
+        async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
       />
-      <Script id="ga-init" strategy="afterInteractive">
+      {/* <Script id="ga-init" strategy="afterInteractive"> */}
+      <Script id="ga-init" >
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
@@ -48,12 +52,12 @@ export default function ScriptLoader() {
       </Script>
 
       {/* Google Ads */}
-      <Script
+      {/* <Script
         async
         strategy="afterInteractive"
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3305345510108069"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=abc123"
         crossOrigin="anonymous"
-      />
+      /> */}
     </>
   );
 }
