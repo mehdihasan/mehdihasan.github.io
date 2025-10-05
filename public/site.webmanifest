@@ -1,24 +1,24 @@
 {
-  "name": "DataDreamscape",
-  "short_name": "DataDreamscape",
+  "name": "BetweenSystems",
+  "short_name": "BetweenSystems",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#005cbf",
   "theme_color": "#005cbf",
-  "description": "At DataDreamscape, we explore Northern Europe and the wider continent, uncovering breathtaking landscapes, rich cultures, and forward-looking innovations.",
+  "description": "At BetweenSystems, we explore Northern Europe and the wider continent, uncovering breathtaking landscapes, rich cultures, and forward-looking innovations.",
   "icons": [
     {
-      "src": "/public/datadreamscape/favicon-16x16.png",
+      "src": "/public/betweensystems/favicon-16x16.png",
       "sizes": "16x16",
       "type": "image/png"
     },
     {
-      "src": "/public/datadreamscape/favicon-96x96.png",
+      "src": "/public/betweensystems/favicon-96x96.png",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "/public/datadreamscape/favicon-32x32.png",
+      "src": "/public/betweensystems/favicon-32x32.png",
       "sizes": "32x32",
       "type": "image/png"
     }

@@ -34,7 +34,7 @@ export default function Footer() {
             gutterBottom
             sx={{ fontWeight: 'bold', mb: 1 }}
           >
-            DataDreamscape
+            BetweenSystems
           </Typography>
           <Typography
             variant="body2"
@@ -105,7 +105,7 @@ export default function Footer() {
           {/* Copyright and Policy Links */}
           <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
             <Typography variant="body2" color="text.secondary">
-              © {currentYear} DataDreamscape. Made with
+              © {currentYear} BetweenSystems. Made with
             </Typography>
             <Favorite
               sx={{

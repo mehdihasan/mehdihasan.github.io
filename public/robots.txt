@@ -1,12 +1,12 @@
-# robots.txt for DataDreamscape blog
+# robots.txt for BetweenSystems blog
 # Allow all web crawlers
 
 User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://datadreamscape.com/sitemap.xml
-Sitemap: https://datadreamscape.com/sitemap-posts.xml
+Sitemap: https://betweensystems.com/sitemap.xml
+Sitemap: https://betweensystems.com/sitemap-posts.xml
 
 # Specific crawl rules
 # Allow blog content
@@ -15,7 +15,7 @@ Allow: /posts/
 Allow: /tag/
 
 # Allow static assets
-Allow: /datadreamscape/
+Allow: /betweensystems/
 Allow: /images/
 
 # Disallow admin or private areas (if any)

@@ -54,7 +54,7 @@ export default function Navbar() {
         borderColor: 'divider'
       }}>
         <Typography variant="h6" color="primary.main" fontWeight="bold">
-          DataDreamscape
+          BetweenSystems
         </Typography>
         <IconButton onClick={handleDrawerToggle}>
           <CloseIcon />
@@ -102,10 +102,10 @@ export default function Navbar() {
         <Toolbar sx={{ justifyContent: 'space-between' }}>
           {/* Logo and Brand */}
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
-            <Tooltip title="DataDreamscape - Northern Lights Leader">
+            <Tooltip title="BetweenSystems - Northern Lights Leader">
               <Avatar
-                src="/datadreamscape/logo.svg"
-                alt="DataDreamscape logo"
+                src="/betweensystems/logo.svg"
+                alt="BetweenSystems logo"
                 sx={{
                   width: 40,
                   height: 40,
@@ -132,7 +132,7 @@ export default function Navbar() {
                 }
               }}
             >
-              DataDreamscape
+              BetweenSystems
             </Typography>
           </Box>
 

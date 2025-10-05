@@ -28,4 +28,4 @@ This website uses cookies to improve your experience and analyze site usage. Non
 
 ### Contact
 
-For questions about privacy or cookies, please contact us at info@datadreamscape.com.
+For questions about privacy or cookies, please contact us at info@betweensystems.com.

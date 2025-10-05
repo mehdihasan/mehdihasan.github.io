@@ -21,7 +21,7 @@ export default function Post({ post }) {
 
   return (
     <>
-      <SEO {...seoProps} image={post.coverImage || '/datadreamscape/banner.webp'} />
+      <SEO {...seoProps} image={post.coverImage || '/betweensystems/banner.webp'} />
       <Navbar />
 
       <Landmark role="main" id="main-content" aria-label="Blog post content">
@@ -85,7 +85,7 @@ export default function Post({ post }) {
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, ml: 'auto', flexWrap: 'wrap', minWidth: 0, maxWidth: '100%' }}>
                 <IconButton
                   component="a"
-                  href={`https://twitter.com/intent/tweet?url=${encodeURIComponent('https://datadreamscape.com/' + post.slug)}&text=${encodeURIComponent(post.title)}`}
+                  href={`https://twitter.com/intent/tweet?url=${encodeURIComponent('https://betweensystems.com/' + post.slug)}&text=${encodeURIComponent(post.title)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   size="small"
@@ -98,7 +98,7 @@ export default function Post({ post }) {
                 </IconButton>
                 <IconButton
                   component="a"
-                  href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://datadreamscape.com/' + post.slug)}`}
+                  href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://betweensystems.com/' + post.slug)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   size="small"
@@ -111,7 +111,7 @@ export default function Post({ post }) {
                 </IconButton>
                 <IconButton
                   component="a"
-                  href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent('https://datadreamscape.com/' + post.slug)}&title=${encodeURIComponent(post.title)}`}
+                  href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent('https://betweensystems.com/' + post.slug)}&title=${encodeURIComponent(post.title)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   size="small"

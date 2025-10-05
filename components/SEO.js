@@ -4,11 +4,11 @@ import { useRouter } from 'next/router';
 import Script from 'next/script';
 
 const SEO = ({
-  title = 'DataDreamscape - Adventures in Northern Europe',
+  title = 'BetweenSystems - Adventures in Northern Europe',
   description = 'Adventures, tech, and stories from a South Asian exploring Northern Europe. Discover Norway, Scandinavia, and Nordic culture through travel experiences and drone photography.',
   keywords = 'Sweden, Norway, Scandinavia, travel, adventure, Northern Europe, drone photography, Nordic culture, South Asian, blog, experiences, lifestyle, technology',
-  author = 'DataDreamscape',
-  image = '/datadreamscape/banner.webp',
+  author = 'BetweenSystems',
+  image = '/betweensystems/banner.webp',
   article = false,
   publishedTime,
   modifiedTime,
@@ -21,15 +21,15 @@ const SEO = ({
   structuredData
 }) => {
   const router = useRouter();
-  const baseUrl = 'https://datadreamscape.com';
+  const baseUrl = 'https://betweensystems.com';
   const fullUrl = canonical || `${baseUrl}${router.asPath}`;
-  const fullImageUrl = image && image !== '/datadreamscape/banner.webp' ? (image.startsWith('http') ? image : `${baseUrl}${image}`) : `${baseUrl}/datadreamscape/banner.webp`;
+  const fullImageUrl = image && image !== '/betweensystems/banner.webp' ? (image.startsWith('http') ? image : `${baseUrl}${image}`) : `${baseUrl}/betweensystems/banner.webp`;
 
   // Default structured data for the website
   const defaultStructuredData = {
     '@context': 'https://schema.org',
     '@type': 'Blog',
-    name: 'DataDreamscape',
+    name: 'BetweenSystems',
     description: description,
     url: baseUrl,
     image: fullImageUrl,
@@ -40,10 +40,10 @@ const SEO = ({
     },
     publisher: {
       '@type': 'Organization',
-      name: 'DataDreamscape',
+      name: 'BetweenSystems',
       logo: {
         '@type': 'ImageObject',
-        url: `${baseUrl}/datadreamscape/logo.svg`
+        url: `${baseUrl}/betweensystems/logo.svg`
       }
     },
     inLanguage: lang,
@@ -68,10 +68,10 @@ const SEO = ({
     },
     publisher: {
       '@type': 'Organization',
-      name: 'DataDreamscape',
+      name: 'BetweenSystems',
       logo: {
         '@type': 'ImageObject',
-        url: `${baseUrl}/datadreamscape/logo.svg`
+        url: `${baseUrl}/betweensystems/logo.svg`
       }
     },
     mainEntityOfPage: {
@@ -110,7 +110,7 @@ const SEO = ({
       <meta property="og:image:height" content="630" />
       <meta property="og:image:alt" content={title} />
       <meta property="og:url" content={fullUrl} />
-      <meta property="og:site_name" content="DataDreamscape" />
+      <meta property="og:site_name" content="BetweenSystems" />
       <meta property="og:locale" content={lang === 'en' ? 'en_US' : lang} />
 
       {/* Article specific Open Graph tags */}
@@ -132,8 +132,8 @@ const SEO = ({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={fullImageUrl} />
       <meta name="twitter:image:alt" content={title} />
-      <meta name="twitter:site" content="@datadreamscape" />
-      <meta name="twitter:creator" content="@datadreamscape" />
+      <meta name="twitter:site" content="@betweensystems" />
+      <meta name="twitter:creator" content="@betweensystems" />
 
       {/* Additional SEO Meta Tags */}
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -152,10 +152,10 @@ const SEO = ({
       {/* <meta name="msvalidate.01" content="your-bing-verification-code" /> */}
 
       {/* Favicons and Icons */}
-      <link rel="icon" href="/datadreamscape/favicon.ico" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/datadreamscape/apple-touch-icon.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/datadreamscape/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/datadreamscape/favicon-16x16.png" />
+      <link rel="icon" href="/betweensystems/favicon.ico" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/betweensystems/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/betweensystems/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/betweensystems/favicon-16x16.png" />
       <link rel="manifest" href="/site.webmanifest" />
 
       {/* Structured Data (JSON-LD) */}
@@ -177,29 +177,29 @@ const SEO = ({
       <link rel="dns-prefetch" href="//github.com" />
 
       {/* Alternative formats and feeds */}
-      <link rel="alternate" type="application/rss+xml" title="DataDreamscape RSS Feed" href="/feed.xml" />
-      <link rel="alternate" type="application/atom+xml" title="DataDreamscape Atom Feed" href="/atom.xml" />
+      <link rel="alternate" type="application/rss+xml" title="BetweenSystems RSS Feed" href="/feed.xml" />
+      <link rel="alternate" type="application/atom+xml" title="BetweenSystems Atom Feed" href="/atom.xml" />
 
       {/* Copyright and license information */}
-      <meta name="copyright" content={`© ${new Date().getFullYear()} DataDreamscape`} />
+      <meta name="copyright" content={`© ${new Date().getFullYear()} BetweenSystems`} />
       <meta name="rating" content="General" />
       <meta name="distribution" content="Global" />
 
       {/* Social Media Profile Links */}
-      <link rel="me" href="https://github.com/datadreamscape" />
+      <link rel="me" href="https://github.com/betweensystems" />
     </Head>
   );
 };
 
 // Helper function to generate article SEO props
 export const generateArticleSEO = (post) => {
-  const baseUrl = 'https://datadreamscape.com';
+  const baseUrl = 'https://betweensystems.com';
 
   return {
-    title: `${post.title} | DataDreamscape`,
+    title: `${post.title} | BetweenSystems`,
     description: post.excerpt || post.content?.slice(0, 160) || 'Read more about this adventure in Northern Europe.',
     keywords: post.tags?.join(', ') || 'Norway, travel, adventure',
-    image: post.coverImage || '/datadreamscape/banner.webp',
+    image: post.coverImage || '/betweensystems/banner.webp',
     article: true,
     publishedTime: post.date ? new Date(post.date).toISOString() : undefined,
     modifiedTime: post.modifiedDate ? new Date(post.modifiedDate).toISOString() : undefined,
@@ -212,7 +212,7 @@ export const generateArticleSEO = (post) => {
       description: post.excerpt || post.content?.slice(0, 160),
       image: {
         '@type': 'ImageObject',
-        url: post.coverImage ? `${baseUrl}${post.coverImage}` : `${baseUrl}/datadreamscape/banner.webp`,
+        url: post.coverImage ? `${baseUrl}${post.coverImage}` : `${baseUrl}/betweensystems/banner.webp`,
         width: 1200,
         height: 630
       },
@@ -220,15 +220,15 @@ export const generateArticleSEO = (post) => {
       dateModified: post.modifiedDate ? new Date(post.modifiedDate).toISOString() : new Date(post.date || Date.now()).toISOString(),
       author: {
         '@type': 'Person',
-        name: 'DataDreamscape',
+        name: 'BetweenSystems',
         url: baseUrl
       },
       publisher: {
         '@type': 'Organization',
-        name: 'DataDreamscape',
+        name: 'BetweenSystems',
         logo: {
           '@type': 'ImageObject',
-          url: `${baseUrl}/datadreamscape/logo.svg`,
+          url: `${baseUrl}/betweensystems/logo.svg`,
           width: 200,
           height: 200
         }
