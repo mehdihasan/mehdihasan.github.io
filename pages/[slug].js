@@ -15,6 +15,8 @@ import { Home, Tag, Share as ShareIcon, Facebook, Twitter, LinkedIn } from '@mui
 import Link from 'next/link';
 import Image from "next/image";
 import Script from 'next/script';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { oneLight } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 export default function Post({ post }) {
   const seoProps = generateArticleSEO(post);
@@ -351,6 +353,39 @@ function MarkdownWithGallery({ content }) {
     return <p>{children}</p>;
   };
 
+  // Custom code block renderer
+  const markdownCode = ({ node, inline, className, children, ...props }) => {
+    const match = /language-(\w+)/.exec(className || '');
+    return !inline && match ? (
+      <SyntaxHighlighter
+        style={oneLight}
+        language={match[1]}
+        PreTag="div"
+        customStyle={{
+          borderRadius: 8,
+          fontSize: '1rem',
+          margin: '16px 0',
+          background: '#ffffff',
+        }}
+      >
+        {String(children).replace(/\n$/, '')}
+      </SyntaxHighlighter>
+    ) : (
+      <code
+        style={{
+          background: '#ffffff',
+          color: '#ffd700',
+          borderRadius: 4,
+          padding: '2px 6px',
+          fontSize: '0.95em',
+        }}
+        {...props}
+      >
+        {children}
+      </code>
+    );
+  };
+
   return (
     <>
       {blocks.map((block, idx) => {
@@ -366,12 +401,17 @@ function MarkdownWithGallery({ content }) {
         if (images.length >= 2 && images.length === lines.length && lines.length > 0) {
           return <Gallery key={idx} images={images} />;
         } else {
-          // Otherwise, render as normal markdown with custom img, link, and p renderer
+          // Otherwise, render as normal markdown with custom img, link, p, and code renderer
           return (
             <ReactMarkdown
               key={idx}
               remarkPlugins={[remarkGfm]}
-              components={{ img: markdownImg, a: markdownLink, p: markdownP }}
+              components={{
+                img: markdownImg,
+                a: markdownLink,
+                p: markdownP,
+                code: markdownCode
+              }}
             >
               {block}
             </ReactMarkdown>
