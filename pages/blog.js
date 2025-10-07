@@ -3,7 +3,6 @@ import { Container, Typography } from '@mui/material';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { getSortedPostsData } from '../lib/posts';
-import ArticleCard from '../components/ArticleCard';
 import ArticleCardHorizontal from '../components/ArticleCardHorizontal';
 
 export async function getStaticProps() {
