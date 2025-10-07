@@ -1,0 +1,26 @@
+{
+  "name": "BetweenSystems",
+  "short_name": "BetweenSystems",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#005cbf",
+  "theme_color": "#005cbf",
+  "description": "Exploring the art and engineering of modern technology — from systems and software to data, people, and the ideas that connect them.",
+  "icons": [
+    {
+      "src": "/public/betweensystems/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/betweensystems/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/betweensystems/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}

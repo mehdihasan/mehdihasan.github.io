@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://betweensystems.com
+
+# Sitemaps
+Sitemap: https://betweensystems.com/sitemap.xml
