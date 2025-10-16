@@ -136,7 +136,7 @@ export default function Home({ posts, topTags }) {
       <Box sx={{
         width: '100%',
         minHeight: 250,
-        background: `url(/betweensystems/banner.webp) center/cover no-repeat, linear-gradient(120deg, #00ABE4 60%, #0FFCBE 100%)`,
+        background: `linear-gradient(120deg, #00ABE4 60%, #0FFCBE 100%)`,
         color: '#fff',
         display: 'flex',
         alignItems: 'center',
