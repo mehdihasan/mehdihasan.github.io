@@ -103,7 +103,22 @@ export default function ArticleCardHorizontal({ post }) {
               </Button>
             ))}
           </Box>
-          <Button component={Link} href={`/${post.slug}`} variant="contained" size="big">
+          <Button
+            component={Link}
+            href={`/${post.slug}`}
+            variant="contained"
+            size="big"
+            sx={{
+              color: '#fff',
+              backgroundColor: '#00ABE4',
+              transition: 'background 0.2s, color 0.2s, font-weight 0.2s',
+              '&:hover': {
+                backgroundColor: '#0FFCBE',
+                color: '#000',
+                fontWeight: 'bold'
+              }
+            }}
+          >
             Read More
           </Button>
         </CardActions>

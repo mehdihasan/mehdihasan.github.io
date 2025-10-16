@@ -3,8 +3,8 @@
   "short_name": "BetweenSystems",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#005cbf",
-  "theme_color": "#005cbf",
+  "background_color": "#00ABE4",
+  "theme_color": "#00ABE4",
   "description": "Exploring the art and engineering of modern technology — from systems and software to data, people, and the ideas that connect them.",
   "icons": [
     {

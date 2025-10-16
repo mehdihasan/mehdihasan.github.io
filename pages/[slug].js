@@ -93,7 +93,7 @@ export default function Post({ post }) {
                   size="small"
                   aria-label="Share on Twitter"
                   sx={{
-                    '&:hover svg': { color: '#005cbf' }
+                    '&:hover svg': { color: '#00ABE4' }
                   }}
                 >
                   <Twitter fontSize="small" />
@@ -106,7 +106,7 @@ export default function Post({ post }) {
                   size="small"
                   aria-label="Share on Facebook"
                   sx={{
-                    '&:hover svg': { color: '#005cbf' }
+                    '&:hover svg': { color: '#00ABE4' }
                   }}
                 >
                   <Facebook fontSize="small" />
@@ -119,7 +119,7 @@ export default function Post({ post }) {
                   size="small"
                   aria-label="Share on LinkedIn"
                   sx={{
-                    '&:hover svg': { color: '#005cbf' }
+                    '&:hover svg': { color: '#00ABE4' }
                   }}
                 >
                   <LinkedIn fontSize="small" />
@@ -137,9 +137,27 @@ export default function Post({ post }) {
                     component={Link}
                     href={`/tag/${tag}`}
                     clickable
-                    size="small"
-                    icon={<Tag fontSize="small" />}
-                    sx={{ mr: 1, mb: 1 }}
+                    size="big"
+                    icon={<Tag fontSize="small" sx={{ color: '#fff' }} />} // icon color white by default
+                    sx={{
+                      mr: 1,
+                      mb: 1,
+                      color: '#fff',
+                      backgroundColor: 'primary.main',
+                      transition: 'background 0.2s, color 0.2s, font-weight 0.2s',
+                      '& .MuiChip-icon': {
+                        color: '#fff', // ensure icon is white by default
+                        transition: 'color 0.2s, font-weight 0.2s'
+                      },
+                      '&:hover': {
+                        backgroundColor: '#0FFCBE',
+                        color: '#000',
+                        fontWeight: 'bold',
+                        '& .MuiChip-icon': {
+                          color: '#000' // icon color black on hover
+                        }
+                      }
+                    }}
                     aria-label={`View all posts tagged with ${tag}`}
                   />
                 ))}
@@ -248,7 +266,7 @@ function ReadingProgress() {
       sx={{
         width: `${progress}%`,
         height: '100%',
-        background: 'linear-gradient(90deg, #005cbf 0%, #0070f3 100%)',
+        background: 'linear-gradient(90deg, #00ABE4 0%, #0070f3 100%)',
         transition: 'width 0.1s ease-out'
       }}
       role="progressbar"
@@ -374,7 +392,7 @@ function MarkdownWithGallery({ content }) {
       <code
         style={{
           background: '#ffffff',
-          color: '#ffd700',
+          color: '#0FFCBE',
           borderRadius: 4,
           padding: '2px 6px',
           fontSize: '0.95em',

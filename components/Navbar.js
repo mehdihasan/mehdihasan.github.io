@@ -91,12 +91,13 @@ export default function Navbar() {
   return (
     <>
       <AppBar
-        position="static"
+        position="sticky" // <-- change from "static" or "relative" to "sticky"
         color="primary"
         elevation={2}
         sx={{
-          background: 'linear-gradient(45deg, #005cbf 30%, #0070f3 90%)',
-          boxShadow: '0 3px 10px 0 rgba(0,92,191,0.3)'
+          background: 'linear-gradient(45deg, #00ABE4 30%, #00ABE4 90%)',
+          boxShadow: '0 3px 10px 0 rgba(0,92,191,0.3)',
+          zIndex: 1100 // ensure always above hero section
         }}
       >
         <Toolbar sx={{ justifyContent: 'space-between' }}>
@@ -123,7 +124,7 @@ export default function Navbar() {
               component={Link}
               href="/"
               sx={{
-                color: 'inherit',
+                color: '#fff', // white text
                 textDecoration: 'none',
                 fontWeight: 'bold',
                 letterSpacing: '0.5px',
@@ -147,6 +148,7 @@ export default function Navbar() {
                   href={item.href}
                   startIcon={item.icon}
                   sx={{
+                    color: '#fff', // white text
                     borderRadius: 2,
                     px: 2,
                     py: 1,

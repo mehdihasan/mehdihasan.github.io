@@ -12,10 +12,10 @@ import ScriptLoader from '../components/ScriptLoader';
 const theme = createTheme({
   palette: {
     mode: 'light',
-    primary: { main: '#005cbf' }, // Nordic blue (Sweden/Finland)
+    primary: { main: '#00ABE4' }, // Nordic blue (Sweden/Finland)
     secondary: { main: '#d72828' }, // Red (Denmark/Norway/Iceland)
     background: { default: '#f5f7fa' }, // Light gray/white
-    info: { main: '#ffd700' }, // Yellow (Sweden)
+    info: { main: '#0FFCBE' }, // Yellow (Sweden)
     success: { main: '#009b3a' }, // Green (Nordic nature)
   },
   components: {
@@ -25,8 +25,8 @@ const theme = createTheme({
           cursor: 'pointer',
           transition: 'background 0.2s',
           '&:hover': {
-            backgroundColor: '#ffd700', // Yellow on hover
-            color: '#005cbf',
+            backgroundColor: '#0FFCBE', // Yellow on hover
+            color: '#00ABE4',
           },
         },
       },
@@ -47,7 +47,7 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           '&:focus-visible': {
-            outline: '2px solid #005cbf',
+            outline: '2px solid #00ABE4',
             outlineOffset: '2px',
           },
         },
@@ -103,7 +103,7 @@ export default function MyApp({ Component, pageProps }) {
           <style jsx global>{`
             /* Focus styles for accessibility */
             *:focus-visible {
-              outline: 2px solid #005cbf;
+              outline: 2px solid #00ABE4;
               outline-offset: 2px;
             }
 
@@ -153,7 +153,7 @@ export default function MyApp({ Component, pageProps }) {
               position: absolute;
               top: -40px;
               left: 8px;
-              background: #005cbf;
+              background: #00ABE4;
               color: white;
               padding: 8px 16px;
               text-decoration: none;

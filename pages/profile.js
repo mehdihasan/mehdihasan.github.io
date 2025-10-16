@@ -33,7 +33,16 @@ export default function Profile() {
                   component={Link}
                   href={profile.url}
                   clickable
-                  sx={{ mr: 1 }}
+                  sx={{
+                    mr: 1,
+                    color: '#fff',
+                    backgroundColor: 'primary.main',
+                    transition: 'background 0.2s, color 0.2s',
+                    '&:hover': {
+                      backgroundColor: '#0FFCBE',
+                      color: '#000'
+                    }
+                  }}
                 />
               ))}
             </Box>
@@ -60,7 +69,21 @@ export default function Profile() {
                 </Typography>
                 <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, mt: 1 }}>
                   {skill.keywords.map(keyword => (
-                    <Chip key={keyword} label={keyword} size="small" sx={{ mb: 0.5 }} />
+                    <Chip
+                      key={keyword}
+                      label={keyword}
+                      size="small"
+                      sx={{
+                        mb: 0.5,
+                        color: '#fff',
+                        backgroundColor: 'primary.main',
+                        transition: 'background 0.2s, color 0.2s',
+                        '&:hover': {
+                          backgroundColor: '#0FFCBE',
+                          color: '#000'
+                        }
+                      }}
+                    />
                   ))}
                 </Box>
               </Box>
@@ -100,7 +123,7 @@ export default function Profile() {
         {certification && certification.length > 0 && (
           <List>
             {certification.map(cert => (
-              <ListItem key={cert.certificate} sx={{ mb: 2 }}>
+              <ListItem key={cert.certificate} sx={{ mb: 2 }} alignItems="flex-start">
                 <ListItemText
                   primary={
                     <Box>
@@ -110,14 +133,11 @@ export default function Profile() {
                       <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                         {cert.issueDate}
                       </Typography>
-                    </Box>
-                  }
-                  secondary={
-                    <Tooltip title={cert.area} arrow>
+                      {/* Show full description, not truncated */}
                       <Typography variant="body2" sx={{ mt: 1 }}>
-                        {cert.area.length > 120 ? cert.area.slice(0, 120) + '...' : cert.area}
+                        {cert.area}
                       </Typography>
-                    </Tooltip>
+                    </Box>
                   }
                 />
               </ListItem>

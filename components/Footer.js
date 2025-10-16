@@ -105,16 +105,8 @@ export default function Footer() {
           {/* Copyright and Policy Links */}
           <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
             <Typography variant="body2" color="text.secondary">
-              © {currentYear} BetweenSystems. Made with
+              © {currentYear} BetweenSystems.
             </Typography>
-            <Favorite
-              sx={{
-                color: 'error.main',
-                mx: 0.5,
-                fontSize: 16,
-                animation: 'heartbeat 2s ease-in-out infinite'
-              }}
-            />
           </Box>
 
           {/* Additional Info */}

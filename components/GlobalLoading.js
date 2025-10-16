@@ -1,10 +1,10 @@
 // Global loading component with various loading states
 import React, { useState, useEffect } from 'react';
-import { 
-  Box, 
-  CircularProgress, 
-  LinearProgress, 
-  Typography, 
+import {
+  Box,
+  CircularProgress,
+  LinearProgress,
+  Typography,
   Backdrop,
   Fade,
   Paper
@@ -13,17 +13,17 @@ import { Cloud, CloudOff } from '@mui/icons-material';
 
 // Full-screen loading overlay
 export const FullScreenLoader = ({ open, message = "Loading..." }) => (
-  <Backdrop 
-    sx={{ 
-      color: '#fff', 
+  <Backdrop
+    sx={{
+      color: '#fff',
       zIndex: (theme) => theme.zIndex.drawer + 1,
       background: 'linear-gradient(135deg, rgba(0,92,191,0.9) 0%, rgba(0,112,243,0.9) 100%)'
-    }} 
+    }}
     open={open}
   >
     <Box sx={{ textAlign: 'center' }}>
-      <CircularProgress 
-        color="inherit" 
+      <CircularProgress
+        color="inherit"
         size={60}
         thickness={4}
         sx={{ mb: 2 }}
@@ -37,26 +37,26 @@ export const FullScreenLoader = ({ open, message = "Loading..." }) => (
 
 // Page transition loader
 export const PageLoader = () => (
-  <Box sx={{ 
-    position: 'fixed', 
-    top: 0, 
-    left: 0, 
-    right: 0, 
-    zIndex: 9999 
+  <Box sx={{
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    zIndex: 9999
   }}>
-    <LinearProgress 
-      sx={{ 
+    <LinearProgress
+      sx={{
         height: 3,
-        background: 'linear-gradient(90deg, #005cbf 0%, #0070f3 100%)'
-      }} 
+        background: 'linear-gradient(90deg, #00ABE4 0%, #0070f3 100%)'
+      }}
     />
   </Box>
 );
 
 // Content loading placeholder
-export const ContentLoader = ({ 
-  lines = 3, 
-  width = "100%", 
+export const ContentLoader = ({
+  lines = 3,
+  width = "100%",
   height = 200,
   message = "Loading content..."
 }) => (
