@@ -5,14 +5,12 @@
     "picture": "/profile.png",
     "phone": "",
     "skype": "skype.mehdi",
-    "resume": "https://www.dropbox.com/s/w85g5044zldvncc/resume-mehdi-2020-01-21.pdf?dl=0",
     "website": "https://www.linkedin.com/in/md-mehdi-hasan/",
-    "summary": "Experienced software systems engineer with 14+ years spanning networking, mobile, backend, and cloud — now specialized in distributed data systems and large-scale architectures. Proven track record in building real-time data platforms, streaming pipelines, and high-performance storage/analytics systems using Python, Java, and modern cloud ecosystems (GCP certified: Architect, Data Engineer, Developer). Hands-on expertise in IoT data ingestion & integration, distributed databases (ClickHouse, Postgres, Elastic), and event-driven systems (Kafka, Solace, RabbitMQ). Skilled in mentoring teams, onboarding newcomers, and raising the technical bar — while remaining deeply hands-on with system design and problem solving. Passionate about distributed systems, data-intensive applications, and continuous learning, with a long-term goal of designing the next generation of scalable, data-driven platforms.",
+    "summary": "Experienced software systems engineer with 14+ years spanning networking, mobile, backend, and cloud - now specialized in distributed data systems and large-scale architectures. Proven track record in building real-time data platforms, streaming pipelines, and high-performance storage/analytics systems using Python, Java, and modern cloud ecosystems (GCP certified: Architect, Data Engineer, Developer). Hands-on expertise in IoT data ingestion & integration, distributed databases (ClickHouse, Postgres, Elastic), and event-driven systems (Kafka, Solace, RabbitMQ). Skilled in mentoring teams, onboarding newcomers, and raising the technical bar - while remaining deeply hands-on with system design and problem solving. Passionate about distributed systems, data-intensive applications, and continuous learning, with a long-term goal of designing the next generation of scalable, data-driven platforms.",
     "location": {
       "address": "",
       "postalCode": "",
       "city": "Lund",
-      "countryCode": "SE",
       "region": "Sweden"
     },
     "profiles": [
@@ -104,7 +102,7 @@
       "jobType": "Full-time",
       "summary": "Worked for Dagens Næringsliv (DN), Norway's 3rd largest business newspaper, building mobile apps and backend systems.",
       "highlights": [
-        "Led Android development of DN’s media app, growing users 6x between 2016–2018.",
+        "Led Android development of DN’s media app, growing users 6x between 2016-2018.",
         "Developed backend APIs (Spring Boot) powering mobile apps, improving scalability and performance.",
         "Contributed to iOS app modules in Swift and backend gateway apps in Java.",
         "TECH: Spring Boot, MySQL, Openshift, Java, Kotlin, Swift, Android SDK, iOS SDK, Jenkins, GDPR compliance."
@@ -257,7 +255,7 @@
   "skills": [
     {
       "name": "Back End Development",
-      "level": "Master",
+      "level": "",
       "keywords": [
         "Mentorship",
         "Technical Leadership",

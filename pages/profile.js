@@ -47,7 +47,7 @@ export default function Profile() {
               ))}
             </Box>
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-              {basics.location.city}, {basics.location.region}, {basics.location.countryCode}
+              {basics.location.city}, {basics.location.region}
             </Typography>
           </Box>
         </Box>
@@ -65,7 +65,7 @@ export default function Profile() {
             {skills.map(skill => (
               <Box key={skill.name} sx={{ mb: 2 }}>
                 <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
-                  {skill.name} <span style={{ fontSize: '0.95rem', color: '#888' }}>({skill.level})</span>
+                  {/* {skill.name} <span style={{ fontSize: '0.95rem', color: '#888' }}>{skill.level}</span> */}
                 </Typography>
                 <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, mt: 1 }}>
                   {skill.keywords.map(keyword => (
