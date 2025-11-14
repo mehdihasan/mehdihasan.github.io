@@ -43,7 +43,7 @@
         "Led the full redesign of the telemetry processing pipeline to meet new scalability and reliability requirements, increasing the system's load capacity by 10% and migrating from a semi-structured to a fully structured data model.",
         "Eliminated systemic processing issues, reducing failure rates from 7% in the previous system to 0% in the redesigned platform.",
         "Improved overall processing consistency by introducing stricter validation and richer transformations, achieving an 87% reduction in max response time and a 34% reduction in mean processing time, resulting in far more predictable and reliable system behavior.",
-        "TECH: Data Engineering, Linux, Embedded Systems, Kafka, RabbitMQ, Clickhouse, Redis, GitOps, Microservices, Kubernetes, Python, Elasticsearch, Kibana, Prometheus.io, Grafana, Containerization, SQL, Git, REST API, Jenkins, Docker, API Development, DevOps"
+        "TECH: Apache Kafka, Apache Superset, ClickHouse, Dagster, Distributed Systems, Elasticsearch, Java, Kibana, Kubernetes, Linux, PostgreSQL, Python, Redis, Telemetry"
       ]
     },
     {
@@ -62,7 +62,7 @@
         "Built microservices in Spring Boot, Kotlin, and Python Flask for business-critical integrations.",
         "Automated operational workflows with Ansible and CI/CD pipelines in Jenkins (Groovy, Bash).",
         "Introduced KSQL-based stream processing for real-time message transformations.",
-        "TECH: Java, Kotlin, Python, Spring Boot, Strimzi Kafka, Kafka Connect, KSQL, Solace Event Mesh, Oracle, PostgreSQL, GCP (Pub/Sub, Cloud Run, GKE), Kubernetes, Helm, Docker, Ansible, Jenkins, Prometheus, Grafana, Splunk."
+        "TECH: Ansible, Docker, GCP (Pub/Sub, Cloud Run, GKE), Grafana, Helm, Jenkins, Java, Kafka Connect, Kotlin, KSQL, Kubernetes, Oracle, PostgreSQL, Prometheus, Python, Solace Event Mesh, Splunk, Spring Boot, Strimzi Kafka"
       ]
     },
     {
@@ -75,7 +75,7 @@
       "jobType": "Full-time",
       "summary": "Work full time as senior information technology consultant.",
       "highlights": [
-        "TECH: Android SDK, iOS SDK, Viper, MVP, MVVM, Android Jetpack Architecture, Fastlane, Jenkins, MsAppcenter, TDD, JUnit, Kubernetes, Docker, Espresso, React & Express, Accessibility, etc."
+        "TECH: Accessibility, Android Jetpack Architecture, Android SDK, Docker, Espresso, Fastlane, iOS SDK, Jenkins, JUnit, Kubernetes, MVP, MVVM, MsAppcenter, React & Express, TDD, Viper"
       ]
     },
     {
@@ -91,7 +91,7 @@
         "Developed and distributed multiple native Android/iOS apps (Swift, Kotlin, Objective-C, Java).",
         "Automated build, test, and deploy workflows with Fastlane, Jenkins, and AppCenter.",
         "Implemented automation for iOS push certificate generation across 180+ apps.",
-        "TECH: Swift, Kotlin, Objective-C, Android SDK, iOS SDK, Fastlane, Jenkins, Espresso, XCTest, Mockito."
+        "TECH: Android SDK, Espresso, Fastlane, iOS SDK, Jenkins, Kotlin, Mockito, Objective-C, Swift, XCTest"
       ]
     },
     {
@@ -107,7 +107,7 @@
         "Led Android development of DN’s media app, growing users 6x between 2016-2018.",
         "Developed backend APIs (Spring Boot) powering mobile apps, improving scalability and performance.",
         "Contributed to iOS app modules in Swift and backend gateway apps in Java.",
-        "TECH: Spring Boot, MySQL, Openshift, Java, Kotlin, Swift, Android SDK, iOS SDK, Jenkins, GDPR compliance."
+        "TECH: Android SDK, GDPR compliance, iOS SDK, Jenkins, Java, Kotlin, MySQL, Openshift, Spring Boot, Swift"
       ]
     },
     {
@@ -123,7 +123,7 @@
         "Developed backend for emergency management system (CodeRed) using Spring Boot, OAuth2, JWT, and Firebase messaging.",
         "Built CI/CD pipelines (Jenkins) for automated deployment to Tomcat and cloud environments.",
         "Integrated SSO (Azure AD) for healthcare systems and automated data ingestion via CRON/SFTP.",
-        "TECH: Java, Spring Boot, Hibernate, PHP Yii, MySQL, Firebase, AWS, Digital Ocean."
+        "TECH: AWS, Digital Ocean, Firebase, Hibernate, Java, MySQL, PHP Yii, Spring Boot"
       ]
     },
     {
@@ -153,7 +153,7 @@
         "Architected and built backend for YO! messaging app with Tornado (async Python), DynamoDB, and Twilio.",
         "Developed socket-based modules and authentication flows for Android/iOS apps.",
         "Led a cross-border team, managed releases, and conducted regular code reviews.",
-        "TECH: Python (Tornado), DynamoDB, Java, Objective-C, PHP Yii, MySQL, Jenkins, JIRA."
+        "TECH: DynamoDB, Java, Jenkins, JIRA, MySQL, Objective-C, PHP Yii, Python (Tornado)"
       ]
     },
     {
