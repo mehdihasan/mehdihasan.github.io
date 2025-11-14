@@ -40,7 +40,9 @@
         "Working in the Data Infrastructure & System Insights area, designing and developing data platforms to collect, process, store, and analyze device telemetry at scale.",
         "Successfully put the system into production, enabling scalable ingestion and monitoring of device telemetry data.",
         "Broke down data silos by creating ETL pipelines from legacy platforms into a modern distributed system, unlocking cross-team access to insights.",
-        "Led the design, development, and rollout of migration strategy from legacy to modern data systems, improving reliability and future scalability.",
+        "Led the full redesign of the telemetry processing pipeline to meet new scalability and reliability requirements, increasing the system's load capacity by 10% and migrating from a semi-structured to a fully structured data model.",
+        "Eliminated systemic processing issues, reducing failure rates from 7% in the previous system to 0% in the redesigned platform.",
+        "Improved overall processing consistency by introducing stricter validation and richer transformations, achieving an 87% reduction in max response time and a 34% reduction in mean processing time, resulting in far more predictable and reliable system behavior.",
         "TECH: Data Engineering, Linux, Embedded Systems, Kafka, RabbitMQ, Clickhouse, Redis, GitOps, Microservices, Kubernetes, Python, Elasticsearch, Kibana, Prometheus.io, Grafana, Containerization, SQL, Git, REST API, Jenkins, Docker, API Development, DevOps"
       ]
     },
