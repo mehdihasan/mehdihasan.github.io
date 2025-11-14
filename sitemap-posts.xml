@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
     <loc>https://betweensystems.com/challenges-n-pitfalls-of-running-kafka-on-kubernetes</loc>
-    <lastmod>2025-11-14T15:46:32.266Z</lastmod>
+    <lastmod>2025-11-14T16:15:31.418Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 <url>
     <loc>https://betweensystems.com/fixing-concurrent-queries-within-the-same-session-in-clickHouse-async-python-apps</loc>
-    <lastmod>2025-11-14T15:46:32.266Z</lastmod>
+    <lastmod>2025-11-14T16:15:31.418Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
