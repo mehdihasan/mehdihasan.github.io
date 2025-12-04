@@ -2,7 +2,7 @@
 title: "Is Something Dramatic Happening Underground in Bangladesh? A Data-Based Look at Earthquakes"
 date: "2025-12-04"
 tags: ["Data", "Science"]
-coverImage: "/images/eqb/2.jpg"
+coverImage: "/images/eqb/2.png"
 ---
 
 Recently, there has been some discussion about whether earthquakes in Bangladesh are changing — for example, happening closer to the surface or becoming stronger. Curious about this, I decided to look at the data myself and see what it really says.
