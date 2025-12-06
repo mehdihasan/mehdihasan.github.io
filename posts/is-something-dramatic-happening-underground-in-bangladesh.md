@@ -2,76 +2,158 @@
 title: "Is Something Dramatic Happening Underground in Bangladesh? A Data-Based Look at Earthquakes"
 date: "2025-12-04"
 tags: ["Data", "Science"]
-coverImage: "/images/eqb/2.png"
+coverImage: "/images/eqb/quake_clusters.png"
 ---
 
-Recently, there has been some discussion about whether earthquakes in Bangladesh are changing — for example, happening closer to the surface or becoming stronger. Curious about this, I decided to look at the data myself and see what it really says.
+Recent weeks have raised public concern in Bangladesh after several noticeable earthquakes shook the Dhaka–Narsingdi region. Many people are wondering: *Is this the start of something dangerous? Has seismic activity suddenly increased?* To answer these questions, we analyzed decades of earthquake data across Bangladesh and compared it with the events of 2025. Here is what the numbers — not rumors — actually show.
 
-## What I Did
+## **What the long-term data tells us**
 
-I analyzed **1133 earthquakes** recorded in and around Bangladesh from **1985 to 2025**. For each earthquake, I looked at:
+A full historical catalog of 465 earthquakes (1976–2025) shows that Bangladesh experiences regular moderate seismicity. The recent activity sits within long-term patterns, but several features of **2025 stand out scientifically**:
 
-* **Magnitude** (how strong the earthquake was)
-* **Depth** (how far underground it happened)
-* **Number of earthquakes per year**
-* **Energy released**
-* **Aftershocks and clusters**
+### **Energy release in 2025 is higher than average**
 
-I also used **statistical tests** to check if any changes over time were real or just normal variations.
+This year’s events have released about **1.65× more seismic energy** than the historical yearly average. That increase is driven mainly by the **M5.4 earthquake on November 21**, the largest event of the year.
 
----
+![img](/images/eqb/seismic_eng_per_yr.png)
 
-## What the Data Shows
+### **Event counts are *not* unusually high**
 
-### 1. Earthquake Counts
+Statistical tests show that **2025 has a normal number of earthquakes** — no spike in the *frequency* of events.
 
-![img](/images/eqb/1.png)
+![img](/images/eqb/e_count.png)
 
-Earthquake numbers go up and down each year. Some years, like **2015**, had more earthquakes, and others, like **1985**, had very few. In **2025**, the number of earthquakes was slightly below average. This means **the number of earthquakes is not increasing dramatically**.
+### **Magnitudes remain in the typical range**
 
-### 2. Magnitude (Strength)
+The distribution of earthquake magnitudes in 2025 does **not differ significantly** from previous decades.
 
-![img](/images/eqb/3.png)
+![img](/images/eqb/mag_distribution.png)
 
-Most earthquakes are moderate, around magnitude **4–5**. Strong earthquakes (M ≥ 6) happen occasionally but are rare. Over 40 years, the average and maximum magnitudes **have not increased**, so there is **no trend toward stronger earthquakes**.
+![img](/images/eqb/mag_bin.png)
 
-### 3. Depth
+### **Depth is where things get interesting**
 
-![img](/images/eqb/5.png)
+Multiple tests show that **2025 earthquakes are noticeably shallower** than in most previous years. Shallow earthquakes are felt more strongly at the surface, even if their magnitudes are moderate.
 
-Most earthquakes happen at shallow depths, roughly **10–60 km** underground. Statistical tests show that **there is no significant trend** of earthquakes becoming shallower or deeper over time.
+![img](/images/eqb/median_quake_depth.png)
 
-### 4. Energy
+This is one of the most important findings: **No unusual increase in the number of earthquakes — but the ones occurring are shallower, so they feel stronger.**
 
-![img](/images/eqb/4.png)
+![img](/images/eqb/depth_dis.png)
 
-The total energy released by earthquakes varies from year to year. Some years, like **2011** and **2016**, released more energy due to larger quakes. **2025 is within the normal range**, meaning there is no unusual energy buildup.
+## **Understanding the recent sequence near Dhaka / Narsingdi**
 
-### 5. Aftershocks and Clusters
+So far, four earthquakes attracted public attention in late November and early December:
 
-Many earthquakes are followed by smaller aftershocks. Some areas also have **clusters or swarms** of small quakes. These patterns are **consistent with known tectonic structures** in Bangladesh and nearby regions. Nothing unusual appears in the recent data.
 
-### 6. Inter-Event Times
+| Date (UTC) | Mag     | Depth | Location        |
 
-The time between earthquakes changes naturally. In 2025, earthquakes were slightly closer together than the long-term average, but this is **well within normal variation**.
+| ---------- | ------- | ----- | --------------- |
 
----
+| **Nov 21** | **5.4** | 27 km | Narsingdi (SSW) |
 
-## What This Means
+| **Nov 22** | 4.3     | 10 km | Narsingdi (W)   |
 
-Some people have claimed that something dramatic is happening underground in Bangladesh. The data, however, does **not support this idea**. Over 40 years:
+| **Nov 27** | 4.0     | 10 km | Tungi (NNE)     |
 
-* Earthquake counts are normal
-* Magnitudes are stable
-* Depth patterns have not changed significantly
-* Energy release is consistent with historical variation
+| **Dec 4**  | 4.1     | 10 km | Dhaka (ESE)     |
 
-In short, **Bangladesh’s earthquakes and the regions around are behaving as they have for decades**. There is no evidence of sudden changes or heightened seismic hazard.
+The **21 November M5.4 earthquake** is almost certainly the **mainshock**, assuming no larger event occurred shortly before or after it. Terms like *mainshock* or *foreshock* are assigned **after** the fact, once the full sequence is known. The three subsequent earthquakes — magnitudes **4.0 to 4.3** over the following two weeks — fit the pattern of **aftershocks**, which is the normal and expected response of the crust after a moderate event like this.
 
----
+Aftershock models and cluster analysis support this:
 
-## Conclusion
+- ✔ Spatially close
+- ✔ Shallow
+- ✔ Occurred soon after the M5.4
+- ✔ Magnitudes appropriate for aftershocks
 
-Analyzing earthquake data scientifically helps separate **fact from fear**. While earthquakes are always a hazard, the patterns in Bangladesh **remain stable**. No dramatic underground changes are detected — at least, not yet.
+There is **no scientific indication** that the sequence is an "ongoing mega-event" or a sign of an imminent major catastrophe.
+
+## **Should people be worried?**
+
+### **Short answer: No panic — but yes, be prepared.**
+
+Based on the data:
+
+* There is **no evidence** of a large earthquake building up in the immediate future.
+* The pattern fits a **normal mainshock–aftershock sequence**.
+* Bangladesh’s long-term seismic environment is active, but this year is not unprecedented.
+
+That said, shallow earthquakes, even at moderate magnitudes, can **shake cities hard**, especially in cities like Dhaka with probably thousands of vulnerable buildings. This means:
+
+- 🔸 **Risk exists**
+- 🔸 **But it is manageable**
+- 🔸 **Preparedness is the key difference-maker**
+
+## **Why shallow earthquakes matter more**
+
+Our analysis found a statistically significant shift toward shallower depths in 2025. This is important because:
+
+* A shallow M4–M5 can feel like a deeper M6 in terms of surface shaking.
+* Dhaka has many old and unreinforced structures that are more sensitive to this kind of shaking.
+* Even without a major earthquake, shallow moderate events can cause injuries, wall collapses, and infrastructure disruption.
+
+So the message is not "a big earthquake is coming."
+The message is: **a moderate earthquake can still be damaging if buildings are fragile — so strengthen preparedness now.**
+
+## **What people and communities can do right now**
+
+### **A. Stay informed without panic**
+
+Follow official bulletins from:
+
+* Bangladesh Meteorological Department (BMD)
+* National Disaster Response agencies
+* Universities or credible institutions
+
+**Please avoid unverified social media rumors.**
+
+### **B. Community organization**
+
+* Form **local volunteer preparedness groups** in neighborhoods.
+* Identify safe open spaces.
+* Help elderly or disabled neighbors with emergency planning.
+* Practice evacuation routes.
+
+### **C. Training and drills**
+
+Push local authorities and community leaders to:
+
+* Organize **earthquake safety workshops**.
+* Conduct **drop–cover–hold-on drills** in schools, offices, and markets.
+* Teach people how to check homes for hazards (loose shelves, falling objects, unsecured gas cylinders).
+
+### **D. Structural safety**
+
+Citizens and journalists should push authorities to:
+
+* Enforce building codes more strictly.
+* Inspect vulnerable buildings, especially schools and hospitals.
+* Provide public guidance on strengthening old structures.
+
+### **E. Spread helpful information**
+
+Local organizations can print simple, factual pamphlets covering:
+
+* What to do during shaking
+* How to prepare emergency kits
+* Where to gather after an earthquake
+* How aftershocks behave
+* What NOT to believe on social media
+
+Helping people understand what is normal in an earthquake sequence reduces fear — and that improves safety.
+
+## **Final takeaway**
+
+**No, Bangladesh is not currently experiencing a dramatic, unprecedented seismic crisis.**
+But **yes**, 2025’s earthquakes — especially the shallow M5.4 near Narsingdi — remind us that Bangladesh sits in an active tectonic region where moderate earthquakes can be strongly felt.
+
+* The number of earthquakes is normal.
+* Magnitudes are normal.
+* **Depths are shallower**, so shaking feels stronger.
+* The recent events fit a **mainshock–aftershock pattern**.
+* Preparedness, not panic, is the appropriate response.
+
+Earthquakes cannot be stopped, but **knowledge, training, and readiness** can prevent injuries and save lives. The best time to prepare is **before** a larger earthquake happens — and these recent events give Bangladesh a valuable opportunity to do exactly that.
 
 For those interested in the full analysis, code, and data, it is available on [this GitHub repository](https://github.com/mehdihasan/bd-earthquake-analysis-2025).
