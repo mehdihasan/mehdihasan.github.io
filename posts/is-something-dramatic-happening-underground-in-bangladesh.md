@@ -3,6 +3,7 @@ title: "Is Something Dramatic Happening Underground in Bangladesh? A Data-Based 
 date: "2025-12-04"
 tags: ["Data", "Science"]
 coverImage: "/images/eqb/earthquake_animation.gif"
+author: "Mehdi Hasan"
 ---
 
 Recent weeks have raised public concern in Bangladesh after several noticeable earthquakes shook the Dhaka–Narsingdi region. Many people are wondering: *Is this the start of something dangerous? Has seismic activity suddenly increased?* To answer these questions, we analyzed decades of earthquake data across Bangladesh and compared it with the events of 2025. Here is what the numbers — not rumors — actually show.

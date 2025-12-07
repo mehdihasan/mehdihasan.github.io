@@ -3,6 +3,7 @@ title: "Fixing Concurrent Queries Within the Same Session in ClickHouse Async Py
 date: "2025-10-16"
 tags: ["Python", "ClickHouse", "Uvicorn", "Concurrency", "Architecture", "DevOps"]
 coverImage: "/images/ch1/cover.jpg"
+author: "Mehdi Hasan"
 ---
 
 Connecting to a database from Python seems simple enough - you create a client, send queries, and handle results. But when we scaled that to thousands of concurrent requests under an async web server, things got a bit more interesting.

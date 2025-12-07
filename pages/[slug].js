@@ -1,5 +1,5 @@
 // Enhanced dynamic blog article page with SEO and accessibility
-import { Container, Typography, Box, Chip, Breadcrumbs, IconButton } from '@mui/material';
+import { Container, Typography, Box, Chip, Breadcrumbs, IconButton /*, Avatar if you want*/ } from '@mui/material';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { getPostData, getSortedPostsData } from '../lib/posts';
@@ -20,6 +20,19 @@ import { oneLight } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 export default function Post({ post }) {
   const seoProps = generateArticleSEO(post);
+
+  // Helper: slugify an author name for a URL (simple ASCII-friendly)
+  const slugify = (s = '') =>
+    String(s)
+      .trim()
+      .toLowerCase()
+      .replace(/[^a-z0-9\s-]/g, '')
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-');
+
+  // Derive a simple author name from post data (supports string or object)
+  const authorName = typeof post.author === 'string' ? post.author : post.author?.name || null;
+  const authorLink = authorName ? `/author/${slugify(authorName)}` : null;
 
   return (
     <>
@@ -49,6 +62,25 @@ export default function Post({ post }) {
             <AccessibleHeading level={2} sx={{ mb: 2, fontSize: { xs: '1.5rem', sm: '2rem', md: '3.5rem' }, wordBreak: 'break-word' }}>
               {post.title}
             </AccessibleHeading>
+
+            {authorName && (
+              <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1 }} aria-label={`Article author: ${authorName}`}>
+                <Typography variant="subtitle2" color="text.secondary">
+                  By{' '}
+                </Typography>
+                {authorLink ? (
+                  <Link href={authorLink}>
+                    <Typography component="span" variant="subtitle2" color="text.primary" sx={{ fontWeight: 600, cursor: 'pointer' }}>
+                      {authorName}
+                    </Typography>
+                  </Link>
+                ) : (
+                  <Typography variant="subtitle2" color="text.primary" sx={{ fontWeight: 600 }}>
+                    {authorName}
+                  </Typography>
+                )}
+              </Box>
+            )}
 
             <Box sx={{
               display: 'flex',
