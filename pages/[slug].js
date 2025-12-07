@@ -15,8 +15,8 @@ import { Home, Tag, Share as ShareIcon, Facebook, Twitter, LinkedIn } from '@mui
 import Link from 'next/link';
 import Image from "next/image";
 import Script from 'next/script';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { oneLight } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { atomOneDark } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 
 export default function Post({ post }) {
   const seoProps = generateArticleSEO(post);
@@ -456,26 +456,33 @@ function MarkdownWithGallery({ content }) {
   // Custom code block renderer
   const markdownCode = ({ node, inline, className, children, ...props }) => {
     const match = /language-(\w+)/.exec(className || '');
-    return !inline && match ? (
-      <SyntaxHighlighter
-        style={oneLight}
-        language={match[1]}
-        PreTag="div"
-        customStyle={{
-          borderRadius: 8,
-          fontSize: '1rem',
-          margin: '16px 0',
-          background: '#ffffff',
-        }}
-        {...props}
-      >
-        {String(children).replace(/\n$/, '')}
-      </SyntaxHighlighter>
-    ) : (
+    const code = String(children).replace(/\n$/, '');
+
+    if (!inline && match) {
+      const language = match[1];
+      return (
+        <SyntaxHighlighter
+          language={language}
+          style={atomOneDark}
+          customStyle={{
+            borderRadius: 8,
+            fontSize: '1rem',
+            margin: '16px 0',
+            padding: '16px',
+          }}
+          showLineNumbers={false}
+          wrapLines={false}
+        >
+          {code}
+        </SyntaxHighlighter>
+      );
+    }
+
+    return (
       <code
         style={{
-          background: '#ffffff',
-          color: '#0FFCBE',
+          background: '#f5f5f5',
+          color: '#d63384',
           borderRadius: 4,
           padding: '2px 6px',
           fontSize: '0.95em',
