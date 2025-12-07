@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 import { getPostData, getSortedPostsData } from '../lib/posts';
 import React, { useMemo } from 'react';
 import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
 import Gallery from '../components/Gallery';
 // import LikeDislike from '../components/LikeDislike';
 // import CommentBox from '../components/CommentBox';
@@ -289,42 +289,90 @@ export async function getStaticProps({ params }) {
   return { props: { post } };
 }
 
-// Helper to extract consecutive images from markdown AST
-function groupImages(children) {
-  const groups = [];
-  let current = [];
-  children.forEach((child, idx) => {
-    if (child.type === 'element' && child.tagName === 'img') {
-      current.push(child);
-    } else {
-      if (current.length > 1) {
-        groups.push({ type: 'gallery', images: current.map(img => img.properties.src) });
-        current = [];
-      } else if (current.length === 1) {
-        groups.push(current[0]);
-        current = [];
-      }
-      groups.push(child);
-    }
-  });
-  if (current.length > 1) {
-    groups.push({ type: 'gallery', images: current.map(img => img.properties.src) });
-  } else if (current.length === 1) {
-    groups.push(current[0]);
-  }
-  return groups;
-}
-
+// Replaced MarkdownWithGallery: convert GFM tables to HTML and use rehypeRaw.
+// Do NOT split content before running ReactMarkdown.
 function MarkdownWithGallery({ content }) {
-  // Split content by <!--gallery--> marker
-  const blocks = content.split(/<!--gallery-->/g);
-  const galleryImageRegex = /^!\[(.*)\]\((.*)\)$/;
+  // Improved convertTablesToHtml: more robust separator detection and column handling
+  const convertTablesToHtml = (md) => {
+    if (!md) return md;
+    const lines = md.split('\n');
+    const out = [];
+
+    const trimPipes = (s) => s.trim().replace(/^\||\|$/g, '');
+    const splitRow = (s) => trimPipes(s).split('|').map(cell => cell.trim());
+
+    // Separator line is valid if each cell contains only :, -, and spaces and at least one '-'
+    const isSeparatorLine = (s, expectedCols) => {
+      const parts = splitRow(s);
+      if (parts.length < expectedCols) return false;
+      return parts.every(p => p.length > 0 && /^[:\-\s]+$/.test(p) && /-/.test(p));
+    };
+
+    const parseAligns = (sepRow, count) => {
+      const parts = splitRow(sepRow);
+      return parts.slice(0, count).map(p => {
+        const left = /^\s*:-/.test(p);
+        const right = /-:\s*$/.test(p);
+        if (left && right) return 'center';
+        if (right) return 'right';
+        if (left) return 'left';
+        return null;
+      });
+    };
+
+    const buildTableHtml = (headers, aligns, rows) => {
+      const ths = headers.map((h, i) => {
+        const style = aligns[i] ? ` style="text-align:${aligns[i]}"` : '';
+        return `<th${style}>${h}</th>`;
+      }).join('');
+      const trs = rows.map(r => {
+        const cells = r.map((c, i) => {
+          const style = aligns[i] ? ` style="text-align:${aligns[i]}"` : '';
+          return `<td${style}>${c}</td>`;
+        }).join('');
+        return `<tr>${cells}</tr>`;
+      }).join('');
+      return `<div style="overflow-x:auto;margin:16px 0;"><table style="width:100%;border-collapse:collapse;">` +
+             `<thead><tr>${ths}</tr></thead><tbody>${trs}</tbody></table></div>`;
+    };
+
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
+      const next = lines[i + 1] ?? '';
+
+      // Candidate header must contain at least one '|' and not be just code fence
+      if (line.includes('|') && next.includes('|')) {
+        const headers = splitRow(line);
+        // Use isSeparatorLine with expected header count
+        if (isSeparatorLine(next, headers.length)) {
+          const aligns = parseAligns(next, headers.length);
+          const rows = [];
+          let j = i + 2;
+          // Collect following pipe-rows until break (blank line or non-pipe line)
+          while (j < lines.length && lines[j].trim() !== '' && lines[j].includes('|')) {
+            rows.push(splitRow(lines[j]).slice(0, headers.length));
+            j++;
+          }
+          out.push(buildTableHtml(headers, aligns, rows));
+          i = j - 1;
+          continue;
+        }
+      }
+
+      out.push(line);
+    }
+
+    return out.join('\n');
+  };
+
+  const processed = useMemo(() => convertTablesToHtml(content), [content]);
 
   // Custom image renderer for non-gallery images
-  const markdownImg = ({ src, alt }) => (
+  const markdownImg = ({ src, alt, title, ...props }) => (
     <Image
       src={src}
       alt={alt}
+      title={title}
       width={800}
       height={600}
       style={{
@@ -335,12 +383,13 @@ function MarkdownWithGallery({ content }) {
         margin: '16px 0',
         minWidth: 0
       }}
+      {...props}
     />
   );
 
   // Custom link renderer to embed YouTube videos
-  const markdownLink = ({ href, children }) => {
-    const ytMatch = href.match(/^https?:\/\/(www\.)?(youtube\.com\/watch\?v=|youtu\.be\/)([\w-]+)/);
+  const markdownLink = ({ href, children, ...props }) => {
+    const ytMatch = href && href.match(/^https?:\/\/(www\.)?(youtube\.com\/watch\?v=|youtu\.be\/)([\w-]+)/);
     if (ytMatch) {
       const videoId = ytMatch[3];
       return (
@@ -352,23 +401,24 @@ function MarkdownWithGallery({ content }) {
           frameBorder="0"
           allowFullScreen
           style={{ display: 'block', margin: '24px 0' }}
-        ></iframe>
+          {...props}
+        />
       );
     }
-    return <a href={href} target="_blank" rel="noopener noreferrer">{children}</a>;
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
+        {children}
+      </a>
+    );
   };
 
-  // Custom paragraph renderer to avoid <p><iframe/></p> nesting
-  const markdownP = ({ node, children }) => {
-    // If the only child is an iframe, return it directly (no <p> wrapper)
-    if (
-      Array.isArray(children) &&
-      children.length === 1 &&
-      children[0]?.type === 'iframe'
-    ) {
-      return children;
+  // Fixed paragraph renderer: if the child is a React element (e.g., iframe or other block element),
+  // return it directly (no <p> wrapper). Otherwise return a normal <p>.
+  const markdownP = ({ node, children, ...props }) => {
+    if (React.isValidElement(children) || (Array.isArray(children) && children.length === 1 && React.isValidElement(children[0]))) {
+      return <>{children}</>;
     }
-    return <p>{children}</p>;
+    return <p {...props}>{children}</p>;
   };
 
   // Custom code block renderer
@@ -385,6 +435,7 @@ function MarkdownWithGallery({ content }) {
           margin: '16px 0',
           background: '#ffffff',
         }}
+        {...props}
       >
         {String(children).replace(/\n$/, '')}
       </SyntaxHighlighter>
@@ -404,38 +455,34 @@ function MarkdownWithGallery({ content }) {
     );
   };
 
+  // Styles for table elements (still used when HTML is parsed by rehype-raw)
+  const thStyle = { borderBottom: '1px solid #ddd', textAlign: 'left', padding: '8px', background: '#fafafa' };
+  const tdStyle = { borderBottom: '1px solid #eee', padding: '8px' };
+
   return (
-    <>
-      {blocks.map((block, idx) => {
-        // Check if this block is a gallery (contains only images, at least 2)
-        const lines = block.trim().split('\n').filter(Boolean);
-        const images = lines
-          .map(line => {
-            const match = line.match(galleryImageRegex);
-            return match ? { src: match[2], alt: match[1] } : null;
-          })
-          .filter(Boolean);
-        // Only render as gallery if all lines are images and there are at least 2
-        if (images.length >= 2 && images.length === lines.length && lines.length > 0) {
-          return <Gallery key={idx} images={images} />;
-        } else {
-          // Otherwise, render as normal markdown with custom img, link, p, and code renderer
-          return (
-            <ReactMarkdown
-              key={idx}
-              remarkPlugins={[remarkGfm]}
-              components={{
-                img: markdownImg,
-                a: markdownLink,
-                p: markdownP,
-                code: markdownCode
-              }}
-            >
-              {block}
-            </ReactMarkdown>
-          );
-        }
-      })}
-    </>
+    <ReactMarkdown
+      // remarkPlugins left empty to avoid the mdast-util-gfm-table runtime issue
+      rehypePlugins={[rehypeRaw]}
+      components={{
+        img: markdownImg,
+        a: markdownLink,
+        p: markdownP,
+        code: markdownCode,
+        table: ({ node, children, ...props }) => (
+          <div style={{ overflowX: 'auto', margin: '16px 0' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse' }} {...props}>
+              {children}
+            </table>
+          </div>
+        ),
+        thead: ({ node, children, ...props }) => <thead {...props}>{children}</thead>,
+        tbody: ({ node, children, ...props }) => <tbody {...props}>{children}</tbody>,
+        tr: ({ node, children, ...props }) => <tr {...props}>{children}</tr>,
+        th: ({ node, children, ...props }) => <th style={thStyle} {...props}>{children}</th>,
+        td: ({ node, children, ...props }) => <td style={tdStyle} {...props}>{children}</td>,
+      }}
+    >
+      {processed}
+    </ReactMarkdown>
   );
 }
