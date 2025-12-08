@@ -24,7 +24,7 @@ function getPlainSummary(content) {
 
 export default function ArticleCardHorizontal({ post }) {
   return (
-    <Card sx={{ display: 'flex', mb: 3, minHeight: 180, flexDirection: { xs: 'column', md: 'row' } }}>
+    <Card sx={{ display: 'flex', mb: 3, minHeight: 150, flexDirection: { xs: 'column', md: 'row' } }}>
       {post.coverImage && (
         <CardMedia
           component="img"
@@ -32,7 +32,7 @@ export default function ArticleCardHorizontal({ post }) {
           alt={post.title}
           sx={{
             width: { xs: '100%', md: 270 },
-            height: { xs: 230, md: 250 },
+            height: { xs: 200, md: 270 },
             objectFit: 'cover',
             borderRadius: { xs: '4px 4px 0 0', md: '4px 0 0 4px' }
           }}
