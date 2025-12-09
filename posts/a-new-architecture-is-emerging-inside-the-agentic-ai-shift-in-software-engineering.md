@@ -179,7 +179,9 @@ Google’s stack is a prime example: the Gemini models, the [Agent Development K
 * Cloud → AWS/GCP/Azure
 * Web → React, Angular, Vue
 
-I guess, agentic AI will follow the same path. Each vendor will assemble its own “agent stack,” and developers will choose the one that best suits their workflows, constraints, and integration needs - much like selecting a cloud provider or web framework today.
+Agentic AI is moving in the same direction. Each vendor is assembling its own “agent stack,” and engineers will eventually choose their agent platform the same way they choose a cloud provider or a frontend framework today.
+
+And it’s not just cloud vendors—open-source ecosystems are emerging too. Frameworks like [AutoGen](https://microsoft.github.io/autogen/stable/index.html) are already enabling multi-agent coordination and tooling without being tied to any specific cloud platform. I’ll explore this more deeply in a separate article, but it’s clear that both proprietary and open-source stacks will shape how the agent landscape evolves.
 
 We’re still early in this shift, but the competition and cross-pollination that follow will shape how agent systems are built for years to come.
 
