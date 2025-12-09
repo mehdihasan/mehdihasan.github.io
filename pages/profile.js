@@ -55,7 +55,10 @@ export default function Profile() {
 
         {/* Summary */}
         <Typography variant="h6" sx={{ mb: 1 }}>Summary</Typography>
-        <Typography sx={{ mb: 3 }}>{basics.summary}</Typography>
+        {/* ADD whiteSpace here */}
+        <Typography sx={{ mb: 3, whiteSpace: 'pre-line' }}>
+          {basics.summary}
+        </Typography>
         <Divider sx={{ my: 2 }} />
 
         {/* Skills */}
