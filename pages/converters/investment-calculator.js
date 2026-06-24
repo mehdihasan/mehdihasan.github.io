@@ -262,64 +262,73 @@ export default function InvestmentCalculator() {
 
                   return (
                   <Box key={fIndex} sx={{ mb: 2 }}>
-                    <Grid container spacing={1} alignItems="center">
-                      <Grid item xs={12} sm={10}>
-                        <Autocomplete
-                          freeSolo
-                          options={fundOptions}
-                          value={fund.name || ''}
-                          inputValue={fund.name || ''}
-                          onChange={(_, value) => handleKnownFundSelect(pIndex, fIndex, value || '')}
-                          onInputChange={(_, value, reason) => {
-                            if (reason !== 'reset') {
-                              handleFundChange(pIndex, fIndex, 'name', value);
-                            }
-                          }}
-                          renderInput={(params) => (
-                            <TextField
-                              {...params}
-                              label="Fund Name"
-                              size="small"
-                              fullWidth
-                            />
-                          )}
-                        />
-                      </Grid>
-                      <Grid item xs={12} sm={2} sx={{ textAlign: 'right' }}>
+                    <Box
+                      sx={{
+                        display: 'flex',
+                        flexWrap: { xs: 'wrap', sm: 'nowrap' },
+                        gap: 1,
+                        alignItems: 'center',
+                      }}
+                    >
+                      <Autocomplete
+                        freeSolo
+                        fullWidth
+                        options={fundOptions}
+                        value={fund.name || ''}
+                        inputValue={fund.name || ''}
+                        onChange={(_, value) => handleKnownFundSelect(pIndex, fIndex, value || '')}
+                        onInputChange={(_, value, reason) => {
+                          if (reason !== 'reset') {
+                            handleFundChange(pIndex, fIndex, 'name', value);
+                          }
+                        }}
+                        sx={{ flex: { xs: '1 1 100%', sm: '0 0 50%' }, minWidth: 0 }}
+                        renderInput={(params) => (
+                          <TextField
+                            {...params}
+                            label="Fund Name"
+                            size="small"
+                            fullWidth
+                            inputProps={{
+                              ...params.inputProps,
+                              style: { minWidth: 0 },
+                            }}
+                          />
+                        )}
+                      />
+                      <TextField
+                        label="Percentage"
+                        value={fund.percentage}
+                        onChange={(e) => handleFundChange(pIndex, fIndex, 'percentage', e.target.value)}
+                        size="small"
+                        error={isInvalidPercentage}
+                        InputProps={{ endAdornment: '%' }}
+                        sx={{ flex: { xs: '1 1 100px', sm: '1 1 0' }, minWidth: 90 }}
+                      />
+                      <TextField
+                        label="Fee"
+                        value={fund.fee}
+                        onChange={(e) => handleFundChange(pIndex, fIndex, 'fee', e.target.value)}
+                        size="small"
+                        InputProps={{ endAdornment: '%' }}
+                        sx={{ flex: { xs: '1 1 100px', sm: '1 1 0' }, minWidth: 90 }}
+                      />
+                      <Chip
+                        label={`${((parseFloat(platform.totalAmount) || 0) * (parseFloat(fund.percentage) || 0) / 100).toLocaleString()} SEK`}
+                        variant="outlined"
+                        sx={{ flex: { xs: '1 1 140px', sm: '1 1 0' }, minWidth: 110, height: 40 }}
+                      />
+                      <Box sx={{ flex: '0 0 auto', whiteSpace: 'nowrap' }}>
                         <IconButton onClick={() => toggleDistribution(pIndex, fIndex)} size="small">
-                            <ExpandMoreIcon
-                                sx={{ transform: fund.isDistributionExpanded ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }}
-                            />
+                          <ExpandMoreIcon
+                            sx={{ transform: fund.isDistributionExpanded ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }}
+                          />
                         </IconButton>
                         <IconButton onClick={() => handleRemoveFund(pIndex, fIndex)} size="small">
                           <RemoveCircleOutline fontSize="small" />
                         </IconButton>
-                      </Grid>
-                      <Grid item xs={6} sm={3}>
-                        <TextField
-                          label="Percentage"
-                          value={fund.percentage}
-                          onChange={(e) => handleFundChange(pIndex, fIndex, 'percentage', e.target.value)}
-                          size="small"
-                          fullWidth
-                          error={isInvalidPercentage}
-                          InputProps={{ endAdornment: '%' }}
-                        />
-                      </Grid>
-                      <Grid item xs={6} sm={3}>
-                        <TextField
-                          label="Fee"
-                          value={fund.fee}
-                          onChange={(e) => handleFundChange(pIndex, fIndex, 'fee', e.target.value)}
-                          size="small"
-                          fullWidth
-                          InputProps={{ endAdornment: '%' }}
-                        />
-                      </Grid>
-                      <Grid item xs={12} sm={6}>
-                        <Chip label={`${((parseFloat(platform.totalAmount) || 0) * (parseFloat(fund.percentage) || 0) / 100).toLocaleString()} SEK`} variant="outlined" sx={{ width: '100%' }}/>
-                      </Grid>
-                    </Grid>
+                      </Box>
+                    </Box>
                     <Collapse in={fund.isDistributionExpanded}>
                         <Paper sx={{p: 2, mt: 1}} variant="outlined">
                             <Typography variant="caption">Regional Distribution</Typography>
