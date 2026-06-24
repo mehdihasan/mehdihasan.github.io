@@ -21,8 +21,10 @@ import {
 } from '@mui/icons-material';
 import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { KNOWN_FUNDS, CATEGORY_MAPPING, REGIONS } from '../../lib/funds';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#AF19FF', '#FF1919'];
+const COLORS = ['#00ABE4', '#0FFCBE', '#d72828', '#009b3a', '#FFD700', '#7C4DFF'];
 
 const getKnownFund = (fundName) => KNOWN_FUNDS[fundName.trim().toLowerCase()];
 
@@ -212,15 +214,25 @@ export default function InvestmentCalculator() {
     }));
 
   return (
-    <Container maxWidth="lg" sx={{ py: 4 }}>
-      <Typography variant="h4" component="h1" gutterBottom align="center" fontWeight="bold">
-        Investment Portfolio Planner
-      </Typography>
+    <>
+      <Navbar />
+      <Box sx={{ bgcolor: 'background.default', minHeight: '100vh', py: 4 }}>
+        <Container maxWidth="lg">
+          <Typography
+            variant="h4"
+            component="h1"
+            gutterBottom
+            align="center"
+            color="primary.main"
+            fontWeight="bold"
+          >
+            Investment Portfolio Planner
+          </Typography>
 
       <Grid container spacing={4}>
         {/* Input Section */}
         <Grid item xs={12} md={7}>
-          <Typography variant="h5" gutterBottom>
+          <Typography variant="h5" gutterBottom color="primary.main" fontWeight={600}>
             Investment Platforms and Funds
           </Typography>
           {platforms.map((platform, pIndex) => {
@@ -231,7 +243,17 @@ export default function InvestmentCalculator() {
             const isInvalidPercentage = totalPercentage !== 100;
 
             return (
-              <Paper key={pIndex} sx={{ p: 2, mb: 2 }} elevation={2}>
+              <Paper
+                key={pIndex}
+                sx={{
+                  p: 2,
+                  mb: 2,
+                  border: '1px solid',
+                  borderColor: 'divider',
+                  boxShadow: '0 3px 10px 0 rgba(0,92,191,0.08)',
+                }}
+                elevation={0}
+              >
                 <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <TextField
                     label="Platform Name"
@@ -240,7 +262,7 @@ export default function InvestmentCalculator() {
                     variant="standard"
                     sx={{ flexGrow: 1 }}
                   />
-                  <IconButton onClick={() => handleRemovePlatform(pIndex)} size="small">
+                  <IconButton color="secondary" onClick={() => handleRemovePlatform(pIndex)} size="small">
                     <RemoveCircleOutline />
                   </IconButton>
                 </Box>
@@ -319,19 +341,19 @@ export default function InvestmentCalculator() {
                         sx={{ flex: { xs: '1 1 140px', sm: '1 1 0' }, minWidth: 110, height: 40 }}
                       />
                       <Box sx={{ flex: '0 0 auto', whiteSpace: 'nowrap' }}>
-                        <IconButton onClick={() => toggleDistribution(pIndex, fIndex)} size="small">
+                        <IconButton color="primary" onClick={() => toggleDistribution(pIndex, fIndex)} size="small">
                           <ExpandMoreIcon
                             sx={{ transform: fund.isDistributionExpanded ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }}
                           />
                         </IconButton>
-                        <IconButton onClick={() => handleRemoveFund(pIndex, fIndex)} size="small">
+                        <IconButton color="secondary" onClick={() => handleRemoveFund(pIndex, fIndex)} size="small">
                           <RemoveCircleOutline fontSize="small" />
                         </IconButton>
                       </Box>
                     </Box>
                     <Collapse in={fund.isDistributionExpanded}>
-                        <Paper sx={{p: 2, mt: 1}} variant="outlined">
-                            <Typography variant="caption">Regional Distribution</Typography>
+                        <Paper sx={{p: 2, mt: 1, bgcolor: 'grey.50'}} variant="outlined">
+                          <Typography variant="caption" color="primary.main" fontWeight={600}>Regional Distribution</Typography>
                             <Grid container spacing={1} sx={{mt: 1}}>
                                 {REGIONS.map(region => (
                                     <Grid item xs={6} sm={4} md={3} key={region}>
@@ -359,28 +381,54 @@ export default function InvestmentCalculator() {
                   startIcon={<AddCircleOutline />}
                   onClick={() => handleAddFund(pIndex)}
                   size="small"
+                  color="primary"
+                  sx={{
+                    '&:hover': {
+                      backgroundColor: 'info.main',
+                      color: 'primary.main',
+                    },
+                  }}
                 >
                   Add Fund
                 </Button>
               </Paper>
             );
           })}
-          <Button startIcon={<AddCircleOutline />} onClick={handleAddPlatform}>
+          <Button
+            variant="contained"
+            startIcon={<AddCircleOutline />}
+            onClick={handleAddPlatform}
+            sx={{
+              color: '#fff',
+              '&:hover': {
+                backgroundColor: 'info.main',
+                color: 'primary.main',
+              },
+            }}
+          >
             Add Platform
           </Button>
         </Grid>
 
         {/* Output Section */}
         <Grid item xs={12} md={5}>
-          <Typography variant="h5" gutterBottom>
+          <Typography variant="h5" gutterBottom color="primary.main" fontWeight={600}>
             Portfolio Summary
           </Typography>
-          <Paper sx={{ p: 2 }} elevation={2}>
-            <Typography variant="h6">
+          <Paper
+            sx={{
+              p: 2,
+              border: '1px solid',
+              borderColor: 'divider',
+              boxShadow: '0 3px 10px 0 rgba(0,92,191,0.08)',
+            }}
+            elevation={0}
+          >
+            <Typography variant="h6" color="primary.main">
               Total Investment: {results.totalInvestment.toLocaleString()} SEK
             </Typography>
             <Divider sx={{ my: 2 }} />
-            <Typography variant="h6">Distribution by Category</Typography>
+            <Typography variant="h6" color="primary.main">Distribution by Category</Typography>
             <Box sx={{ height: 300 }}>
               <ResponsiveContainer>
                 <PieChart>
@@ -416,7 +464,7 @@ export default function InvestmentCalculator() {
               ))}
             </Box>
             <Divider sx={{ my: 2 }} />
-            <Typography variant="h6">Fee Summary</Typography>
+            <Typography variant="h6" color="primary.main">Fee Summary</Typography>
             <Typography>
               Total Yearly Fee: {results.totalFee.toFixed(2)} SEK
             </Typography>
@@ -426,6 +474,9 @@ export default function InvestmentCalculator() {
           </Paper>
         </Grid>
       </Grid>
-    </Container>
+        </Container>
+      </Box>
+      <Footer />
+    </>
   );
 }

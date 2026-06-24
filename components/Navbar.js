@@ -26,7 +26,7 @@ import {
   Person as AboutIcon,
   Email as ContactIcon,
   Home as HomeIcon,
-  Calculate as ConvertersIcon,
+  Build as ToolsIcon,
 } from '@mui/icons-material';
 import Link from 'next/link';
 
@@ -53,12 +53,12 @@ export default function Navbar() {
     { label: 'About', href: '/about', icon: <AboutIcon /> },
     { label: 'Contact', href: '/contact', icon: <ContactIcon /> },
     {
-      label: 'Converters',
-      icon: <ConvertersIcon />,
+      label: 'Tools',
+      icon: <ToolsIcon />,
       menu: [
         {
           label: 'Investment Calculator',
-          href: '/converters/investment-calculator',
+          href: '/tools/investment-calculator',
         },
       ],
     },
