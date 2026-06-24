@@ -26,7 +26,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import SEO from '../../components/SEO';
 
-const COLORS = ['#00ABE4', '#0FFCBE', '#d72828', '#009b3a', '#FFD700', '#7C4DFF'];
+const COLORS = ['#00ABE4', '#d72828', '#009b3a', '#7C4DFF', '#5dade2', '#0079b1', '#f88888'];
 
 const CURRENCIES = ['SEK', 'EUR', 'USD', 'GBP', 'NOK', 'DKK', 'CHF', 'JPY', 'CAD', 'AUD'];
 
@@ -491,7 +491,7 @@ export default function InvestmentCalculator() {
             </Typography>
             <Divider sx={{ my: 2 }} />
             <Typography variant="h6" color="primary.main">Distribution by Category</Typography>
-            <Box sx={{ height: 300 }}>
+            <Box sx={{ height: 450 }}>
               <ResponsiveContainer>
                 <PieChart>
                   <Pie
@@ -499,7 +499,7 @@ export default function InvestmentCalculator() {
                     cx="50%"
                     cy="50%"
                     labelLine={false}
-                    outerRadius={80}
+                    outerRadius={140}
                     fill="#8884d8"
                     dataKey="value"
                     label={({ name, percent }) => `${name.replace(/\\n/g, ' ')} ${(percent * 100).toFixed(0)}%`}
