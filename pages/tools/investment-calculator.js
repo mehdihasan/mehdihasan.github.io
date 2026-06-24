@@ -24,6 +24,7 @@ import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from 'recha
 import { KNOWN_FUNDS, CATEGORY_MAPPING, REGIONS } from '../../lib/funds';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import SEO from '../../components/SEO';
 
 const COLORS = ['#00ABE4', '#0FFCBE', '#d72828', '#009b3a', '#FFD700', '#7C4DFF'];
 
@@ -221,6 +222,47 @@ export default function InvestmentCalculator() {
 
   return (
     <>
+      <SEO
+        title="Investment Portfolio Planner | Fund Allocation Calculator | BetweenSystems"
+        description="Plan investment portfolios across platforms and funds. Calculate fund allocations, regional exposure, category distribution, and yearly fees with a customizable currency selector."
+        keywords="investment calculator, portfolio planner, fund allocation calculator, regional distribution, portfolio diversification, fund fee calculator, Avanza funds, Nordnet funds, ETF allocation, personal finance tool"
+        canonical="https://betweensystems.com/tools/investment-calculator"
+        type="website"
+        structuredData={{
+          '@context': 'https://schema.org',
+          '@type': 'WebApplication',
+          name: 'Investment Portfolio Planner',
+          applicationCategory: 'FinanceApplication',
+          operatingSystem: 'Web',
+          url: 'https://betweensystems.com/tools/investment-calculator',
+          description: 'A browser-based investment portfolio planner for calculating fund allocations, regional exposure, category distribution, and yearly fund fees.',
+          author: {
+            '@type': 'Person',
+            name: 'BetweenSystems',
+            url: 'https://betweensystems.com'
+          },
+          publisher: {
+            '@type': 'Organization',
+            name: 'BetweenSystems',
+            logo: {
+              '@type': 'ImageObject',
+              url: 'https://betweensystems.com/betweensystems/logo.svg'
+            }
+          },
+          offers: {
+            '@type': 'Offer',
+            price: '0',
+            priceCurrency: 'SEK'
+          },
+          featureList: [
+            'Portfolio allocation by platform and fund',
+            'Regional distribution calculator',
+            'Fund fee calculation',
+            'Currency display selector',
+            'Known fund autocomplete with prefilled data'
+          ]
+        }}
+      />
       <Navbar />
       <Box sx={{ bgcolor: 'background.default', minHeight: '100vh', py: 4 }}>
         <Container maxWidth="lg">
@@ -500,3 +542,5 @@ export default function InvestmentCalculator() {
     </>
   );
 }
+
+InvestmentCalculator.disableDefaultSEO = true;

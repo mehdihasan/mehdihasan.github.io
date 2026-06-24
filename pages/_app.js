@@ -90,10 +90,12 @@ const theme = createTheme({
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const isArticlePage = router.pathname === '/[slug]';
+  const shouldRenderDefaultSEO = !isArticlePage && !Component.disableDefaultSEO;
+
   return (
     <ErrorBoundary>
       <LoadingProvider>
-        {!isArticlePage && <SEO />}
+        {shouldRenderDefaultSEO && <SEO />}
         <ThemeProvider theme={theme}>
           <CssBaseline />
           <SkipToMain />
