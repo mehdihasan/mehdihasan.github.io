@@ -13,6 +13,7 @@ import {
   Chip,
   Collapse,
   Autocomplete,
+  MenuItem,
 } from '@mui/material';
 import {
   AddCircleOutline,
@@ -25,6 +26,8 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
 const COLORS = ['#00ABE4', '#0FFCBE', '#d72828', '#009b3a', '#FFD700', '#7C4DFF'];
+
+const CURRENCIES = ['SEK', 'EUR', 'USD', 'GBP', 'NOK', 'DKK', 'CHF', 'JPY', 'CAD', 'AUD'];
 
 const getKnownFund = (fundName) => KNOWN_FUNDS[fundName.trim().toLowerCase()];
 
@@ -47,6 +50,7 @@ const fundOptions = Object.values(KNOWN_FUNDS)
 
 
 export default function InvestmentCalculator() {
+  const [currency, setCurrency] = useState('SEK');
   const [platforms, setPlatforms] = useState([
     {
       name: 'Avanza ISK',
@@ -213,6 +217,8 @@ export default function InvestmentCalculator() {
       value: amount,
     }));
 
+  const formatAmount = (amount, options = {}) => `${amount.toLocaleString(undefined, options)} ${currency}`;
+
   return (
     <>
       <Navbar />
@@ -232,6 +238,20 @@ export default function InvestmentCalculator() {
       <Grid container spacing={4}>
         {/* Input Section */}
         <Grid item xs={12} md={7}>
+          <TextField
+            select
+            label="Currency"
+            value={currency}
+            onChange={(e) => setCurrency(e.target.value)}
+            size="small"
+            sx={{ mb: 2, minWidth: 140 }}
+          >
+            {CURRENCIES.map((currencyOption) => (
+              <MenuItem key={currencyOption} value={currencyOption}>
+                {currencyOption}
+              </MenuItem>
+            ))}
+          </TextField>
           <Typography variant="h5" gutterBottom color="primary.main" fontWeight={600}>
             Investment Platforms and Funds
           </Typography>
@@ -336,7 +356,7 @@ export default function InvestmentCalculator() {
                         sx={{ flex: { xs: '1 1 100px', sm: '1 1 0' }, minWidth: 90 }}
                       />
                       <Chip
-                        label={`${((parseFloat(platform.totalAmount) || 0) * (parseFloat(fund.percentage) || 0) / 100).toLocaleString()} SEK`}
+                        label={formatAmount((parseFloat(platform.totalAmount) || 0) * (parseFloat(fund.percentage) || 0) / 100)}
                         variant="outlined"
                         sx={{ flex: { xs: '1 1 140px', sm: '1 1 0' }, minWidth: 110, height: 40 }}
                       />
@@ -425,7 +445,7 @@ export default function InvestmentCalculator() {
             elevation={0}
           >
             <Typography variant="h6" color="primary.main">
-              Total Investment: {results.totalInvestment.toLocaleString()} SEK
+              Total Investment: {formatAmount(results.totalInvestment)}
             </Typography>
             <Divider sx={{ my: 2 }} />
             <Typography variant="h6" color="primary.main">Distribution by Category</Typography>
@@ -446,7 +466,7 @@ export default function InvestmentCalculator() {
                       <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                     ))}
                   </Pie>
-                  <Tooltip formatter={(value) => `${value.toLocaleString()} SEK`} />
+                  <Tooltip formatter={(value) => formatAmount(value)} />
                   <Legend />
                 </PieChart>
               </ResponsiveContainer>
@@ -455,7 +475,7 @@ export default function InvestmentCalculator() {
               {categoryChartData.map(({ name: category, value: amount }) => (
                 <Chip
                   key={category}
-                  label={`${category.replace(/\\n/g, ' ')}: ${amount.toLocaleString()} SEK (${(
+                  label={`${category.replace(/\\n/g, ' ')}: ${formatAmount(amount)} (${(
                     (amount / results.totalInvestment) *
                     100
                   ).toFixed(2)}%)`}
@@ -466,7 +486,7 @@ export default function InvestmentCalculator() {
             <Divider sx={{ my: 2 }} />
             <Typography variant="h6" color="primary.main">Fee Summary</Typography>
             <Typography>
-              Total Yearly Fee: {results.totalFee.toFixed(2)} SEK
+              Total Yearly Fee: {formatAmount(results.totalFee, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
             </Typography>
             <Typography>
               Total Fee Percentage: {results.feePercentage.toFixed(4)}%
