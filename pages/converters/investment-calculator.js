@@ -12,6 +12,7 @@ import {
   Divider,
   Chip,
   Collapse,
+  Autocomplete,
 } from '@mui/material';
 import {
   AddCircleOutline,
@@ -23,19 +24,30 @@ import { KNOWN_FUNDS, CATEGORY_MAPPING, REGIONS } from '../../lib/funds';
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#AF19FF', '#FF1919'];
 
+const getKnownFund = (fundName) => KNOWN_FUNDS[fundName.trim().toLowerCase()];
+
+const normalizeDistribution = (distribution = {}) => REGIONS.reduce(
+  (acc, region) => ({ ...acc, [region]: parseFloat(distribution[region]) || 0 }),
+  {}
+);
+
 const getInitialDistribution = (fundName) => {
-    const knownFund = KNOWN_FUNDS[fundName.toLowerCase()];
+    const knownFund = getKnownFund(fundName);
     if (knownFund) {
-        return knownFund;
+        return normalizeDistribution(knownFund.distribution);
     }
-    return REGIONS.reduce((acc, region) => ({ ...acc, [region]: 0 }), {});
+    return normalizeDistribution();
 };
+
+const fundOptions = Object.values(KNOWN_FUNDS)
+  .map((fund) => fund.name)
+  .sort((first, second) => first.localeCompare(second));
 
 
 export default function InvestmentCalculator() {
   const [platforms, setPlatforms] = useState([
     {
-      name: 'Avanza ISK 01',
+      name: 'Avanza ISK',
       totalAmount: 2000,
       funds: [
         {
@@ -120,6 +132,23 @@ export default function InvestmentCalculator() {
 
     if (field === 'name') {
         fund.distribution = getInitialDistribution(value);
+    }
+
+    setPlatforms(newPlatforms);
+  };
+
+  const handleKnownFundSelect = (platformIndex, fundIndex, fundName) => {
+    const newPlatforms = [...platforms];
+    const fund = newPlatforms[platformIndex].funds[fundIndex];
+    const knownFund = getKnownFund(fundName || '');
+
+    if (knownFund) {
+      fund.name = knownFund.name;
+      fund.fee = String(knownFund.fee.toFixed(2));
+      fund.distribution = normalizeDistribution(knownFund.distribution);
+    } else {
+      fund.name = fundName || '';
+      fund.distribution = getInitialDistribution(fundName || '');
     }
 
     setPlatforms(newPlatforms);
@@ -239,12 +268,25 @@ export default function InvestmentCalculator() {
                   <Box key={fIndex} sx={{ mb: 2 }}>
                     <Grid container spacing={1} alignItems="center">
                       <Grid item xs={12} sm={5}>
-                        <TextField
-                          label="Fund Name"
-                          value={fund.name}
-                          onChange={(e) => handleFundChange(pIndex, fIndex, 'name', e.target.value)}
-                          size="small"
-                          fullWidth
+                        <Autocomplete
+                          freeSolo
+                          options={fundOptions}
+                          value={fund.name || ''}
+                          inputValue={fund.name || ''}
+                          onChange={(_, value) => handleKnownFundSelect(pIndex, fIndex, value || '')}
+                          onInputChange={(_, value, reason) => {
+                            if (reason !== 'reset') {
+                              handleFundChange(pIndex, fIndex, 'name', value);
+                            }
+                          }}
+                          renderInput={(params) => (
+                            <TextField
+                              {...params}
+                              label="Fund Name"
+                              size="small"
+                              fullWidth
+                            />
+                          )}
                         />
                       </Grid>
                       <Grid item xs={6} sm={3}>
