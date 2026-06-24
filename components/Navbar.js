@@ -50,8 +50,6 @@ export default function Navbar() {
 
   const navItems = [
     { label: 'Home', href: '/', icon: <HomeIcon /> },
-    { label: 'About', href: '/about', icon: <AboutIcon /> },
-    { label: 'Contact', href: '/contact', icon: <ContactIcon /> },
     {
       label: 'Tools',
       icon: <ToolsIcon />,
@@ -62,6 +60,8 @@ export default function Navbar() {
         },
       ],
     },
+    { label: 'About', href: '/about', icon: <AboutIcon /> },
+    { label: 'Contact', href: '/contact', icon: <ContactIcon /> },
   ];
 
   const drawer = (
