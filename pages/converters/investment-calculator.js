@@ -267,7 +267,7 @@ export default function InvestmentCalculator() {
                   return (
                   <Box key={fIndex} sx={{ mb: 2 }}>
                     <Grid container spacing={1} alignItems="center">
-                      <Grid item xs={12} sm={5}>
+                      <Grid item xs={12} sm={6}>
                         <Autocomplete
                           freeSolo
                           options={fundOptions}
@@ -289,24 +289,19 @@ export default function InvestmentCalculator() {
                           )}
                         />
                       </Grid>
-                      <Grid item xs={6} sm={3}>
+                      <Grid item xs={6} sm={2}>
                         <TextField
-                          label="Percentage (%)"
+                          label="Percentage"
                           value={fund.percentage}
                           onChange={(e) => handleFundChange(pIndex, fIndex, 'percentage', e.target.value)}
                           size="small"
                           fullWidth
                           error={isInvalidPercentage}
+                          InputProps={{ endAdornment: '%' }}
                         />
                       </Grid>
                       <Grid item xs={6} sm={2}>
-                        <TextField
-                          label="Fee (%)"
-                          value={fund.fee}
-                          onChange={(e) => handleFundChange(pIndex, fIndex, 'fee', e.target.value)}
-                          size="small"
-                          fullWidth
-                        />
+                        <Chip label={`${((parseFloat(platform.totalAmount) || 0) * (parseFloat(fund.percentage) || 0) / 100).toLocaleString()} SEK`} variant="outlined" sx={{ width: '100%' }}/>
                       </Grid>
                       <Grid item xs={12} sm={2} sx={{ textAlign: 'right' }}>
                         <IconButton onClick={() => toggleDistribution(pIndex, fIndex)} size="small">
