@@ -130,10 +130,6 @@ export default function InvestmentCalculator() {
     const fund = newPlatforms[platformIndex].funds[fundIndex];
     fund[field] = value;
 
-    if (field === 'name') {
-        fund.distribution = getInitialDistribution(value);
-    }
-
     setPlatforms(newPlatforms);
   };
 
@@ -267,7 +263,7 @@ export default function InvestmentCalculator() {
                   return (
                   <Box key={fIndex} sx={{ mb: 2 }}>
                     <Grid container spacing={1} alignItems="center">
-                      <Grid item xs={12} sm={6}>
+                      <Grid item xs={12} sm={10}>
                         <Autocomplete
                           freeSolo
                           options={fundOptions}
@@ -289,7 +285,17 @@ export default function InvestmentCalculator() {
                           )}
                         />
                       </Grid>
-                      <Grid item xs={6} sm={2}>
+                      <Grid item xs={12} sm={2} sx={{ textAlign: 'right' }}>
+                        <IconButton onClick={() => toggleDistribution(pIndex, fIndex)} size="small">
+                            <ExpandMoreIcon
+                                sx={{ transform: fund.isDistributionExpanded ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }}
+                            />
+                        </IconButton>
+                        <IconButton onClick={() => handleRemoveFund(pIndex, fIndex)} size="small">
+                          <RemoveCircleOutline fontSize="small" />
+                        </IconButton>
+                      </Grid>
+                      <Grid item xs={6} sm={3}>
                         <TextField
                           label="Percentage"
                           value={fund.percentage}
@@ -300,18 +306,18 @@ export default function InvestmentCalculator() {
                           InputProps={{ endAdornment: '%' }}
                         />
                       </Grid>
-                      <Grid item xs={6} sm={2}>
-                        <Chip label={`${((parseFloat(platform.totalAmount) || 0) * (parseFloat(fund.percentage) || 0) / 100).toLocaleString()} SEK`} variant="outlined" sx={{ width: '100%' }}/>
+                      <Grid item xs={6} sm={3}>
+                        <TextField
+                          label="Fee"
+                          value={fund.fee}
+                          onChange={(e) => handleFundChange(pIndex, fIndex, 'fee', e.target.value)}
+                          size="small"
+                          fullWidth
+                          InputProps={{ endAdornment: '%' }}
+                        />
                       </Grid>
-                      <Grid item xs={12} sm={2} sx={{ textAlign: 'right' }}>
-                        <IconButton onClick={() => toggleDistribution(pIndex, fIndex)} size="small">
-                            <ExpandMoreIcon
-                                sx={{ transform: fund.isDistributionExpanded ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }}
-                            />
-                        </IconButton>
-                        <IconButton onClick={() => handleRemoveFund(pIndex, fIndex)} size="small">
-                          <RemoveCircleOutline fontSize="small" />
-                        </IconButton>
+                      <Grid item xs={12} sm={6}>
+                        <Chip label={`${((parseFloat(platform.totalAmount) || 0) * (parseFloat(fund.percentage) || 0) / 100).toLocaleString()} SEK`} variant="outlined" sx={{ width: '100%' }}/>
                       </Grid>
                     </Grid>
                     <Collapse in={fund.isDistributionExpanded}>
