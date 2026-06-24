@@ -16,19 +16,23 @@ import {
   useTheme,
   useMediaQuery,
   Avatar,
-  Tooltip
+  Tooltip,
+  Menu,
+  MenuItem,
 } from '@mui/material';
 import {
   Menu as MenuIcon,
   Close as CloseIcon,
   Person as AboutIcon,
   Email as ContactIcon,
-  Home as HomeIcon
+  Home as HomeIcon,
+  Calculate as ConvertersIcon,
 } from '@mui/icons-material';
 import Link from 'next/link';
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(null);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
@@ -36,23 +40,42 @@ export default function Navbar() {
     setMobileOpen(!mobileOpen);
   };
 
+  const handleMenuOpen = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+  };
+
   const navItems = [
     { label: 'Home', href: '/', icon: <HomeIcon /> },
     { label: 'About', href: '/about', icon: <AboutIcon /> },
-    { label: 'Contact', href: '/contact', icon: <ContactIcon /> }
-
+    { label: 'Contact', href: '/contact', icon: <ContactIcon /> },
+    {
+      label: 'Converters',
+      icon: <ConvertersIcon />,
+      menu: [
+        {
+          label: 'Investment Calculator',
+          href: '/converters/investment-calculator',
+        },
+      ],
+    },
   ];
 
   const drawer = (
     <Box sx={{ width: 250 }}>
-      <Box sx={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        p: 2,
-        borderBottom: '1px solid',
-        borderColor: 'divider'
-      }}>
+      <Box
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          p: 2,
+          borderBottom: '1px solid',
+          borderColor: 'divider',
+        }}
+      >
         <Typography variant="h6" color="primary.main" fontWeight="bold">
           BetweenSystems
         </Typography>
@@ -65,13 +88,13 @@ export default function Navbar() {
           <ListItem key={item.label} disablePadding>
             <ListItemButton
               component={Link}
-              href={item.href}
-              onClick={handleDrawerToggle}
+              href={item.href || '#'}
+              onClick={item.menu ? handleMenuOpen : handleDrawerToggle}
               sx={{
                 '&:hover': {
                   backgroundColor: 'primary.light',
-                  color: 'primary.contrastText'
-                }
+                  color: 'primary.contrastText',
+                },
               }}
             >
               <ListItemIcon sx={{ color: 'primary.main' }}>
@@ -97,7 +120,7 @@ export default function Navbar() {
         sx={{
           background: 'linear-gradient(45deg, #00ABE4 30%, #00ABE4 90%)',
           boxShadow: '0 3px 10px 0 rgba(0,92,191,0.3)',
-          zIndex: 1100 // ensure always above hero section
+          zIndex: 1100, // ensure always above hero section
         }}
       >
         <Toolbar sx={{ justifyContent: 'space-between' }}>
@@ -114,8 +137,8 @@ export default function Navbar() {
                   border: '2px solid rgba(255,255,255,0.3)',
                   transition: 'transform 0.2s',
                   '&:hover': {
-                    transform: 'scale(1.1)'
-                  }
+                    transform: 'scale(1.1)',
+                  },
                 }}
               />
             </Tooltip>
@@ -129,8 +152,8 @@ export default function Navbar() {
                 fontWeight: 'bold',
                 letterSpacing: '0.5px',
                 '&:hover': {
-                  textShadow: '0 0 8px rgba(255,255,255,0.5)'
-                }
+                  textShadow: '0 0 8px rgba(255,255,255,0.5)',
+                },
               }}
             >
               BetweenSystems
@@ -140,29 +163,69 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           {!isMobile && (
             <Box sx={{ display: 'flex', gap: 1 }}>
-              {navItems.slice(1).map((item) => (
-                <Button
-                  key={item.label}
-                  color="inherit"
-                  component={Link}
-                  href={item.href}
-                  startIcon={item.icon}
-                  sx={{
-                    color: '#fff', // white text
-                    borderRadius: 2,
-                    px: 2,
-                    py: 1,
-                    transition: 'all 0.2s',
-                    '&:hover': {
-                      backgroundColor: 'rgba(255,255,255,0.2)',
-                      transform: 'translateY(-1px)',
-                      boxShadow: '0 4px 8px rgba(0,0,0,0.2)'
-                    }
-                  }}
-                >
-                  {item.label}
-                </Button>
-              ))}
+              {navItems.slice(1).map((item) =>
+                item.menu ? (
+                  <div key={item.label}>
+                    <Button
+                      color="inherit"
+                      onClick={handleMenuOpen}
+                      startIcon={item.icon}
+                      sx={{
+                        color: '#fff', // white text
+                        borderRadius: 2,
+                        px: 2,
+                        py: 1,
+                        transition: 'all 0.2s',
+                        '&:hover': {
+                          backgroundColor: 'rgba(255,255,255,0.2)',
+                          transform: 'translateY(-1px)',
+                          boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
+                        },
+                      }}
+                    >
+                      {item.label}
+                    </Button>
+                    <Menu
+                      anchorEl={anchorEl}
+                      open={Boolean(anchorEl)}
+                      onClose={handleMenuClose}
+                    >
+                      {item.menu.map((menuItem) => (
+                        <MenuItem
+                          key={menuItem.label}
+                          onClick={handleMenuClose}
+                          component={Link}
+                          href={menuItem.href}
+                        >
+                          {menuItem.label}
+                        </MenuItem>
+                      ))}
+                    </Menu>
+                  </div>
+                ) : (
+                  <Button
+                    key={item.label}
+                    color="inherit"
+                    component={Link}
+                    href={item.href}
+                    startIcon={item.icon}
+                    sx={{
+                      color: '#fff', // white text
+                      borderRadius: 2,
+                      px: 2,
+                      py: 1,
+                      transition: 'all 0.2s',
+                      '&:hover': {
+                        backgroundColor: 'rgba(255,255,255,0.2)',
+                        transform: 'translateY(-1px)',
+                        boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
+                      },
+                    }}
+                  >
+                    {item.label}
+                  </Button>
+                )
+              )}
             </Box>
           )}
 
@@ -176,8 +239,8 @@ export default function Navbar() {
               sx={{
                 transition: 'transform 0.2s',
                 '&:hover': {
-                  transform: 'scale(1.1)'
-                }
+                  transform: 'scale(1.1)',
+                },
               }}
             >
               <MenuIcon />
@@ -200,7 +263,7 @@ export default function Navbar() {
           '& .MuiDrawer-paper': {
             boxSizing: 'border-box',
             width: 250,
-            background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)'
+            background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
           },
         }}
       >
