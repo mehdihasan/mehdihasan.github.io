@@ -59,16 +59,16 @@ export default function InvestmentCalculator() {
       funds: [
         {
           name: 'Avanza Global',
-          percentage: '85',
+          percentage: '60',
           fee: '0.10',
           distribution: getInitialDistribution('Avanza Global'),
           isDistributionExpanded: false,
         },
         {
-          name: 'Avanza Emerging Markets',
-          percentage: '15',
-          fee: '0.30',
-          distribution: getInitialDistribution('Avanza Emerging Markets'),
+          name: 'Vanguard Ex USA',
+          percentage: '40',
+          fee: '0.14',
+          distribution: getInitialDistribution('Vanguard Ex USA'),
           isDistributionExpanded: false,
         },
       ],
