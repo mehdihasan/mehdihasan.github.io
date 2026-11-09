@@ -59,16 +59,23 @@ export default function InvestmentCalculator() {
       funds: [
         {
           name: 'Avanza Global',
-          percentage: '60',
+          percentage: '70',
           fee: '0.10',
           distribution: getInitialDistribution('Avanza Global'),
           isDistributionExpanded: false,
         },
         {
-          name: 'Vanguard Ex USA',
-          percentage: '40',
-          fee: '0.14',
-          distribution: getInitialDistribution('Vanguard Ex USA'),
+          name: 'Xtrackers MSCI World ex USA',
+          percentage: '20',
+          fee: '0.17',
+          distribution: getInitialDistribution('Xtrackers MSCI World ex USA'),
+          isDistributionExpanded: false,
+        },
+        {
+          name: 'Xtrackers Emerging Markets',
+          percentage: '10',
+          fee: '0.22',
+          distribution: getInitialDistribution('Xtrackers Emerging Markets'),
           isDistributionExpanded: false,
         },
       ],
